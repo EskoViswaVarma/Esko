@@ -1,0 +1,58 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Esko Test Environment">
+<parameter name="appURL" value="https://test-www.esko.com"/>
+<parameter name="pdURL" value="http://accept.docs.esko.com/docs/en-us/artioscad/20/userguide/home.html#about.html"/>
+
+    <parameter name="browserType" value="Chrome"/>
+<!--<parameter name="browserType" value="edge"/>-->
+<!--<parameter name="browserType" value="firefox"/>-->
+
+<parameter name="sitename" value="Esko"/>
+<parameter name="env" value="Test"/>
+<parameter name="uEmail1" value="eskododp04@gmail.com"/>
+<parameter name="uEmail2" value="eskododp03@gmail.com"/>
+<parameter name="uPassword" value="Azertyu1$"/>		
+<parameter name="uEmail3" value="eskododp05@gmail.com"/>	
+<parameter name="uCoupoun" value="SAVEALOTDODP"/>
+<parameter name="uCoupoun1" value="SAVEALOTDODP03"/>
+<parameter name="uUpdatedcontact" value="eskododp04@yahoo.be"/>
+<parameter name="uUpdatedcreditcard" value="411111XXXXXX1111 exp 09 / 2022"/>
+<parameter name="Esubemail" value="eskododp-metsys2-ID@mailinator.com"/>
+<parameter name="EsubProrefno" value="METSYS_MOCK_2"/>
+<parameter name="Esuborderno" value="000MOCK1"/>
+<parameter name="Eproductname" value="Studio Essentials subscription"/>
+
+ <test name="Scenarios">
+   <groups>
+   <run>
+    <exclude name="CAPEPACKADVANCEDTRIALDownloadwithNewUser"/>
+    <exclude name="CAPEPACKADVANCEDTRIALDownloadwithExistingUser"/>
+    <exclude name="SupportSearchwithquotationmarks"/>
+    <exclude name="Openproductdocumentation"/>
+    <exclude name="productdocumentverification"/>
+    </run>
+    </groups>
+<!--<classes>
+    <class name="com.pack.common.tests.SubscriptionStoreTest"/>
+    <class name="com.pack.common.tests.MyAccountTest"/>
+    <class name="com.pack.common.tests.MyAccountOrdermanagementTest"/>
+    <class name="com.pack.common.tests.EPSMyAccountSubscriptionOrdermanagementTest"/>
+    <class name="com.pack.common.tests.SubscriptionCheckoutPageTest"/>
+    <class name="com.pack.common.tests.SubscriptionPromotioncodeCheckoutTest"/>
+    <class name="com.pack.common.tests.NewCDIConsumablesTest"/>
+    <class name="com.pack.common.tests.NewCDICheckoutPageTest"/>
+    <class name="com.pack.common.tests.DownloadsTest"/>
+    <class name="com.pack.common.tests.SupportsearchTest"/>
+    <class name="com.pack.common.tests.AllEmailsTest"/>
+    <class name="com.pack.common.tests.MyAccountordermanagementverificationTest"/>
+    <class name="com.pack.common.tests.MyAccountHardwareOrdermanagementTest"/>
+    <class name="com.pack.common.tests.EPSMyAccountCloudOrdermanagementTest"/>
+</classes>-->
+   
+<classes>
+     <class name="com.pack.common.tests.EPSMyAccountSubscriptionOrdermanagementTest"/>
+    
+</classes> 
+
+  </test>
+</suite>

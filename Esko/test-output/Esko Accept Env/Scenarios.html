@@ -1,0 +1,473 @@
+<html>
+<head>
+<title>TestNG:  Scenarios</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Scenarios</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 04 14:00:45 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>462 seconds (462768 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td>CAPEPACKADVANCEDTRIALDownloadwithNewUser CAPEPACKADVANCEDTRIALDownloadwithExistingUser SupportSearchwithquotationmarks </td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchopendocumentation()'><b>Supportsearchopendocumentation</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search open Documentation<br/>
+<a href="#Output-1217207511" onClick='toggleBox("Output-1217207511", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1217207511" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1217207511">
+Search with text: installation<br/>
+Selected option in Sources dropdown:Documentation<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;searchresults&apos;]/div[2]/h6/a&quot;}
+  (Session info: chrome=69.0.3497.72)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:36.161Z&apos;
+System info: host: &apos;DPCD-7J8G622&apos;, ip: &apos;10.31.143.186&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\VISWAN~1.VAR\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.72, webStorageEnabled: true}
+Session ID: 10da45d80aaa892495143061ff2161d3
+*** Element info: {Using=xpath, value=//div[@id=&apos;searchresults&apos;]/div[2]/h6/a}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.pack.common.pageobjects.SupportsearchPage.opendocumentation(SupportsearchPage.java:303)
+	at com.pack.common.tests.SupportsearchTest.Supportsearchopendocumentation(SupportsearchTest.java:135)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1217207511", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1217207511'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;searchresults&apos;]/div[2]/h6/a&quot;}
+  (Session info: chrome=69.0.3497.72)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:36.161Z&apos;
+System info: host: &apos;DPCD-7J8G622&apos;, ip: &apos;10.31.143.186&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\VISWAN~1.VAR\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.72, webStorageEnabled: true}
+Session ID: 10da45d80aaa892495143061ff2161d3
+*** Element info: {Using=xpath, value=//div[@id=&apos;searchresults&apos;]/div[2]/h6/a}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.pack.common.pageobjects.SupportsearchPage.opendocumentation(SupportsearchPage.java:303)
+	at com.pack.common.tests.SupportsearchTest.Supportsearchopendocumentation(SupportsearchTest.java:135)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>22</td>
+<td>com.pack.common.tests.SupportsearchTest@6121c9d6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Generalsearch()'><b>Generalsearch</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: General Search<br/>
+<a href="#Output-565839681" onClick='toggleBox("Output-565839681", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-565839681" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-565839681">
+Search with text: artioscad<br/>
+Total Search Results: 161<br/>
+Title of the 1st Search Result: ArtiosCAD Subscription Editions<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.pack.common.tests.SupportsearchTest@6121c9d6</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Newsoverview()'><b>Newsoverview</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: News overview<br/>
+<a href="#Output-189207010" onClick='toggleBox("Output-189207010", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-189207010" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-189207010">
+Clicked on News link<br/>
+Title of the 1st News: Esko plug-ins are compatible with Adobe Creative Cloud 2018<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.pack.common.tests.SupportsearchTest@6121c9d6</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Pressoverview()'><b>Pressoverview</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Press overview<br/>
+<a href="#Output-1894788146" onClick='toggleBox("Output-1894788146", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1894788146" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1894788146">
+Clicked on Press releases link<br/>
+Title of the 1st Press release: Cartonéo chooses Esko solutions for continuous small series POS production<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.pack.common.tests.SupportsearchTest@6121c9d6</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Salescontacts()'><b>Salescontacts</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Sales contacts<br/>
+<a href="#Output-1449605932" onClick='toggleBox("Output-1449605932", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1449605932" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1449605932">
+Clicked on Sales contacts<br/>
+Selected Country:United Kingdom<br/>
+Esko Sales Contact(s) : James Mason
+Denis Fitzgerald (+441216674200)
+Peter Hargreaves (+44 7870 155 275)
+Simon Cavanagh (+44 7973 197464)
+Danny Mills
+Melanie Fox
+Sam Nicholson<br/>
+Esko Office(s) : Esko
+The Rhodium
+Blythe Valley Park
+B90 8AS Solihull
+United Kingdom
+Tel: +44 121 667 4200
+Fax: +44 121 667 4210
+Email: info.eur@esko.com
+Web: www.esko.com<br/>
+Reseller(s) : CMYUK Limited
+Headley Road East Woodley
+RG5 4SE Reading
+United Kingdom
+Tel: +44 118 989 2929
+Web: www.cmyuk.com
+Dantex Graphics Limited
+Danon House
+5 Kings Road
+BD2 1EY Bradford
+United Kingdom
+Tel: +44 1274 777777
+Fax: +44 1274 777766
+Web: www.dantex.com
+Reprocentre Group Ireland Ltd
+Graphic House
+Nangor Road Business Park
+Clondalkin
+CLONDALKIN Dublin 12
+Ireland
+Tel: +353 1 40 93 100
+Fax: +353 1 409 3160
+Web: www.reprocentre.ie
+Contact:
+Mr. Eoin Honan<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>com.pack.common.tests.SupportsearchTest@6121c9d6</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchfordocumentation()'><b>Supportsearchfordocumentation</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search for documentation<br/>
+<a href="#Output-1215904751" onClick='toggleBox("Output-1215904751", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1215904751" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1215904751">
+Clicked on Productdocumentation<br/>
+Selected Prodcut-ArtiosCAD<br/>
+Page title-DOCUMENTATION FOR ARTIOSCAD<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>com.pack.common.tests.SupportsearchTest@6121c9d6</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.SupportsearchopenHtmldocument()'><b>SupportsearchopenHtmldocument</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search Open Html document<br/>
+<a href="#Output-2058135834" onClick='toggleBox("Output-2058135834", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2058135834" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2058135834">
+Clicked on Productdocumentation<br/>
+Selected Prodcut-ArtiosCAD<br/>
+Page title-DOCUMENTATION FOR ARTIOSCAD<br/>
+Clicked on User Guide link<br/>
+HtmlPage title- User Guide<br/>
+http://accept.docs.esko.com/docs/en-us/artioscad/16.1/userguide/home.html<br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>com.pack.common.tests.SupportsearchTest@6121c9d6</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.SupportsearchopenKBdocument()'><b>SupportsearchopenKBdocument</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search open KB document<br/>
+<a href="#Output-1829217853" onClick='toggleBox("Output-1829217853", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1829217853" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1829217853">
+Search with text: installation<br/>
+Selected option in Sources dropdown:Knowledge Base<br/>
+Title of the 1st Search Result: KB78615036: DeskPack - Error during the installation "Installation failed: following installation step failed: run postinstall script"<br/>
+http://egwbewiki001tst/pages/viewpage.action?pageId=80742849<br/>
+</div>
+</td>
+<td></td>
+<td>56</td>
+<td>com.pack.common.tests.SupportsearchTest@6121c9d6</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchopenpdfdocument()'><b>Supportsearchopenpdfdocument</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search Open Pdf document<br/>
+<a href="#Output-1052212904" onClick='toggleBox("Output-1052212904", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1052212904" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1052212904">
+Clicked on Productdocumentation<br/>
+Selected Prodcut-ArtiosCAD<br/>
+Page title-DOCUMENTATION FOR ARTIOSCAD<br/>
+Clicked on What's New in ArtiosCAD link<br/>
+http://accept.docs.esko.com/docs/en-us/artioscad/16.1/whatsnew/ArtiosCAD_16_1_Whats_New.pdf<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>com.pack.common.tests.SupportsearchTest@6121c9d6</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchwithminus()'><b>Supportsearchwithminus</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search with minus<br/>
+<a href="#Output-1100399456" onClick='toggleBox("Output-1100399456", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1100399456" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1100399456">
+Search with text: installation tips -webcenter<br/>
+Total Search Results: 62<br/>
+Title of the 1st Search Result: User Guide: Licensing and Activation 16.1: If the Program Hangs<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.pack.common.tests.SupportsearchTest@6121c9d6</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchwithproductfilters()'><b>Supportsearchwithproductfilters</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search with product filters<br/>
+<a href="#Output-1463355115" onClick='toggleBox("Output-1463355115", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1463355115" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1463355115">
+Search with text: installation<br/>
+Number of results with All products option: 5527<br/>
+Selected dropdown option: ArtiosCAD<br/>
+Number of results with ArtiosCAD option: 3707<br/>
+ArtiosCAD product number of results is less than All products number of results<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.pack.common.tests.SupportsearchTest@6121c9d6</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchwithsourcefilters()'><b>Supportsearchwithsourcefilters</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search with source filters<br/>
+<a href="#Output-35984028" onClick='toggleBox("Output-35984028", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-35984028" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-35984028">
+Search with text: installation<br/>
+Number of results with All sources option: 5527<br/>
+Selected dropdown option: Knowledge Base<br/>
+Number of results with Knowledge Base option: 483<br/>
+Selected dropdown option: System Requirements<br/>
+Number of results with System Requirements option: 18<br/>
+Selected dropdown option: Documentation<br/>
+Number of results with Documentation option: 5023<br/>
+Selected dropdown option: Hotfixes<br/>
+Number of results with Hotfixes option: 3<br/>
+Sum of results with other options: 5527<br/>
+All results matchs with sum of the all other options<br/>
+</div>
+</td>
+<td></td>
+<td>51</td>
+<td>com.pack.common.tests.SupportsearchTest@6121c9d6</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchwithtext()'><b>Supportsearchwithtext</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search with text<br/>
+<a href="#Output-1090541608" onClick='toggleBox("Output-1090541608", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1090541608" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1090541608">
+Search with text: Studio installation<br/>
+Total Search Results: 240<br/>
+Title of the 1st Search Result: KB74647202: Where to find the DeskPack/ Studio/ Dynamic Content installation log files<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.pack.common.tests.SupportsearchTest@6121c9d6</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchwithwildcards()'><b>Supportsearchwithwildcards</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search with wildcards<br/>
+<a href="#Output-2144284609" onClick='toggleBox("Output-2144284609", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2144284609" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2144284609">
+Search with text: *stalla*<br/>
+Total Search Results: 5608<br/>
+Title of the 1st Search Result: Installation and Configuration Guide: PDF Security tab<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.pack.common.tests.SupportsearchTest@6121c9d6</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Testimonialcountryfilter()'><b>Testimonialcountryfilter</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Testimonial country filter<br/>
+<a href="#Output-838812606" onClick='toggleBox("Output-838812606", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-838812606" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-838812606">
+Clicked on Testimonials link<br/>
+Selected Country:Belgium<br/>
+Title of the 1st Testimonials: DSN<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>com.pack.common.tests.SupportsearchTest@6121c9d6</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Testimonialoverview()'><b>Testimonialoverview</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Testimonial overview<br/>
+<a href="#Output-1375394559" onClick='toggleBox("Output-1375394559", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1375394559" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1375394559">
+Clicked on Testimonials link<br/>
+Title of the 1st Testimonials: Abbott-Action purchases 10,000th Kongsberg table<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.pack.common.tests.SupportsearchTest@6121c9d6</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Testimonialproductfilter()'><b>Testimonialproductfilter</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Testimonial product filter<br/>
+<a href="#Output-746115872" onClick='toggleBox("Output-746115872", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-746115872" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-746115872">
+Clicked on Testimonials link<br/>
+Selected Product:ArtiosCAD<br/>
+Title of the 1st Testimonials: ArtiosCAD Enterprise consolidates intellectual property of Great Northern Corporation<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>com.pack.common.tests.SupportsearchTest@6121c9d6</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Testimonialsolutionfilter()'><b>Testimonialsolutionfilter</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Testimonial solution filter<br/>
+<a href="#Output-1548010882" onClick='toggleBox("Output-1548010882", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1548010882" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1548010882">
+Clicked on Testimonials link<br/>
+Selected Solution:Digital Finishing<br/>
+Title of the 1st Testimonials: Abbott-Action purchases 10,000th Kongsberg table<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>com.pack.common.tests.SupportsearchTest@6121c9d6</td></tr>
+</table><p>
+</body>
+</html>

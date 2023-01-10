@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Clicked on Software Subscription Orders]]>
+    </line>
+    <line>
+      <![CDATA[Number of subscription order list-20]]>
+    </line>
+    <line>
+      <![CDATA[Selected order-ACCEPTS719209]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on manage option of the subscription order]]>
+    </line>
+    <line>
+      <![CDATA[Contact from website:eskododp04@yahoo.be]]>
+    </line>
+    <line>
+      <![CDATA[Contact from text file:eskododp04@yahoo.be]]>
+    </line>
+    <line>
+      <![CDATA[Contact matched in website and datafile]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Software Subscription Orders]]>
+    </line>
+    <line>
+      <![CDATA[Number of subscription order list-20]]>
+    </line>
+    <line>
+      <![CDATA[Selected order-ACCEPTS719209]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on manage option of the subscription order]]>
+    </line>
+    <line>
+      <![CDATA[Credit card from website:411111XXXXXX1111 exp 08 / 2027]]>
+    </line>
+    <line>
+      <![CDATA[Credit card from text file:411111XXXXXX1111 exp 08 / 2027]]>
+    </line>
+    <line>
+      <![CDATA[Updated credit card matched in website and datafile]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Software Subscription Orders]]>
+    </line>
+    <line>
+      <![CDATA[Number of subscription order list-20]]>
+    </line>
+    <line>
+      <![CDATA[Selected order-ACCEPTS719206]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on manage option of the subscription order]]>
+    </line>
+    <line>
+      <![CDATA[New credit card from website:411111XXXXXX1111 exp 08 / 2027]]>
+    </line>
+    <line>
+      <![CDATA[New credit card from text file:411111XXXXXX1111 exp 08 / 2027]]>
+    </line>
+    <line>
+      <![CDATA[New credit card matched in website and datafile]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Software Subscription Orders]]>
+    </line>
+    <line>
+      <![CDATA[Number of subscription order list-20]]>
+    </line>
+    <line>
+      <![CDATA[Selected order-ACCEPTS719205]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on manage option of the subscription order]]>
+    </line>
+    <line>
+      <![CDATA[Payment option from website:Invoice]]>
+    </line>
+    <line>
+      <![CDATA[Payment option from textfile:Invoice]]>
+    </line>
+    <line>
+      <![CDATA[Invoice option not updated in subscription order details page]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Software Subscription Orders]]>
+    </line>
+    <line>
+      <![CDATA[Number of subscription order list-20]]>
+    </line>
+    <line>
+      <![CDATA[Selected order-ACCEPTS719204]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on manage option of the subscription order]]>
+    </line>
+    <line>
+      <![CDATA[License status from website-Cancelled]]>
+    </line>
+    <line>
+      <![CDATA[After cancellation status is Cancelled]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Software Subscription Orders]]>
+    </line>
+    <line>
+      <![CDATA[Number of subscription order list-20]]>
+    </line>
+    <line>
+      <![CDATA[Selected order-ACCEPTS719203]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on manage option of the subscription order]]>
+    </line>
+    <line>
+      <![CDATA[Product Key after upgrade-SUBT00266090-1]]>
+    </line>
+    <line>
+      <![CDATA[Product Key before upgrade-SUBT00266089-1]]>
+    </line>
+    <line>
+      <![CDATA[Product Key updated after upgradation]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Software Subscription Orders]]>
+    </line>
+    <line>
+      <![CDATA[Number of subscription order list-20]]>
+    </line>
+    <line>
+      <![CDATA[Selected order-ACCEPTS719200]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on manage option of the subscription order]]>
+    </line>
+    <line>
+      <![CDATA[Total Number of Productkeys after seat Increase-4]]>
+    </line>
+    <line>
+      <![CDATA[New license key generated after seat Increase]]>
+    </line>
+    <line>
+      <![CDATA[After seat Increase licensekey1-SUBT00266129-1]]>
+    </line>
+    <line>
+      <![CDATA[After seat Increase licensekey2-SUBT00266129-2]]>
+    </line>
+    <line>
+      <![CDATA[After seat Increase licensekey3-SUBT00266129-3]]>
+    </line>
+    <line>
+      <![CDATA[After seat Increase licensekey4-SUBT00266129-4]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-01-09T10:11:40Z" name="Esko Regression Suite" finished-at="2023-01-09T10:11:40Z" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- Esko Regression Suite -->
+  <suite started-at="2023-01-09T09:46:58Z" name="Esko Accept Environment" finished-at="2023-01-09T10:11:40Z" duration-ms="1481882">
+    <groups>
+      <group name="Change payment option from CC to New CC verification">
+        <method signature="MyAccountordermanagementverificationTest.ChangepaymentoptionfromCCtoNewCCverfication()[pri:114, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" name="ChangepaymentoptionfromCCtoNewCCverfication" class="com.pack.common.tests.MyAccountordermanagementverificationTest"/>
+      </group> <!-- Change payment option from CC to New CC verification -->
+      <group name="License Keys verification after upgrade">
+        <method signature="MyAccountordermanagementverificationTest.UpgradeLicenseVerification()[pri:117, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" name="UpgradeLicenseVerification" class="com.pack.common.tests.MyAccountordermanagementverificationTest"/>
+      </group> <!-- License Keys verification after upgrade -->
+      <group name="Cancel License Verification">
+        <method signature="MyAccountordermanagementverificationTest.CancelLicenseVerification()[pri:116, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" name="CancelLicenseVerification" class="com.pack.common.tests.MyAccountordermanagementverificationTest"/>
+      </group> <!-- Cancel License Verification -->
+      <group name="Change contact person verification">
+        <method signature="MyAccountordermanagementverificationTest.Changecontactpersonverfication()[pri:112, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" name="Changecontactpersonverfication" class="com.pack.common.tests.MyAccountordermanagementverificationTest"/>
+      </group> <!-- Change contact person verification -->
+      <group name="Seat Increase Verification">
+        <method signature="MyAccountordermanagementverificationTest.SeatIncreaseVerification()[pri:118, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" name="SeatIncreaseVerification" class="com.pack.common.tests.MyAccountordermanagementverificationTest"/>
+      </group> <!-- Seat Increase Verification -->
+      <group name="Change payment option from CC to Invoice verification">
+        <method signature="MyAccountordermanagementverificationTest.ChangepaymentoptionfromCCtoInvoiceverfication()[pri:115, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" name="ChangepaymentoptionfromCCtoInvoiceverfication" class="com.pack.common.tests.MyAccountordermanagementverificationTest"/>
+      </group> <!-- Change payment option from CC to Invoice verification -->
+      <group name="Change payment option from CC to existing CC verification">
+        <method signature="MyAccountordermanagementverificationTest.ChangepaymentoptionfromCCtoCCverfication()[pri:113, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" name="ChangepaymentoptionfromCCtoCCverfication" class="com.pack.common.tests.MyAccountordermanagementverificationTest"/>
+      </group> <!-- Change payment option from CC to existing CC verification -->
+    </groups>
+    <test started-at="2023-01-09T09:46:58Z" name="Scenarios" finished-at="2023-01-09T10:11:40Z" duration-ms="1481882">
+      <class name="com.pack.common.tests.MyAccountordermanagementverificationTest">
+        <test-method is-config="true" signature="initializeTestBaseSetup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" started-at="2023-01-09T09:46:58Z" name="initializeTestBaseSetup" finished-at="2023-01-09T09:47:19Z" duration-ms="20675" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Esko]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://accept-www.esko.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeTestBaseSetup -->
+        <test-method is-config="true" signature="setUp(org.testng.ITestContext)[pri:0, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" started-at="2023-01-09T09:47:19Z" name="setUp" finished-at="2023-01-09T09:47:19Z" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@14b7786]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Changecontactpersonverfication()[pri:112, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" started-at="2023-01-09T09:47:19Z" name="Changecontactpersonverfication" description="Change contact person verification" finished-at="2023-01-09T09:50:04Z" duration-ms="165112" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Software Subscription Orders]]>
+            </line>
+            <line>
+              <![CDATA[Number of subscription order list-20]]>
+            </line>
+            <line>
+              <![CDATA[Selected order-ACCEPTS719209]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on manage option of the subscription order]]>
+            </line>
+            <line>
+              <![CDATA[Contact from website:eskododp04@yahoo.be]]>
+            </line>
+            <line>
+              <![CDATA[Contact from text file:eskododp04@yahoo.be]]>
+            </line>
+            <line>
+              <![CDATA[Contact matched in website and datafile]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Changecontactpersonverfication -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" started-at="2023-01-09T09:50:04Z" name="afterMethod" finished-at="2023-01-09T09:50:04Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Changecontactpersonverfication status=SUCCESS method=MyAccountordermanagementverificationTest.Changecontactpersonverfication()[pri:112, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557] output=Clicked on Software Subscription Orders]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="ChangepaymentoptionfromCCtoCCverfication()[pri:113, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" started-at="2023-01-09T09:50:04Z" name="ChangepaymentoptionfromCCtoCCverfication" description="Change payment option from CC to existing CC verification" finished-at="2023-01-09T09:53:22Z" duration-ms="197687" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Software Subscription Orders]]>
+            </line>
+            <line>
+              <![CDATA[Number of subscription order list-20]]>
+            </line>
+            <line>
+              <![CDATA[Selected order-ACCEPTS719209]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on manage option of the subscription order]]>
+            </line>
+            <line>
+              <![CDATA[Credit card from website:411111XXXXXX1111 exp 08 / 2027]]>
+            </line>
+            <line>
+              <![CDATA[Credit card from text file:411111XXXXXX1111 exp 08 / 2027]]>
+            </line>
+            <line>
+              <![CDATA[Updated credit card matched in website and datafile]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ChangepaymentoptionfromCCtoCCverfication -->
+        <test-method signature="ChangepaymentoptionfromCCtoNewCCverfication()[pri:114, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" started-at="2023-01-09T09:53:22Z" name="ChangepaymentoptionfromCCtoNewCCverfication" description="Change payment option from CC to New CC verification" finished-at="2023-01-09T09:56:47Z" duration-ms="205077" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Software Subscription Orders]]>
+            </line>
+            <line>
+              <![CDATA[Number of subscription order list-20]]>
+            </line>
+            <line>
+              <![CDATA[Selected order-ACCEPTS719206]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on manage option of the subscription order]]>
+            </line>
+            <line>
+              <![CDATA[New credit card from website:411111XXXXXX1111 exp 08 / 2027]]>
+            </line>
+            <line>
+              <![CDATA[New credit card from text file:411111XXXXXX1111 exp 08 / 2027]]>
+            </line>
+            <line>
+              <![CDATA[New credit card matched in website and datafile]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ChangepaymentoptionfromCCtoNewCCverfication -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" started-at="2023-01-09T09:53:22Z" name="afterMethod" finished-at="2023-01-09T09:53:22Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ChangepaymentoptionfromCCtoCCverfication status=SUCCESS method=MyAccountordermanagementverificationTest.ChangepaymentoptionfromCCtoCCverfication()[pri:113, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557] output=Clicked on Software Subscription Orders]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" started-at="2023-01-09T09:56:47Z" name="afterMethod" finished-at="2023-01-09T09:56:47Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ChangepaymentoptionfromCCtoNewCCverfication status=SUCCESS method=MyAccountordermanagementverificationTest.ChangepaymentoptionfromCCtoNewCCverfication()[pri:114, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557] output=Clicked on Software Subscription Orders]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="ChangepaymentoptionfromCCtoInvoiceverfication()[pri:115, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" started-at="2023-01-09T09:56:47Z" name="ChangepaymentoptionfromCCtoInvoiceverfication" description="Change payment option from CC to Invoice verification" finished-at="2023-01-09T10:00:19Z" duration-ms="212025" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Software Subscription Orders]]>
+            </line>
+            <line>
+              <![CDATA[Number of subscription order list-20]]>
+            </line>
+            <line>
+              <![CDATA[Selected order-ACCEPTS719205]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on manage option of the subscription order]]>
+            </line>
+            <line>
+              <![CDATA[Payment option from website:Invoice]]>
+            </line>
+            <line>
+              <![CDATA[Payment option from textfile:Invoice]]>
+            </line>
+            <line>
+              <![CDATA[Invoice option not updated in subscription order details page]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ChangepaymentoptionfromCCtoInvoiceverfication -->
+        <test-method signature="CancelLicenseVerification()[pri:116, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" started-at="2023-01-09T10:00:19Z" name="CancelLicenseVerification" description="Cancel License Verification" finished-at="2023-01-09T10:03:57Z" duration-ms="218352" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Software Subscription Orders]]>
+            </line>
+            <line>
+              <![CDATA[Number of subscription order list-20]]>
+            </line>
+            <line>
+              <![CDATA[Selected order-ACCEPTS719204]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on manage option of the subscription order]]>
+            </line>
+            <line>
+              <![CDATA[License status from website-Cancelled]]>
+            </line>
+            <line>
+              <![CDATA[After cancellation status is Cancelled]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CancelLicenseVerification -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" started-at="2023-01-09T10:00:19Z" name="afterMethod" finished-at="2023-01-09T10:00:19Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ChangepaymentoptionfromCCtoInvoiceverfication status=SUCCESS method=MyAccountordermanagementverificationTest.ChangepaymentoptionfromCCtoInvoiceverfication()[pri:115, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557] output=Clicked on Software Subscription Orders]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" started-at="2023-01-09T10:03:57Z" name="afterMethod" finished-at="2023-01-09T10:03:57Z" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CancelLicenseVerification status=SUCCESS method=MyAccountordermanagementverificationTest.CancelLicenseVerification()[pri:116, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557] output=Clicked on Software Subscription Orders]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="UpgradeLicenseVerification()[pri:117, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" started-at="2023-01-09T10:03:57Z" name="UpgradeLicenseVerification" description="License Keys verification after upgrade" finished-at="2023-01-09T10:07:49Z" duration-ms="231253" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Software Subscription Orders]]>
+            </line>
+            <line>
+              <![CDATA[Number of subscription order list-20]]>
+            </line>
+            <line>
+              <![CDATA[Selected order-ACCEPTS719203]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on manage option of the subscription order]]>
+            </line>
+            <line>
+              <![CDATA[Product Key after upgrade-SUBT00266090-1]]>
+            </line>
+            <line>
+              <![CDATA[Product Key before upgrade-SUBT00266089-1]]>
+            </line>
+            <line>
+              <![CDATA[Product Key updated after upgradation]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- UpgradeLicenseVerification -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" started-at="2023-01-09T10:07:49Z" name="afterMethod" finished-at="2023-01-09T10:07:49Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UpgradeLicenseVerification status=SUCCESS method=MyAccountordermanagementverificationTest.UpgradeLicenseVerification()[pri:117, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557] output=Clicked on Software Subscription Orders]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="SeatIncreaseVerification()[pri:118, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" started-at="2023-01-09T10:07:49Z" name="SeatIncreaseVerification" description="Seat Increase Verification" finished-at="2023-01-09T10:11:39Z" duration-ms="230527" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Software Subscription Orders]]>
+            </line>
+            <line>
+              <![CDATA[Number of subscription order list-20]]>
+            </line>
+            <line>
+              <![CDATA[Selected order-ACCEPTS719200]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on manage option of the subscription order]]>
+            </line>
+            <line>
+              <![CDATA[Total Number of Productkeys after seat Increase-4]]>
+            </line>
+            <line>
+              <![CDATA[New license key generated after seat Increase]]>
+            </line>
+            <line>
+              <![CDATA[After seat Increase licensekey1-SUBT00266129-1]]>
+            </line>
+            <line>
+              <![CDATA[After seat Increase licensekey2-SUBT00266129-2]]>
+            </line>
+            <line>
+              <![CDATA[After seat Increase licensekey3-SUBT00266129-3]]>
+            </line>
+            <line>
+              <![CDATA[After seat Increase licensekey4-SUBT00266129-4]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- SeatIncreaseVerification -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" started-at="2023-01-09T10:11:39Z" name="afterMethod" finished-at="2023-01-09T10:11:39Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SeatIncreaseVerification status=SUCCESS method=MyAccountordermanagementverificationTest.SeatIncreaseVerification()[pri:118, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557] output=Clicked on Software Subscription Orders]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557]" started-at="2023-01-09T10:11:39Z" name="tearDown" finished-at="2023-01-09T10:11:40Z" duration-ms="1119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pack.common.tests.MyAccountordermanagementverificationTest -->
+    </test> <!-- Scenarios -->
+  </suite> <!-- Esko Accept Environment -->
+</testng-results>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Esko test Scenario"
+           tests="4"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="88.572">
+  <properties />
+            <testcase name="CapePackDownloadwithNewuser" time="27.847" classname="com.pack.common.tests.DownloadsTest">
+                <failure type="org.openqa.selenium.WebDriverException"
+                  message="unknown error: Element &lt;input data-val=&quot;true&quot; data-val-checkrequired=&quot;You must accept the Esko privacy policy before you can proceed.&quot; data-val-required=&quot;The By creating an Esko ID, I indicate that I agree to the terms in the Esko {0} and I allow Esko to contact me via phone and/or e-mail. field is required.&quot; id=&quot;OptinPolicy_PolicyAccepted&quot; name=&quot;OptinPolicy.PolicyAccepted&quot; type=&quot;checkbox&quot; value=&quot;true&quot;&gt; is not clickable at point (405, 870). Other element would receive the click: &lt;label&gt;...&lt;/label&gt;
+  (Session info: chrome=63.0.3239.84)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:36.161Z&apos;
+System info: host: &apos;EIL-IT-3020-06&apos;, ip: &apos;10.31.143.186&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506120 (e3e53437346286..., userDataDir: C:\Users\VISWAN~1.VAR\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.84, webStorageEnabled: true}
+Session ID: d6f0efbc6836211b93b6504574c6acd2"
+              >
+<![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <input data-val="true" data-val-checkrequired="You must accept the Esko privacy policy before you can proceed." data-val-required="The By creating an Esko ID, I indicate that I agree to the terms in the Esko {0} and I allow Esko to contact me via phone and/or e-mail. field is required." id="OptinPolicy_PolicyAccepted" name="OptinPolicy.PolicyAccepted" type="checkbox" value="true"> is not clickable at point (405, 870). Other element would receive the click: <label>...</label>
+  (Session info: chrome=63.0.3239.84)
+  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.7.1', revision: '8a0099a', time: '2017-11-06T21:07:36.161Z'
+System info: host: 'EIL-IT-3020-06', ip: '10.31.143.186', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_151'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.33.506120 (e3e53437346286..., userDataDir: C:\Users\VISWAN~1.VAR\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 63.0.3239.84, webStorageEnabled: true}
+Session ID: d6f0efbc6836211b93b6504574c6acd2
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+  java.lang.reflect.Constructor.newInstance(Unknown Source)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+  org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+  org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+  org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+  com.pack.common.pageobjects.SignInPage.newcustomerregistrationfordownload(SignInPage.java:88)
+  com.pack.common.tests.DownloadsTest.CapePackDownloadwithNewuser(DownloadsTest.java:69)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+  java.lang.reflect.Method.invoke(Unknown Source)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:571)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+  org.testng.SuiteRunner.run(SuiteRunner.java:364)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+  org.testng.TestNG.runSuites(TestNG.java:1028)
+  org.testng.TestNG.run(TestNG.java:996)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="DeskPackEssentialsDownload" time="16.095" classname="com.pack.common.tests.DownloadsTest" />
+                <testcase name="DeskPackEssentialsDownloadForWindows" time="33.234" classname="com.pack.common.tests.DownloadsTest" />
+                <testcase name="CapePackDownload" time="11.396" classname="com.pack.common.tests.DownloadsTest" />
+      
+</testsuite>

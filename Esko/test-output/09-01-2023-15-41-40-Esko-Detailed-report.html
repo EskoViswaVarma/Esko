@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Detailed Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodds  {background-color: #0A0}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.passed td,.numi_passed {background-color: #0A0}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:Lucida Sans Unicode, Lucida Grande, sans-serif}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<center><h2>Esko Detailed Report - 09-01-2023 15:41:40</h2></center><table cellspacing=0 cellpadding=0 class="testOverview">
+<tr><th>Scenario</th><th>Methods<br/>Passed</th><th># skipped</th><th># failed</th><th>Browser</th><th>Start<br/>Time</th><th>End<br/>Time</th><th>Total<br/>Time(hh:mm:ss)</th><th>Environment</th><th>Excluded<br/>Scenario</th></tr>
+<tr><th colspan="10">Esko Regression Suite-null Environment</th></tr>
+<tr><th colspan="10">Esko Accept Environment-Accept Environment</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1"><b>Scenarios</b></a></td><td class="numi passedodds">7</td><td class="numi">0</td><td class="numi">0</td><td class="numi">Chrome</td></td>
+<td class="numi">03:16:58</td></td>
+<td class="numi">03:41:40</td></td>
+<td class="numi">00:24:41</td><td class="numi">Accept</td><td class="numi">CAPEPACKADVANCEDTRIALDownloadwithNewUser, Openproductdocumentation, CAPEPACKADVANCEDTRIALDownloadwithExistingUser, SupportSearchwithquotationmarks, productdocumentverification, </td></tr>
+</table>
+<table cellspacing=0 cellpadding=0 class="methodOverview" id="Summary">
+<tr><th>Class</th><th>Exception Info</th><th>Start Time </th><th>Execution Time<br/>(hh:mm:ss)</th></tr>
+<tr><th colspan="5">Esko Regression Suite</th></tr>
+<tr><th colspan="5">Esko Accept Environment</th></tr>
+<tr id="t1"><th colspan="5">Scenarios &#8212; passed</th></tr>
+<tr class="passedodd"><td>Cancel License Verification</td><td><a href="#m1><b>CancelLicenseVerification</b> (Cancel License Verification) (Cancel License Verification)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">03:30:19</td><td class="numi">00:03:38</td></tr>
+<tr class="passedeven"><td>Change contact person verification</td><td><a href="#m2><b>Changecontactpersonverfication</b> (Change contact person verification) (Change contact person verification)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">03:17:19</td><td class="numi">00:02:45</td></tr>
+<tr class="passedodd"><td>Change payment option from CC to existing CC verification</td><td><a href="#m3><b>ChangepaymentoptionfromCCtoCCverfication</b> (Change payment option from CC to existing CC verification) (Change payment option from CC to existing CC verification)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">03:20:04</td><td class="numi">00:03:18</td></tr>
+<tr class="passedeven"><td>Change payment option from CC to Invoice verification</td><td><a href="#m4><b>ChangepaymentoptionfromCCtoInvoiceverfication</b> (Change payment option from CC to Invoice verification) (Change payment option from CC to Invoice verification)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">03:26:47</td><td class="numi">00:03:32</td></tr>
+<tr class="passedodd"><td>Change payment option from CC to New CC verification</td><td><a href="#m5><b>ChangepaymentoptionfromCCtoNewCCverfication</b> (Change payment option from CC to New CC verification) (Change payment option from CC to New CC verification)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">03:23:22</td><td class="numi">00:03:25</td></tr>
+<tr class="passedeven"><td>Seat Increase Verification</td><td><a href="#m6><b>SeatIncreaseVerification</b> (Seat Increase Verification) (Seat Increase Verification)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">03:37:49</td><td class="numi">00:03:50</td></tr>
+<tr class="passedodd"><td>License Keys verification after upgrade</td><td><a href="#m7><b>UpgradeLicenseVerification</b> (License Keys verification after upgrade) (License Keys verification after upgrade)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">03:33:57</td><td class="numi">00:03:52</td></tr>
+</table>
+<h2>Scenarios</h2>
+<h3 id="m1">:Cancel License Verification</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-20
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected order-ACCEPTS719204
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on manage option of the subscription order
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+License status from website-Cancelled
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+After cancellation status is Cancelled
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">:Change contact person verification</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-20
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected order-ACCEPTS719209
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on manage option of the subscription order
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Contact from website:eskododp04@yahoo.be
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Contact from text file:eskododp04@yahoo.be
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Contact matched in website and datafile
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">:Change payment option from CC to existing CC verification</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-20
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected order-ACCEPTS719209
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on manage option of the subscription order
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Credit card from website:411111XXXXXX1111 exp 08 / 2027
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Credit card from text file:411111XXXXXX1111 exp 08 / 2027
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Updated credit card matched in website and datafile
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">:Change payment option from CC to Invoice verification</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-20
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected order-ACCEPTS719205
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on manage option of the subscription order
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Payment option from website:Invoice
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Payment option from textfile:Invoice
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Invoice option not updated in subscription order details page
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">:Change payment option from CC to New CC verification</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-20
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected order-ACCEPTS719206
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on manage option of the subscription order
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+New credit card from website:411111XXXXXX1111 exp 08 / 2027
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+New credit card from text file:411111XXXXXX1111 exp 08 / 2027
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+New credit card matched in website and datafile
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">:Seat Increase Verification</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-20
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected order-ACCEPTS719200
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on manage option of the subscription order
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Total Number of Productkeys after seat Increase-4
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+New license key generated after seat Increase
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+After seat Increase licensekey1-SUBT00266129-1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+After seat Increase licensekey2-SUBT00266129-2
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+After seat Increase licensekey3-SUBT00266129-3
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+After seat Increase licensekey4-SUBT00266129-4
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">:License Keys verification after upgrade</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-20
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected order-ACCEPTS719203
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on manage option of the subscription order
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Product Key after upgrade-SUBT00266090-1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Product Key before upgrade-SUBT00266089-1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Product Key updated after upgradation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<center> Espire Automation Framework Generated Report </center>
+</body></html>

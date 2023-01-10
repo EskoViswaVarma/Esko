@@ -1,0 +1,682 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Detailed Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodds  {background-color: #0A0}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.passed td,.numi_passed {background-color: #0A0}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:Lucida Sans Unicode, Lucida Grande, sans-serif}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<center><h2>Esko Detailed Report - 16-11-2022 16:22:10</h2></center><table cellspacing=0 cellpadding=0 class="testOverview">
+<tr><th>Scenario</th><th>Methods<br/>Passed</th><th># skipped</th><th># failed</th><th>Browser</th><th>Start<br/>Time</th><th>End<br/>Time</th><th>Total<br/>Time(hh:mm:ss)</th><th>Environment</th><th>Excluded<br/>Scenario</th></tr>
+<tr><th colspan="10">Esko Regression Suite-null Environment</th></tr>
+<tr><th colspan="10">Esko Test Environment-Test Environment</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1"><b>Scenarios</b></a></td><td class="numi">9</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">Chrome</td></td>
+<td class="numi">04:01:37</td></td>
+<td class="numi">04:22:10</td></td>
+<td class="numi">00:20:32</td><td class="numi">Test</td><td class="numi">CAPEPACKADVANCEDTRIALDownloadwithNewUser, Openproductdocumentation, CAPEPACKADVANCEDTRIALDownloadwithExistingUser, SupportSearchwithquotationmarks, productdocumentverification, </td></tr>
+</table>
+<table cellspacing=0 cellpadding=0 class="methodOverview" id="Summary">
+<tr><th>Class</th><th>Exception Info</th><th>Start Time </th><th>Execution Time<br/>(hh:mm:ss)</th></tr>
+<tr><th colspan="5">Esko Regression Suite</th></tr>
+<tr><th colspan="5">Esko Test Environment</th></tr>
+<tr id="t1"><th colspan="5">Scenarios &#8212; failed</th></tr>
+<tr class="failedodd"><td>Cancel Subscrption license</td><td><a href="#m1><b>Cancellicense</b> (Cancel Subscrption license) (Cancel Subscrption license)</a></td><td class="numi" style="text-align:left;padding-right:2em">java.lang.AssertionError: Subscription not cancelled<br/></td><td style="text-align:right">04:19:51</td><td class="numi">00:02:16</td></tr>
+<tr><th colspan="5">Scenarios &#8212; passed</th></tr>
+<tr class="passedodd"><td>Add Order number in url and verify filtered data</td><td><a href="#m2><b>Addordernumberinurlandverifyfiltereddata</b> (Add order number in url and verify filtered data) (Add Order number in url and verify filtered data)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:17:51</td><td class="numi">00:02:00</td></tr>
+<tr class="passedeven"><td>Add project referencenumber in url and verify filtered data</td><td><a href="#m3><b>Addprojectreferencenumberinurlandverifyfiltereddata</b> (Add project referencenumber in url and verify filtered data) (Add project referencenumber in url and verify filtered data)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:15:48</td><td class="numi">00:02:03</td></tr>
+<tr class="passedodd"><td>Verify Include expired licenses filter</td><td><a href="#m4><b>Includeexpiredlicenses</b> (Verify Include expired licenses filter) (Verify Include expired licenses filter)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:03:36</td><td class="numi">00:02:21</td></tr>
+<tr class="passedeven"><td>Verify Only show licenses linked to specific Project reference number</td><td><a href="#m5><b>OnlyshowlicensesassignedtospecificProjectreferencenumber</b> (Verify Only show licenses linked to specific Project reference number) (Verify Only show licenses linked to specific Project reference number)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:09:57</td><td class="numi">00:01:58</td></tr>
+<tr class="passedodd"><td>Verify Only show licenses assigned to a specific emailaddress filter</td><td><a href="#m6><b>Onlyshowlicensesassignedtospecificemailaddress</b> (Verify Only show licenses assigned to a specific emailaddress) (Verify Only show licenses assigned to a specific emailaddress filter)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:07:56</td><td class="numi">00:02:01</td></tr>
+<tr class="passedeven"><td>Verify Only show licenses linked to Order Number</td><td><a href="#m7><b>Onlyshowlicenseslinkedtoordernumber</b> (Verify Only show licenses linked to Order Number) (Verify Only show licenses linked to Order Number)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:11:55</td><td class="numi">00:01:56</td></tr>
+<tr class="passedodd"><td>Verify Only show licenses of a product with productname</td><td><a href="#m8><b>Onlyshowlicensesofproductwithproductname</b> (Verify Only show licenses of a product with productname) (Verify Only show licenses of a product with productname)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:13:51</td><td class="numi">00:01:57</td></tr>
+<tr class="passedeven"><td>Verify only show unassigned licenses filter</td><td><a href="#m9><b>Onlyshowunassignedlicenses</b> (Verify only show unassigned licenses filter) (Verify only show unassigned licenses filter)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:05:57</td><td class="numi">00:01:59</td></tr>
+<tr class="passedodd"><td>Verify Subscription overview list</td><td><a href="#m10><b>Subscriptionoverviewlist</b> (Verify Subscription overview list) (Verify Subscription overview list)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:01:56</td><td class="numi">00:01:40</td></tr>
+</table>
+<h2>Scenarios</h2>
+<h3 id="m1">:Cancel Subscrption license</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Subscription Licenses
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Subscription Licenses gridview displayed
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-10
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected check box
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Subscrptionid-SUBJ00085467-3
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on View list link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on next botton in Viewlist popup
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Terms & Conditions checkbox
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Confirmation button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on OK Button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Subscrptionkey for cancellation status-SUBJ00085467-3
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Cancellicense-16-22-7.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">java.lang.AssertionError: Subscription not cancelled</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">:Add Order number in url and verify filtered data</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Subscription Licenses
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Subscription Licenses gridview displayed
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+https://test-www.esko.com/en/myaccount/subscription-overview/subscriptions?ordernumber=000MOCK1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-3
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Only showing 'licenses linked to specific Order Number' in Subscriptions list
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Expired license details: Product Name-ArtPro+ Essentials subscription-Project/Order Number-METSYS_MOCK
+000MOCK1-License Key-SUBJ00085467-1-Assigned To-eskododp-metsysID@mailinator.com
+metsys user-License Status-Cancel ongoing-Contract End Date/Next Payment Date-Cancel request sent on 24 Dec 2020
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">:Add project referencenumber in url and verify filtered data</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Subscription Licenses
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Subscription Licenses gridview displayed
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+https://test-www.esko.com/en/myaccount/subscription-overview/subscriptions?projectid=METSYS_MOCK_2
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-2
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Only showing 'licenses linked to specific Project reference number' in Subscriptions list
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Expired license details: Product Name-Studio Essentials subscription-Project/Order Number-METSYS_MOCK_2
+000MOCK2-License Key-SUBP00008901-1-Assigned To-Unassigned-License Status-Cancelled-Contract End Date/Next Payment Date-Expires on 10 May 2023
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">:Verify Include expired licenses filter</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Subscription Licenses
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Subscription Licenses gridview displayed
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Include expired licenses filter option
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Apply Filters button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-10
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-7
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Expired licenses Included in Subscriptions list
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Expired license details: Product Name-Studio Essentials subscription-Project/Order Number-METSYS_MOCK_3
+000MOCK3-License Key-SUBP00008902-3-Assigned To-Unassigned-License Status-Expired-Contract End Date/Next Payment Date-Expired on 10 Apr 2021
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">:Verify Only show licenses linked to specific Project reference number</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Subscription Licenses
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Subscription Licenses gridview displayed
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Entered value 'licenses linked to Project reference number' filter-METSYS_MOCK_2
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Apply Filters button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-2
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Only showing 'licenses linked to specific Project reference number' in Subscriptions list
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Expired license details: Product Name-Studio Essentials subscription-Project/Order Number-METSYS_MOCK_2
+000MOCK2-License Key-SUBP00008901-1-Assigned To-Unassigned-License Status-Cancelled-Contract End Date/Next Payment Date-Expires on 10 May 2023
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">:Verify Only show licenses assigned to a specific emailaddress filter</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Subscription Licenses
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Subscription Licenses gridview displayed
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Entered value on specific emailaddress' filter-eskododp-metsys2-ID@mailinator.com
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Apply Filters button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Only showing 'licenses assigned to a specific emailaddress' in Subscriptions list
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Expired license details: Product Name-ArtPro+ Essentials subscription-Project/Order Number-METSYS_MOCK
+00001229-License Key-SUBJ00161571-2-Assigned To-eskododp-metsys2-ID@mailinator.com
+firstname lastname-License Status-Cancel ongoing-Contract End Date/Next Payment Date-Cancel request sent on 04 Jun 2021
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">:Verify Only show licenses linked to Order Number</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Subscription Licenses
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Subscription Licenses gridview displayed
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Entered value 'licenses linked to order number' filter-000MOCK1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Apply Filters button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-3
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Only showing 'licenses linked to specific Order Number' in Subscriptions list
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Expired license details: Product Name-ArtPro+ Essentials subscription-Project/Order Number-METSYS_MOCK
+000MOCK1-License Key-SUBJ00085467-1-Assigned To-eskododp-metsysID@mailinator.com
+metsys user-License Status-Cancel ongoing-Contract End Date/Next Payment Date-Cancel request sent on 24 Dec 2020
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">:Verify Only show licenses of a product with productname</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Subscription Licenses
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Subscription Licenses gridview displayed
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Entered value 'licenses of a product with productname' filter-Studio Essentials subscription
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Apply Filters button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-7
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Only showing licenses of a 'product with productname' in Subscriptions list
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Expired license details: Product Name-Studio Essentials subscription-Project/Order Number-METSYS_MOCK_2
+000MOCK2-License Key-SUBP00008901-1-Assigned To-Unassigned-License Status-Cancelled-Contract End Date/Next Payment Date-Expires on 10 May 2023
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">:Verify only show unassigned licenses filter</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Subscription Licenses
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Subscription Licenses gridview displayed
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected 'Only show unassigned licenses' filter option
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Apply Filters button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-10
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Only showing unassigned licenses in Subscriptions list
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Expired license details: Product Name-ArtPro+ Essentials subscription-Project/Order Number-METSYS_MOCK
+000MOCK1-License Key-SUBJ00085467-2-Assigned To-Unassigned-License Status-Upgrade ongoing-Contract End Date/Next Payment Date-Upgrade request sent on 10 Dec 2020
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">:Verify Subscription overview list</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Subscription Licenses
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Subscription Licenses gridview displayed
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Subscription orders appearing in overview list
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<center> Espire Automation Framework Generated Report </center>
+</body></html>

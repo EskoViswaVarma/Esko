@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Esko Test Envioranment]">
+  <parameter name="uCoupoun" value="SAVEALOTDODP"/>
+  <parameter name="sitename" value="Esko"/>
+  <parameter name="appURL" value="http://test-www.esko.com"/>
+  <parameter name="uPassword" value="Azertyu1!"/>
+  <parameter name="env" value="Test"/>
+  <parameter name="uEmail2" value="eskododp03@gmail.com"/>
+  <parameter name="browserType" value="chrome"/>
+  <parameter name="uEmail1" value="eskododp04@gmail.com"/>
+  <listeners>
+    <listener class-name="com.easy.TestNGCustomReportListener"/>
+    <listener class-name="com.pack.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Scenarios(failed)">
+    <groups>
+      <run>
+        <exclude name="CAPEPACKADVANCEDTRIALDownloadwithNewUser"/>
+        <exclude name="CAPEPACKADVANCEDTRIALDownloadwithExistingUser"/>
+        <exclude name="SupportSearchwithquotationmarks"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.pack.common.tests.AllEmailsTest">
+        <methods>
+          <include name="Allemailsverification" invocation-numbers="13"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="afterMethod"/>
+          <include name="initializeTestBaseSetup"/>
+        </methods>
+      </class> <!-- com.pack.common.tests.AllEmailsTest -->
+    </classes>
+  </test> <!-- Scenarios(failed) -->
+</suite> <!-- Failed suite [Esko Test Envioranment] -->

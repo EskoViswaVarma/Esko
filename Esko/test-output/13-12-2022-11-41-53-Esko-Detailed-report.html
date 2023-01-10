@@ -1,0 +1,737 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Detailed Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodds  {background-color: #0A0}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.passed td,.numi_passed {background-color: #0A0}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:Lucida Sans Unicode, Lucida Grande, sans-serif}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<center><h2>Esko Detailed Report - 13-12-2022 11:41:53</h2></center><table cellspacing=0 cellpadding=0 class="testOverview">
+<tr><th>Scenario</th><th>Methods<br/>Passed</th><th># skipped</th><th># failed</th><th>Browser</th><th>Start<br/>Time</th><th>End<br/>Time</th><th>Total<br/>Time(hh:mm:ss)</th><th>Environment</th><th>Excluded<br/>Scenario</th></tr>
+<tr><th colspan="10">Esko Regression Suite-null Environment</th></tr>
+<tr><th colspan="10">Esko Live Environment-Live Environment</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1"><b>Scenarios</b></a></td><td class="numi">14</td><td class="numi">0</td><td class="numi_attn">7</td><td class="numi">Chrome</td></td>
+<td class="numi">11:31:42</td></td>
+<td class="numi">11:41:52</td></td>
+<td class="numi">00:10:10</td><td class="numi">Live</td><td class="numi">CAPEPACKADVANCEDTRIALDownloadwithNewUser, CAPEPACKADVANCEDTRIALDownloadwithExistingUser, CheckoutwithnewcustomerwithnewMastercardpayment, </td></tr>
+</table>
+<table cellspacing=0 cellpadding=0 class="methodOverview" id="Summary">
+<tr><th>Class</th><th>Exception Info</th><th>Start Time </th><th>Execution Time<br/>(hh:mm:ss)</th></tr>
+<tr><th colspan="5">Esko Regression Suite</th></tr>
+<tr><th colspan="5">Esko Live Environment</th></tr>
+<tr id="t1"><th colspan="5">Scenarios &#8212; failed</th></tr>
+<tr class="failedodd"><td>Press overview</td><td><a href="#m1><b>Pressoverview</b> (Press overview) (Press overview)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[normalize-space()=&apos;Press releases&apos;]&quot;}<br/></td><td style="text-align:right">11:40:08</td><td class="numi">00:00:13</td></tr>
+<tr class="failedeven"><td>Support-Search Open Pdf document</td><td><a href="#m2><b>Supportsearchopenpdfdocument</b> (SupportSearchOpenPdfdocument) (Support-Search Open Pdf document)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a[title=&apos;Documentation&apos;][href=&apos;http://accept.docs.esko.com/docs/en-us/artioscad/20/whatsnew/ArtiosCAD%2020%20-%20Whats%20New.pdf&apos;]&quot;}<br/></td><td style="text-align:right">11:32:26</td><td class="numi">00:00:38</td></tr>
+<tr class="failedodd"><td>Support-Search with quotationmarks</td><td><a href="#m3><b>Supportsearchwithquotationmarks</b> (SupportSearchwithquotationmarks) (Support-Search with quotationmarks)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;Keyword&apos;]&quot;}<br/></td><td style="text-align:right">11:34:22</td><td class="numi">00:00:29</td></tr>
+<tr class="failedeven"><td>Testimonial country filter</td><td><a href="#m4><b>Testimonialcountryfilter</b> (Testimonialcountryfilter) (Testimonial country filter)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.esko.com/en/company/testimonials has no size and location<br/></td><td style="text-align:right">11:40:27</td><td class="numi">00:00:04</td></tr>
+<tr class="failedodd"><td>Testimonial overview</td><td><a href="#m5><b>Testimonialoverview</b> (Testimonial overview) (Testimonial overview)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.esko.com/en/company/testimonials has no size and location<br/></td><td style="text-align:right">11:40:23</td><td class="numi">00:00:03</td></tr>
+<tr class="failedeven"><td>Testimonial product filter</td><td><a href="#m6><b>Testimonialproductfilter</b> (Testimonialproductfilter) (Testimonial product filter)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.esko.com/en/company/testimonials has no size and location<br/></td><td style="text-align:right">11:40:37</td><td class="numi">00:00:03</td></tr>
+<tr class="failedodd"><td>Testimonial solution filter</td><td><a href="#m7><b>Testimonialsolutionfilter</b> (Testimonialsolutionfilter) (Testimonial solution filter)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.esko.com/en/company/testimonials has no size and location<br/></td><td style="text-align:right">11:40:32</td><td class="numi">00:00:03</td></tr>
+<tr><th colspan="5">Scenarios &#8212; passed</th></tr>
+<tr class="passedodd"><td>General Search</td><td><a href="#m8><b>Generalsearch</b> (General Search) (General Search)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">11:38:23</td><td class="numi">00:00:38</td></tr>
+<tr class="passedeven"><td>News overview</td><td><a href="#m9><b>Newsoverview</b> (News overview) (News overview)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">11:39:57</td><td class="numi">00:00:11</td></tr>
+<tr class="passedodd"><td>Open product documentation</td><td><a href="#m10><b>Openproductdocumentation</b> (Open product documentation) (Open product documentation)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">11:40:41</td><td class="numi">00:00:23</td></tr>
+<tr class="passedeven"><td>Sales contacts</td><td><a href="#m11><b>Salescontacts</b> (Sales contacts) (Sales contacts)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">11:39:01</td><td class="numi">00:00:56</td></tr>
+<tr class="passedodd"><td>Support-Search for documentation</td><td><a href="#m12><b>Supportsearchfordocumentation</b> (SupportSearchfordocumentation) (Support-Search for documentation)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">11:31:59</td><td class="numi">00:00:27</td></tr>
+<tr class="passedeven"><td>Support-Search Open Html document</td><td><a href="#m13><b>SupportsearchopenHtmldocument</b> (SupportSearchOpenHtmldocument) (Support-Search Open Html document)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">11:33:05</td><td class="numi">00:00:59</td></tr>
+<tr class="passedodd"><td>Support-Search open KB document</td><td><a href="#m14><b>SupportsearchopenKBdocument</b> (SupportSearchopenKBdocument) (Support-Search open KB document)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">11:37:01</td><td class="numi">00:00:47</td></tr>
+<tr class="passedeven"><td>Support-Search open Documentation</td><td><a href="#m15><b>Supportsearchopendocumentation</b> (SupportSearchopenDocumentation) (Support-Search open Documentation)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">11:37:48</td><td class="numi">00:00:35</td></tr>
+<tr class="passedodd"><td>Support-Search with minus</td><td><a href="#m16><b>Supportsearchwithminus</b> (SupportSearchwithminus) (Support-Search with minus)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">11:35:10</td><td class="numi">00:00:19</td></tr>
+<tr class="passedeven"><td>Support-Search with product filters</td><td><a href="#m17><b>Supportsearchwithproductfilters</b> (SupportSearchwithproductfilters) (Support-Search with product filters)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">11:36:38</td><td class="numi">00:00:23</td></tr>
+<tr class="passedodd"><td>Support-Search with source filters</td><td><a href="#m18><b>Supportsearchwithsourcefilters</b> (SupportSearchwithsourcefilters) (Support-Search with source filters)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">11:35:29</td><td class="numi">00:01:09</td></tr>
+<tr class="passedeven"><td>Support-Search with text</td><td><a href="#m19><b>Supportsearchwithtext</b> (SupportSearchwithtext) (Support-Search with text)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">11:34:04</td><td class="numi">00:00:18</td></tr>
+<tr class="passedodd"><td>Support-Search with wildcards</td><td><a href="#m20><b>Supportsearchwithwildcards</b> (SupportSearchwithwildcards) (Support-Search with wildcards)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">11:34:52</td><td class="numi">00:00:18</td></tr>
+<tr class="passedeven"><td>Verify Product documentation</td><td><a href="#m21><b>productdocumentverification</b> (Verify Product documentation) (Verify Product documentation)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">11:41:04</td><td class="numi">00:00:47</td></tr>
+</table>
+<h2>Scenarios</h2>
+<h3 id="m1">:Press overview</h3>
+<div >
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Supportsearchopenpdfdocument-11-33-4.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-spac</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">:Support-Search Open Pdf document</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Productdocumentation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Prodcut-ArtiosCAD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Page title-DOCUMENTATION FOR ARTIOSCAD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Supportsearchwithquotationmarks-11-34-51.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[title='Do</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">:Support-Search with quotationmarks</h3>
+<div >
+<table>
+<tr>
+<td>
+Search Results without quotationmarks: 555
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Title of the 1st Search Result without quotationmarks: WebCenter 16 Installation Guide: WebCenter Installation Tips
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Pressoverview-11-40-21.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='Key</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">:Testimonial country filter</h3>
+<div >
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Testimonialoverview-11-40-26.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.esko.com/en/company/testimonials has no size</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">:Testimonial overview</h3>
+<div >
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Testimonialcountryfilter-11-40-31.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.esko.com/en/company/testimonials has no size</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">:Testimonial product filter</h3>
+<div >
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Testimonialsolutionfilter-11-40-35.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.esko.com/en/company/testimonials has no size</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">:Testimonial solution filter</h3>
+<div >
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Testimonialproductfilter-11-40-40.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.esko.com/en/company/testimonials has no size</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">:General Search</h3>
+<div >
+<table>
+<tr>
+<td>
+Search with text: artioscad
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Total Search Results: 277
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Title of the 1st Search Result: Artioscad What's new
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">:News overview</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on News link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Title of the 1st News: Latest Esko software makes it easier to digitize, automate and connect to overcome today’s packaging business challenges
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">:Open product documentation</h3>
+<div >
+<table>
+<tr>
+<td>
+ArtiosCAD 21.07 - Complete Documentation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">:Sales contacts</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Sales contacts
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Country:United Kingdom
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Esko Sales Contact(s) : Get in touch:
++44 1702 9671 46
+info.eur@esko.com
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Esko Office(s) : Esko
+The Loop – building Networks Raymonde de Larochelaan 13
+9051 Gent
+Belgium
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Reseller(s) : Dantex Graphics Limited
+Danon House
+5 Kings Road
+BD2 1EY Bradford
+United Kingdom
+Tel: +44 1274 777777
+Fax: +44 1274 777766
+Web: www.dantex.com
+Reprocentre Group Ltd
+Unit 10 Fonthill Business Park Fonthill Road
+22 Dublin
+Ireland
+Tel: +353 1 40 93 100
+Fax: +353 1 409 3160
+Web: gpmi.ie/
+Contact:
+Mr. Bernard Hoey
+Mr. Dave Brennan
+Mr. Alan O'Brien
+Mr. Eoin Honan
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">:Support-Search for documentation</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Productdocumentation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Prodcut-ArtiosCAD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Page title-DOCUMENTATION FOR ARTIOSCAD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">:Support-Search Open Html document</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Productdocumentation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Prodcut-ArtiosCAD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Page title-DOCUMENTATION FOR ARTIOSCAD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on User Guide link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+HtmlPage title- 
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+https://docs.esko.com/docs/en-us/artioscad/22.11/userguide/home.html#about.html
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">:Support-Search open KB document</h3>
+<div >
+<table>
+<tr>
+<td>
+Search with text: installation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected option in Sources dropdown:Knowledge Base
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Title of the 1st Search Result: KB405014163: Failing Esko installer on Windows
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+https://wiki.esko.com/pages/viewpage.action?pageId=405021417
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">:Support-Search open Documentation</h3>
+<div >
+<table>
+<tr>
+<td>
+Search with text: installation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected option in Sources dropdown:Documentation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Title of the 1st Search Result: WebCenter Installation Guide 22.11: Installation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+https://docs.esko.com/docs/en-us/webcenter/22.11/installationguide/en-us/common/_reuse/_reuse_view/reference/re_reuse_view_installation.html
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">:Support-Search with minus</h3>
+<div >
+<table>
+<tr>
+<td>
+Search with text: installation tips -webcenter
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Total Search Results: 166
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Title of the 1st Search Result: Licensing & Activation User Guide: If the Program Hangs
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">:Support-Search with product filters</h3>
+<div >
+<table>
+<tr>
+<td>
+Search with text: installation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of results with All products option: 13883
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected dropdown option: Adobe Illustrator Client
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of results with Adobe Illustrator Client option: 121
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Adobe Illustrator Client product number of results is less than All products number of results
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">:Support-Search with source filters</h3>
+<div >
+<table>
+<tr>
+<td>
+Search with text: installation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of results with All sources option: 13883
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected dropdown option: Knowledge Base
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of results with Knowledge Base option: 1185
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected dropdown option: System Requirements
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of results with System Requirements option: 203
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected dropdown option: Documentation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of results with Documentation option: 12495
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected dropdown option: Hotfixes
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+No Results Found Messsage: Your search did not match any documents. Use these search tips to help you find what you are looking for.
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of results with Hotfixes option: 0
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Sum of results with other options: 13883
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+All results matchs with sum of the all other options
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">:Support-Search with text</h3>
+<div >
+<table>
+<tr>
+<td>
+Search with text: Studio installation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Total Search Results: 1158
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Title of the 1st Search Result: KB74647202: Where to find the DeskPack/ Studio/ Dynamic Content installation log files
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">:Support-Search with wildcards</h3>
+<div >
+<table>
+<tr>
+<td>
+Search with text: *stalla*
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Total Search Results: 14645
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Title of the 1st Search Result: WebCenter Installation Guide 22.11: Proof for Content Approval
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">:Verify Product documentation</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Productdocumentation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Prodcut-ArtiosCAD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Product documentation links Count-8
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Public
+What’s New
+Richard Deroo
+November 2022
+ArtiosCAD 22.11
+Public
+New Resizable Design Templates Added
+ECMA folding carton FEFCO corrugated Rigid Box
+460+
+15 24 1
+designs added since version 18
+Public
+mate panels, fold-up and knock-down fast and easy with a single-click
+Realistic 3D of Complex Folding Designs
+Gusset Tray
+Beers Tray
+Infold/Outfold Tray
+Gable Top
+Public
+Board Searching & Filtering
+quickly find and select your 
+desired board 
+Public
+Dynamic Subscriptions
+Dynamic Subscriptions is a new cloud-based licensing model for 
+on-premise applications that simplifies global management and distribution of 
+licenses across all sites
+More flexibility and less IT administration than named user subscriptions
+Better management tools than perpetual licenses
+Online cloud portal and cloud services to manage and distribute licenses
+For detailed information, we welcome you to have a look at the Licensing 
+“What’s New” presentation
+Public
+Licensing of on-premise applications
+Local Licenses
+? Activated on client computer
+? Can only be used on the computer where it is 
+activated
+Named User Subscription
+? Is a license that is linked to a user (EskoID) instead 
+of to a computer
+? User can sign in from anywhere on any computer
+? 1 license is assigned to 1 user but can be reassigned 
+to another user online
+Network Licenses
+? Distributed by network license server on the local 
+network
+? Can be used by any computer
+? Usage can not exceed #purchased licenses
+Dynamic Subscription
+? A pool of licenses can be assigned to a group of 
+users from any location (EskoID – no # limit)
+? Users sign in from anywhere as long as # licenses in 
+use does not exceed # purchased licenses
+? Licenses are used and freed up dynamically
+? Licenses and EskoID groups are managed online
+Perpetual Licenses Subscription Licenses
+NEW!
+Public
+Notes
+ArtiosCAD will be converted to a 64-bit 
+application within the next two releases 
+32-bit support will be deprecated at this time, 
+ArtiosCAD will not support:
+32-bit machines
+32-bit apps, like MS Outlook
+Thank you
+
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<center> Espire Automation Framework Generated Report </center>
+</body></html>

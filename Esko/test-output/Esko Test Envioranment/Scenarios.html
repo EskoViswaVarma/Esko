@@ -1,0 +1,1426 @@
+<html>
+<head>
+<title>TestNG:  Scenarios</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Scenarios</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>88/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Nov 02 15:42:26 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>5572 seconds (5572911 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td>CAPEPACKADVANCEDTRIALDownloadwithNewUser CAPEPACKADVANCEDTRIALDownloadwithExistingUser SupportSearchwithquotationmarks </td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionPromotioncodeCheckoutTest.Addupsellproducttocart()'><b>Addupsellproducttocart</b><br>Test class: com.pack.common.tests.SubscriptionPromotioncodeCheckoutTest<br>Test method: Add an upsell product to the cart<br/>
+<a href="#Output-776484396" onClick='toggleBox("Output-776484396", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-776484396" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-776484396">
+Click on cart Link<br/>
+Selected Cape Pack product<br/>
+Selected Capepack Essential plan yearly plan, paid yearly<br/>
+Upsell product added to cart<br/>
+Click on cart Link<br/>
+Login with user name - eskododp04@gmail.com & password -Azertyu1!<br/>
+Wiretransfer payment  method selected<br/>
+Order Number - TEST704391<br/>
+Order Price - 316000<br/>
+</div>
+</td>
+<td></td>
+<td>126</td>
+<td>com.pack.common.tests.SubscriptionPromotioncodeCheckoutTest@670b40af</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp04@gmail.com, Azertyu1!, TEST704372, Confirmation, 223000<br/>
+<a href="#Output-1902430796" onClick='toggleBox("Output-1902430796", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1902430796" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1902430796">
+Esko Store: Order confirmation for TEST704372<br/>
+Order Total Amount-223000<br/>
+Email Total Amount-2230.00 USD<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>63</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp03@gmail.com, Azertyu1!, TEST704374, Confirmation, 15000<br/>
+<a href="#Output-1541697437" onClick='toggleBox("Output-1541697437", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1541697437" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1541697437">
+Esko Store: Order confirmation for TEST704374<br/>
+Order Total Amount-15000<br/>
+Email Total Amount-150.00 EUR<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>61</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp04@gmail.com, Azertyu1!, TEST704376, Confirmation, 25000<br/>
+<a href="#Output-1752182275" onClick='toggleBox("Output-1752182275", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1752182275" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1752182275">
+Esko Store: Order confirmation for TEST704376<br/>
+Order Total Amount-25000<br/>
+Email Total Amount-250.00 USD<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>52</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp03@gmail.com, Azertyu1!, TEST704380, Confirmation, 18000<br/>
+<a href="#Output-37887172" onClick='toggleBox("Output-37887172", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-37887172" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-37887172">
+Esko Store: Order confirmation for TEST704380<br/>
+Order Total Amount-18000<br/>
+Email Total Amount-180.00 EUR<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>51</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp03@gmail.com, Azertyu1!, TEST704380, Subscription, 18000<br/>
+<a href="#Output-1503660218" onClick='toggleBox("Output-1503660218", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1503660218" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1503660218">
+Esko: get started with your subscription for order TEST704380<br/>
+</div>
+</td>
+<td></td>
+<td>42</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp04@gmail.com, Azertyu1!, TEST704382, Confirmation, 23000<br/>
+<a href="#Output-565839681" onClick='toggleBox("Output-565839681", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-565839681" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-565839681">
+Esko Store: Order confirmation for TEST704382<br/>
+Order Total Amount-23000<br/>
+Email Total Amount-230.00 USD<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>51</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp04@gmail.com, Azertyu1!, TEST704382, Subscription, 23000<br/>
+<a href="#Output-24293395" onClick='toggleBox("Output-24293395", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-24293395" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-24293395">
+Esko: get started with your subscription for order TEST704382<br/>
+</div>
+</td>
+<td></td>
+<td>42</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp03@gmail.com, Azertyu1!, TEST704384, Confirmation, 18000<br/>
+<a href="#Output-664186542" onClick='toggleBox("Output-664186542", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-664186542" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-664186542">
+Esko Store: Order confirmation for TEST704384<br/>
+Order Total Amount-18000<br/>
+Email Total Amount-180.00 EUR<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>51</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp03@gmail.com, Azertyu1!, TEST704384, Invoice, 18000<br/>
+<a href="#Output-530696881" onClick='toggleBox("Output-530696881", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-530696881" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-530696881">
+Esko: fattura di abbonamento - TEST704384<br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp04@gmail.com, Azertyu1!, TEST704386, Confirmation, 23000<br/>
+<a href="#Output-1644236636" onClick='toggleBox("Output-1644236636", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1644236636" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1644236636">
+Esko Store: Order confirmation for TEST704386<br/>
+Order Total Amount-23000<br/>
+Email Total Amount-230.00 USD<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>51</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp04@gmail.com, Azertyu1!, TEST704386, Invoice, 23000<br/>
+<a href="#Output-1075803699" onClick='toggleBox("Output-1075803699", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1075803699" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1075803699">
+Esko: invoice for your subscription order TEST704386<br/>
+</div>
+</td>
+<td></td>
+<td>42</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp04@gmail.com, Azertyu1!, TEST061753, Confirmation, 122.17<br/>
+<a href="#Output-1533985074" onClick='toggleBox("Output-1533985074", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1533985074" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1533985074">
+Esko Store: Order confirmation for TEST061753<br/>
+Order Total Amount-122.17<br/>
+Email Total Amount-USD122.17<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp04@gmail.com, Azertyu1!, TEST061754, Confirmation, 122.17<br/>
+<a href="#Output-1741786839" onClick='toggleBox("Output-1741786839", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1741786839" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1741786839">
+Esko Store: Order confirmation for TEST061754<br/>
+Order Total Amount-122.17<br/>
+Email Total Amount-USD122.17<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp04@gmail.com, Azertyu1!, TEST061757, Confirmation, 122.17<br/>
+<a href="#Output-20111564" onClick='toggleBox("Output-20111564", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-20111564" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-20111564">
+Esko Store: Order confirmation for TEST061757<br/>
+Order Total Amount-122.17<br/>
+Email Total Amount-USD122.17<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp04@gmail.com, Azertyu1!, TEST061759, Confirmation, 122.17<br/>
+<a href="#Output-275563320" onClick='toggleBox("Output-275563320", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-275563320" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-275563320">
+Esko Store: Order confirmation for TEST061759<br/>
+Order Total Amount-122.17<br/>
+Email Total Amount-USD122.17<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>48</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp03@gmail.com, Azertyu1!, TEST061762, Confirmation, 733.93<br/>
+<a href="#Output-359742806" onClick='toggleBox("Output-359742806", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-359742806" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-359742806">
+Esko Store: Order confirmation for TEST061762<br/>
+Order Total Amount-733.93<br/>
+Email Total Amount-EUR733.93<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp03@gmail.com, Azertyu1!, TEST061764, Confirmation, 733.93<br/>
+<a href="#Output-651100072" onClick='toggleBox("Output-651100072", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-651100072" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-651100072">
+Esko Store: Order confirmation for TEST061764<br/>
+Order Total Amount-733.93<br/>
+Email Total Amount-EUR733.93<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>60</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp03@gmail.com, Azertyu1!, TEST061765, Confirmation, 484.97<br/>
+<a href="#Output-2089589253" onClick='toggleBox("Output-2089589253", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2089589253" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2089589253">
+Esko Store: Order confirmation for TEST061765<br/>
+Order Total Amount-484.97<br/>
+Email Total Amount-EUR484.97<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp04@gmail.com, Azertyu1!, TEST061768, Confirmation, 75.87<br/>
+<a href="#Output-1545827753" onClick='toggleBox("Output-1545827753", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1545827753" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1545827753">
+Esko Store: Order confirmation for TEST061768<br/>
+Order Total Amount-75.87<br/>
+Email Total Amount-USD75.87<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp04@gmail.com, Azertyu1!, TEST061769, Confirmation, 75.87<br/>
+<a href="#Output-2027317551" onClick='toggleBox("Output-2027317551", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2027317551" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2027317551">
+Esko Store: Order confirmation for TEST061769<br/>
+Order Total Amount-75.87<br/>
+Email Total Amount-USD75.87<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp04@gmail.com, Azertyu1!, TEST061770, Confirmation, 75.87<br/>
+<a href="#Output-139947936" onClick='toggleBox("Output-139947936", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-139947936" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-139947936">
+Esko Store: Order confirmation for TEST061770<br/>
+Order Total Amount-75.87<br/>
+Email Total Amount-USD75.87<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp04@gmail.com, Azertyu1!, TEST061771, Confirmation, 75.87<br/>
+<a href="#Output-1733581655" onClick='toggleBox("Output-1733581655", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1733581655" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1733581655">
+Esko Store: Order confirmation for TEST061771<br/>
+Order Total Amount-75.87<br/>
+Email Total Amount-USD75.87<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp04@gmail.com, Azertyu1!, TEST704390, Confirmation, 4813<br/>
+<a href="#Output-1597328335" onClick='toggleBox("Output-1597328335", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1597328335" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1597328335">
+Esko Store: Order confirmation for TEST704390<br/>
+Order Total Amount-4813<br/>
+Email Total Amount-0.00 USD<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>51</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp04@gmail.com, Azertyu1!, TEST704391, Confirmation, 316000<br/>
+<a href="#Output-2019826979" onClick='toggleBox("Output-2019826979", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2019826979" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2019826979">
+Esko Store: Order confirmation for TEST704391<br/>
+Order Total Amount-316000<br/>
+Email Total Amount-3160.00 USD<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>51</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp04@gmail.com, Azertyu1!, TEST704392, Confirmation, 2986000<br/>
+<a href="#Output-21422054" onClick='toggleBox("Output-21422054", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-21422054" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-21422054">
+Esko Store: Order confirmation for TEST704392<br/>
+Order Total Amount-2986000<br/>
+Email Total Amount-29860.00 USD<br/>
+Order total amount matches in both confirmation page and email<br/>
+</div>
+</td>
+<td></td>
+<td>51</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.AllEmailsTest.Allemailsverification()'><b>Allemailsverification</b><br>Test class: com.pack.common.tests.AllEmailsTest<br>Test method: All Confirmation/Invoice/Subscription emails verification<br>Parameters: eskododp04@gmail.com, Azertyu1!, TEST704392, Subscription, 2986000<br/>
+<a href="#Output-532885071" onClick='toggleBox("Output-532885071", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-532885071" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-532885071">
+Esko: get started with your subscription for order TEST704392<br/>
+</div>
+</td>
+<td></td>
+<td>40</td>
+<td>com.pack.common.tests.AllEmailsTest@4923ab24</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionPromotioncodeCheckoutTest.Applyvalidpromotioncodewithpricereduction()'><b>Applyvalidpromotioncodewithpricereduction</b><br>Test class: com.pack.common.tests.SubscriptionPromotioncodeCheckoutTest<br>Test method: Apply a valid promotion code and verify 75% reduction<br/>
+<a href="#Output-57241990" onClick='toggleBox("Output-57241990", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-57241990" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-57241990">
+Selected studio option<br/>
+Click on cart Link<br/>
+Login with user name - eskododp04@gmail.com & password -Azertyu1!<br/>
+Order total Price-192.5<br/>
+Coupon applied - SAVEALOTDODP<br/>
+Discount Price-144.375<br/>
+After discount order total price-48.13<br/>
+After discount order total price in conformation page-48.13<br/>
+</div>
+</td>
+<td></td>
+<td>60</td>
+<td>com.pack.common.tests.SubscriptionPromotioncodeCheckoutTest@670b40af</td></tr>
+<tr>
+<td title='com.pack.common.tests.LegacyKBCheckoutPageTest.Buyunderlayasresellerfromseealloption()'><b>Buyunderlayasresellerfromseealloption</b><br>Test class: com.pack.common.tests.LegacyKBCheckoutPageTest<br>Test method: Buyunderlay as a reseller from see all option<br/>
+<a href="#Output-1863953433" onClick='toggleBox("Output-1863953433", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1863953433" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1863953433">
+Underlay product added to the cart from see all option<br/>
+Invoice Payment method selected<br/>
+Invoice Payment deatils filled<br/>
+Checkout button clicked<br/>
+Order Number-TEST061765<br/>
+Order Price-484.97<br/>
+</div>
+</td>
+<td></td>
+<td>100</td>
+<td>com.pack.common.tests.LegacyKBCheckoutPageTest@5bcea91b</td></tr>
+<tr>
+<td title='com.pack.common.tests.LegacyKBCheckoutPageTest.Buyunderlayasresellerfromselectcustomeroption()'><b>Buyunderlayasresellerfromselectcustomeroption</b><br>Test class: com.pack.common.tests.LegacyKBCheckoutPageTest<br>Test method: Buyunderlay as a reseller from selectcustomer option<br/>
+<a href="#Output-2144284609" onClick='toggleBox("Output-2144284609", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2144284609" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2144284609">
+Underlay product added to the cart from select customer option<br/>
+Invoice Payment method selected<br/>
+Invoice Payment deatils filled<br/>
+Checkout button clicked<br/>
+Order Number-TEST061762<br/>
+Order Price-733.93<br/>
+</div>
+</td>
+<td></td>
+<td>93</td>
+<td>com.pack.common.tests.LegacyKBCheckoutPageTest@5bcea91b</td></tr>
+<tr>
+<td title='com.pack.common.tests.LegacyKBCheckoutPageTest.Buyunderlayasresellerfromselecttableoption()'><b>Buyunderlayasresellerfromselecttableoption</b><br>Test class: com.pack.common.tests.LegacyKBCheckoutPageTest<br>Test method: Buyunderlay as a reseller from selecttable option<br/>
+<a href="#Output-94157402" onClick='toggleBox("Output-94157402", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-94157402" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-94157402">
+Underlay product added to the cart from select table option<br/>
+Invoice Payment method selected<br/>
+Invoice Payment deatils filled<br/>
+Checkout button clicked<br/>
+Order Number-TEST061764<br/>
+Order Price-733.93<br/>
+</div>
+</td>
+<td></td>
+<td>87</td>
+<td>com.pack.common.tests.LegacyKBCheckoutPageTest@5bcea91b</td></tr>
+<tr>
+<td title='com.pack.common.tests.LegacyKBCheckoutPageTest.Buyunderlaywithinvalidserialnumber()'><b>Buyunderlaywithinvalidserialnumber</b><br>Test class: com.pack.common.tests.LegacyKBCheckoutPageTest<br>Test method: Buyunderlay as a reseller from see all option with invalid serialnumber<br/>
+<a href="#Output-1899141525" onClick='toggleBox("Output-1899141525", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1899141525" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1899141525">
+Underlay product added to the cart from see all option<br/>
+Invalid serial number error message: This is not a valid Kongsberg serial number.<br/>
+</div>
+</td>
+<td></td>
+<td>58</td>
+<td>com.pack.common.tests.LegacyKBCheckoutPageTest@5bcea91b</td></tr>
+<tr>
+<td title='com.pack.common.tests.CDIconsumablesTest.CDIconsumablesoverviewpage()'><b>CDIconsumablesoverviewpage</b><br>Test class: com.pack.common.tests.CDIconsumablesTest<br>Test method: CDI categories appear on CDI overview page</td>
+<td></td>
+<td>10</td>
+<td>com.pack.common.tests.CDIconsumablesTest@12cdcf4</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionStoreTest.CheckoutwithnewcustomerwithnewMastercardpayment()'><b>CheckoutwithnewcustomerwithnewMastercardpayment</b><br>Test class: com.pack.common.tests.SubscriptionStoreTest<br>Test method: Verify Checkout with newcustomer with new Mastercard payment option<br/>
+<a href="#Output-2032326802" onClick='toggleBox("Output-2032326802", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2032326802" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2032326802">
+Capepack reviewer buy button clicked with Yearlyplan,Paid Yearly<br/>
+Click on cart Link<br/>
+Register user email - eskotest2102018-43315@gmail.com<br/>
+Selected cardtype-MasterCard<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>com.pack.common.tests.SubscriptionStoreTest@27f723</td></tr>
+<tr>
+<td title='com.pack.common.tests.KongsbergbitsTest.Compare2products()'><b>Compare2products</b><br>Test class: com.pack.common.tests.KongsbergbitsTest<br>Test method: Compare 2 products<br/>
+<a href="#Output-297490204" onClick='toggleBox("Output-297490204", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-297490204" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-297490204">
+Compare - Esko<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.pack.common.tests.KongsbergbitsTest@59906517</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionStoreTest.ConsultFAQpage()'><b>ConsultFAQpage</b><br>Test class: com.pack.common.tests.SubscriptionStoreTest<br>Test method: Consult FAQ page<br/>
+<a href="#Output-878668275" onClick='toggleBox("Output-878668275", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-878668275" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-878668275">
+Clicked on FAQ'S page<br/>
+FAQ'S Page title: FAQ - Esko<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>com.pack.common.tests.SubscriptionStoreTest@27f723</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionStoreTest.Consultthestorefromcountrywherestorenotallowed()'><b>Consultthestorefromcountrywherestorenotallowed</b><br>Test class: com.pack.common.tests.SubscriptionStoreTest<br>Test method: Consult the store from a country where the store is not allowed<br/>
+<a href="#Output-1126185196" onClick='toggleBox("Output-1126185196", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1126185196" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1126185196">
+Page is navigating to the country(Japan),where Store is not allowed<br/>
+We're sorry, but the store is not yet available in your country - Esko<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.pack.common.tests.SubscriptionStoreTest@27f723</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionStoreTest.Consultthestorefromsubscriptionsnotallowed()'><b>Consultthestorefromsubscriptionsnotallowed</b><br>Test class: com.pack.common.tests.SubscriptionStoreTest<br>Test method: Consult the store from a country where subscriptions is not allowed<br/>
+<a href="#Output-1062714541" onClick='toggleBox("Output-1062714541", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1062714541" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1062714541">
+Page is navigating to the country(India),where subscriptions is not allowed<br/>
+Kongsberg Bits & Blades<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.pack.common.tests.SubscriptionStoreTest@27f723</td></tr>
+<tr>
+<td title='com.pack.common.tests.DownloadsTest.DeskPackEssentialsDownload()'><b>DeskPackEssentialsDownload</b><br>Test class: com.pack.common.tests.DownloadsTest<br>Test method: TO Check DESKPACK ESSENTIALS TRIAL Download for MAC</td>
+<td></td>
+<td>35</td>
+<td>com.pack.common.tests.DownloadsTest@5bfbf16f</td></tr>
+<tr>
+<td title='com.pack.common.tests.DownloadsTest.DeskPackEssentialsDownloadForWindows()'><b>DeskPackEssentialsDownloadForWindows</b><br>Test class: com.pack.common.tests.DownloadsTest<br>Test method: TO Check DESKPACK ESSENTIALS TRIAL Download for Windows</td>
+<td></td>
+<td>28</td>
+<td>com.pack.common.tests.DownloadsTest@5bfbf16f</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Generalsearch()'><b>Generalsearch</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: General Search<br/>
+<a href="#Output-893591815" onClick='toggleBox("Output-893591815", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-893591815" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-893591815">
+Search with text: artioscad<br/>
+Total Search Results: 148<br/>
+Title of the 1st Search Result: ArtiosCAD Subscription Editions<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>com.pack.common.tests.SupportsearchTest@44c8afef</td></tr>
+<tr>
+<td title='com.pack.common.tests.KongsbergbitsTest.Kongsbergbitsoverviewpage()'><b>Kongsbergbitsoverviewpage</b><br>Test class: com.pack.common.tests.KongsbergbitsTest<br>Test method: KB categories appear on KB overview page<br/>
+<a href="#Output-1482246673" onClick='toggleBox("Output-1482246673", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1482246673" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1482246673">
+Total KBcategories Count - 10<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>com.pack.common.tests.KongsbergbitsTest@59906517</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Newsoverview()'><b>Newsoverview</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: News overview<br/>
+<a href="#Output-1105628551" onClick='toggleBox("Output-1105628551", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1105628551" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1105628551">
+Clicked on News link<br/>
+Title of the 1st News: ArtiosCAD dongles support<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.pack.common.tests.SupportsearchTest@44c8afef</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionPromotioncodeCheckoutTest.OrderwithInvalidpromotioncode()'><b>OrderwithInvalidpromotioncode</b><br>Test class: com.pack.common.tests.SubscriptionPromotioncodeCheckoutTest<br>Test method: Make a order with Invalid promotion code<br/>
+<a href="#Output-1209770703" onClick='toggleBox("Output-1209770703", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1209770703" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1209770703">
+Selected studio option<br/>
+Click on cart Link<br/>
+Login with user name - eskododp04@gmail.com & password -Azertyu1!<br/>
+Coupon applied - SAVEALOTDODP<br/>
+Promotion code error message-This promotion code is invalid<br/>
+</div>
+</td>
+<td></td>
+<td>72</td>
+<td>com.pack.common.tests.SubscriptionPromotioncodeCheckoutTest@670b40af</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionCheckoutPageTest.OrderwithMMproduct()'><b>OrderwithMMproduct</b><br>Test class: com.pack.common.tests.SubscriptionCheckoutPageTest<br>Test method: Create Order with existingcustomer with MMproduct<br/>
+<a href="#Output-1344697180" onClick='toggleBox("Output-1344697180", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1344697180" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1344697180">
+Selected studio option<br/>
+Click on cart Link<br/>
+Login with user name - eskododp04@gmail.com & password -Azertyu1!<br/>
+Selected Credit Card Payment method<br/>
+Selected Existing Credit Card<br/>
+Order Number - TEST704376<br/>
+Order Price - 25000<br/>
+</div>
+</td>
+<td></td>
+<td>168</td>
+<td>com.pack.common.tests.SubscriptionCheckoutPageTest@25af5db5</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionCheckoutPageTest.OrderwithNewuser()'><b>OrderwithNewuser</b><br>Test class: com.pack.common.tests.SubscriptionCheckoutPageTest<br>Test method: Create Order with New User registration<br/>
+<a href="#Output-300983713" onClick='toggleBox("Output-300983713", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-300983713" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-300983713">
+Selected studio option<br/>
+Click on cart Link<br/>
+Register user email - eskotest2102018-3530@gmail.com<br/>
+Selected Create a new card option<br/>
+Filled new Creditcard deatils<br/>
+Order Number - TEST704378<br/>
+</div>
+</td>
+<td></td>
+<td>129</td>
+<td>com.pack.common.tests.SubscriptionCheckoutPageTest@25af5db5</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionCheckoutPageTest.OrderwithYMproduct()'><b>OrderwithYMproduct</b><br>Test class: com.pack.common.tests.SubscriptionCheckoutPageTest<br>Test method: Create Order with existingcustomer with YMproduct<br/>
+<a href="#Output-2092801316" onClick='toggleBox("Output-2092801316", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2092801316" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2092801316">
+Selected studio option<br/>
+Click on cart Link<br/>
+Login with user name - eskododp03@gmail.com & password -Azertyu1!<br/>
+Wiretransfer payment  method selected<br/>
+Order Number - TEST704374<br/>
+Order Price - 15000<br/>
+</div>
+</td>
+<td></td>
+<td>126</td>
+<td>com.pack.common.tests.SubscriptionCheckoutPageTest@25af5db5</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionCheckoutPageTest.OrderwithYYproduct()'><b>OrderwithYYproduct</b><br>Test class: com.pack.common.tests.SubscriptionCheckoutPageTest<br>Test method: Create Order with existingcustomer with YYproduct<br/>
+<a href="#Output-668312960" onClick='toggleBox("Output-668312960", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-668312960" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-668312960">
+Selected studio option<br/>
+Click on cart Link<br/>
+Login with user name - eskododp04@gmail.com & password -Azertyu1!<br/>
+Selected Credit Card Payment method<br/>
+Selected Existing Credit Card<br/>
+Order Number - TEST704372<br/>
+Order Price - 223000<br/>
+</div>
+</td>
+<td></td>
+<td>160</td>
+<td>com.pack.common.tests.SubscriptionCheckoutPageTest@25af5db5</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionPromotioncodeCheckoutTest.Orderwithmultiplelineswithmultiplequantity()'><b>Orderwithmultiplelineswithmultiplequantity</b><br>Test class: com.pack.common.tests.SubscriptionPromotioncodeCheckoutTest<br>Test method: Make order with single/multiple lines with single and multiple quantity<br/>
+<a href="#Output-199657303" onClick='toggleBox("Output-199657303", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-199657303" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-199657303">
+Cape pack reviewer buy button clicked with Yearly plan ,Paid Yearly<br/>
+Cape pack reviewer product added to cart with quantity-4<br/>
+Studio Essentials buy button clicked with Yearly plan ,Paid Yearly<br/>
+Studio Essentials product added to cart with quantity-3<br/>
+DeskPack Essentials buy button clicked with Yearly plan ,Paid Yearly<br/>
+DeskPack Essentials product added to cart with quantity-4<br/>
+Cape pack advanced buy button clicked with Yearly plan ,Paid Yearly<br/>
+Cape pack advanced product added to cart with quantity-5<br/>
+DeskPack Advanced buy button clicked with Yearly plan ,Paid Yearly<br/>
+DeskPack Advanced product added to cart with quantity-2<br/>
+Login with user name - eskododp04@gmail.com & password -Azertyu1!<br/>
+Selected Credit Card Payment method<br/>
+Selected Existing Credit Card<br/>
+Order Number - TEST704392<br/>
+Order Price - 2986000<br/>
+</div>
+</td>
+<td></td>
+<td>273</td>
+<td>com.pack.common.tests.SubscriptionPromotioncodeCheckoutTest@670b40af</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionPromotioncodeCheckoutTest.Orderwithvalidpromotioncode()'><b>Orderwithvalidpromotioncode</b><br>Test class: com.pack.common.tests.SubscriptionPromotioncodeCheckoutTest<br>Test method: Make order with valid promotion code and verify discounted price on confirmation email<br/>
+<a href="#Output-1530295320" onClick='toggleBox("Output-1530295320", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1530295320" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1530295320">
+Click on cart Link<br/>
+Wiretransfer payment  method selected<br/>
+Order Number - TEST704390<br/>
+Order Price - 4813<br/>
+</div>
+</td>
+<td></td>
+<td>76</td>
+<td>com.pack.common.tests.SubscriptionPromotioncodeCheckoutTest@670b40af</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionPromotioncodeCheckoutTest.Paymenttermexceedsthepromotionduration()'><b>Paymenttermexceedsthepromotionduration</b><br>Test class: com.pack.common.tests.SubscriptionPromotioncodeCheckoutTest<br>Test method: Payment term of the product exceeds the promotion duration<br/>
+<a href="#Output-315805187" onClick='toggleBox("Output-315805187", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-315805187" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-315805187">
+Selected studio option<br/>
+Click on cart Link<br/>
+Login with user name - eskododp04@gmail.com & password -Azertyu1!<br/>
+Coupon applied - SAVEALOTDODP<br/>
+Promotion code error message-Your cart doesn't match with the promotion restrictions<br/>
+</div>
+</td>
+<td></td>
+<td>67</td>
+<td>com.pack.common.tests.SubscriptionPromotioncodeCheckoutTest@670b40af</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Pressoverview()'><b>Pressoverview</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Press overview<br/>
+<a href="#Output-693267461" onClick='toggleBox("Output-693267461", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-693267461" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-693267461">
+Clicked on Press releases link<br/>
+Title of the 1st Press release: Cartonéo chooses Esko solutions for continuous small series POS production<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.pack.common.tests.SupportsearchTest@44c8afef</td></tr>
+<tr>
+<td title='com.pack.common.tests.LegacyCDICheckoutPageTest.RegistereduserCDIprodcuctbuywithExistingCreditcard()'><b>RegistereduserCDIprodcuctbuywithExistingCreditcard</b><br>Test class: com.pack.common.tests.LegacyCDICheckoutPageTest<br>Test method: Buy a CDI product as normal existing customer with Existing Creditcard Payment<br/>
+<a href="#Output-1168340825" onClick='toggleBox("Output-1168340825", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1168340825" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1168340825">
+CDIproduct added to the cart from Product list page<br/>
+CDIproduct added to the cart from Product details page<br/>
+Selected Credit Card Payment method<br/>
+Selected Existing Credit Card<br/>
+Checkout button clicked<br/>
+Order Number-TEST061770<br/>
+Order Price-75.87<br/>
+</div>
+</td>
+<td></td>
+<td>160</td>
+<td>com.pack.common.tests.LegacyCDICheckoutPageTest@5f3a4b84</td></tr>
+<tr>
+<td title='com.pack.common.tests.LegacyCDICheckoutPageTest.RegistereduserCDIprodcuctbuywithNewCreditcard()'><b>RegistereduserCDIprodcuctbuywithNewCreditcard</b><br>Test class: com.pack.common.tests.LegacyCDICheckoutPageTest<br>Test method: Buy a CDI product as normal existing customer with New Creditcard Payment<br/>
+<a href="#Output-1957099969" onClick='toggleBox("Output-1957099969", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1957099969" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1957099969">
+CDIproduct added to the cart from Product list page<br/>
+CDIproduct added to the cart from Product details page<br/>
+Selected Add New Credit Card<br/>
+Added New Credit Card details<br/>
+Checkout button clicked<br/>
+Order Number-TEST061769<br/>
+Order Price-75.87<br/>
+</div>
+</td>
+<td></td>
+<td>130</td>
+<td>com.pack.common.tests.LegacyCDICheckoutPageTest@5f3a4b84</td></tr>
+<tr>
+<td title='com.pack.common.tests.LegacyCDICheckoutPageTest.RegistereduserCDIprodcuctbuywithPaypal()'><b>RegistereduserCDIprodcuctbuywithPaypal</b><br>Test class: com.pack.common.tests.LegacyCDICheckoutPageTest<br>Test method: Buy a CDI product as normal existing customer with PayPal Payment<br/>
+<a href="#Output-550147359" onClick='toggleBox("Output-550147359", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-550147359" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-550147359">
+CDIproduct added to the cart from Product list page<br/>
+CDIproduct added to the cart from Product details page<br/>
+Selected PayPal Payment method<br/>
+Paypal Email:application.support@esko.com<br/>
+Paypal Password:3sk0st0r3<br/>
+Paypal Submit Button<br/>
+Paypal Confirm Button<br/>
+Order Number-TEST061771<br/>
+Order Price-75.87<br/>
+</div>
+</td>
+<td></td>
+<td>202</td>
+<td>com.pack.common.tests.LegacyCDICheckoutPageTest@5f3a4b84</td></tr>
+<tr>
+<td title='com.pack.common.tests.LegacyKBCheckoutPageTest.RegistereduserKBprodcuctbuywithExistingCreditcard()'><b>RegistereduserKBprodcuctbuywithExistingCreditcard</b><br>Test class: com.pack.common.tests.LegacyKBCheckoutPageTest<br>Test method: Buy a KB product as normal existing customer with Existing Creditcard Payment<br/>
+<a href="#Output-2058135834" onClick='toggleBox("Output-2058135834", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2058135834" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2058135834">
+KBproduct added to the cart from Productlist page<br/>
+KBproduct added to the cart from Productdetails page<br/>
+Selected Credit Card Payment method<br/>
+Selected Existing Credit Card<br/>
+Checkout button clicked<br/>
+Order Number-TEST061757<br/>
+Order Price-122.17<br/>
+</div>
+</td>
+<td></td>
+<td>172</td>
+<td>com.pack.common.tests.LegacyKBCheckoutPageTest@5bcea91b</td></tr>
+<tr>
+<td title='com.pack.common.tests.LegacyKBCheckoutPageTest.RegistereduserKBprodcuctbuywithInvoice()'><b>RegistereduserKBprodcuctbuywithInvoice</b><br>Test class: com.pack.common.tests.LegacyKBCheckoutPageTest<br>Test method: Buy a KB product as normal existing customer with Invoice payment<br/>
+<a href="#Output-1215904751" onClick='toggleBox("Output-1215904751", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1215904751" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1215904751">
+KBproduct added to the cart from Productlist page<br/>
+KBproduct added to the cart from Productdetails page<br/>
+Invoice Payment method selected<br/>
+Invoice Payment deatils filled<br/>
+Checkout button clicked<br/>
+Order Number-TEST061753<br/>
+Order Price-122.17<br/>
+</div>
+</td>
+<td></td>
+<td>125</td>
+<td>com.pack.common.tests.LegacyKBCheckoutPageTest@5bcea91b</td></tr>
+<tr>
+<td title='com.pack.common.tests.LegacyCDICheckoutPageTest.RegistereduserKBprodcuctbuywithInvoice()'><b>RegistereduserKBprodcuctbuywithInvoice</b><br>Test class: com.pack.common.tests.LegacyCDICheckoutPageTest<br>Test method: Buy a CDI product as normal existing customer with Invoice payment<br/>
+<a href="#Output-937744315" onClick='toggleBox("Output-937744315", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-937744315" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-937744315">
+CDIproduct added to the cart from Product list page<br/>
+CDIproduct added to the cart from Product details page<br/>
+Invoice Payment method selected<br/>
+Invoice Payment deatils filled<br/>
+Checkout button clicked<br/>
+Order Number-TEST061768<br/>
+Order Price-75.87<br/>
+</div>
+</td>
+<td></td>
+<td>117</td>
+<td>com.pack.common.tests.LegacyCDICheckoutPageTest@5f3a4b84</td></tr>
+<tr>
+<td title='com.pack.common.tests.LegacyKBCheckoutPageTest.RegistereduserKBprodcuctbuywithNewCreditcard()'><b>RegistereduserKBprodcuctbuywithNewCreditcard</b><br>Test class: com.pack.common.tests.LegacyKBCheckoutPageTest<br>Test method: Buy a KB product as normal existing customer with New Creditcard Payment<br/>
+<a href="#Output-1052212904" onClick='toggleBox("Output-1052212904", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1052212904" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1052212904">
+KBproduct added to the cart from Productlist page<br/>
+KBproduct added to the cart from Productdetails page<br/>
+Selected Add New Credit Card<br/>
+Added New Credit Card details<br/>
+Checkout button clicked<br/>
+Order Number-TEST061754<br/>
+Order Price-122.17<br/>
+</div>
+</td>
+<td></td>
+<td>149</td>
+<td>com.pack.common.tests.LegacyKBCheckoutPageTest@5bcea91b</td></tr>
+<tr>
+<td title='com.pack.common.tests.LegacyKBCheckoutPageTest.RegistereduserKBprodcuctbuywithPaypal()'><b>RegistereduserKBprodcuctbuywithPaypal</b><br>Test class: com.pack.common.tests.LegacyKBCheckoutPageTest<br>Test method: Buy a KB product as normal existing customer with Paypal Payment<br/>
+<a href="#Output-1090541608" onClick='toggleBox("Output-1090541608", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1090541608" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1090541608">
+KBproduct added to the cart from Productlist page<br/>
+KBproduct added to the cart from Productdetails page<br/>
+Selected PayPal Payment method<br/>
+Paypal Email:application.support@esko.com<br/>
+Paypal Password:3sk0st0r3<br/>
+Paypal Submit Button<br/>
+Paypal Confirm Button<br/>
+Order Number-TEST061759<br/>
+Order Price-122.17<br/>
+</div>
+</td>
+<td></td>
+<td>215</td>
+<td>com.pack.common.tests.LegacyKBCheckoutPageTest@5bcea91b</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Salescontacts()'><b>Salescontacts</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Sales contacts<br/>
+<a href="#Output-1990385139" onClick='toggleBox("Output-1990385139", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1990385139" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1990385139">
+Clicked on Sales contacts<br/>
+Selected Country:United Kingdom<br/>
+Sales contacts not exist<br/>
+Esko offices not exist<br/>
+Resellers not exist<br/>
+</div>
+</td>
+<td></td>
+<td>45</td>
+<td>com.pack.common.tests.SupportsearchTest@44c8afef</td></tr>
+<tr>
+<td title='com.pack.common.tests.KongsbergbitsTest.Searchproductwithproductcode()'><b>Searchproductwithproductcode</b><br>Test class: com.pack.common.tests.KongsbergbitsTest<br>Test method: Search for a product with a product code<br/>
+<a href="#Output-1783083399" onClick='toggleBox("Output-1783083399", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1783083399" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1783083399">
+Search Result - 3<br/>
+1.Crease Wheel - 15mm dia - 1-point<br/>
+2.Underlay - XE32 - Std 4mm blue<br/>
+3.Underlay - XL20/900 - Standard<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.pack.common.tests.KongsbergbitsTest@59906517</td></tr>
+<tr>
+<td title='com.pack.common.tests.KongsbergbitsTest.Searchproductwithproductname()'><b>Searchproductwithproductname</b><br>Test class: com.pack.common.tests.KongsbergbitsTest<br>Test method: Search for a product with a product name<br/>
+<a href="#Output-519492428" onClick='toggleBox("Output-519492428", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-519492428" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-519492428">
+Search Result - 10<br/>
+1.Crease Blade - 0.5mm<br/>
+2.Crease Blade - 1mm (i-623)<br/>
+3.Crease Blade 0.5mm for half length #12- 13 knife adapter on<br/>
+4.Crease blade 0.5mm for RM knife<br/>
+5.Crease Blade 1.0mm for half length #12- 13 knife adapter on<br/>
+6.Crease blade 1.0mm for RM knife<br/>
+7.Crease Wheel - 150mm dia - 4-point<br/>
+8.Crease Wheel - 150mm dia - 6 point /6deg<br/>
+9.Crease Wheel - 150mm dia - 6-point<br/>
+10.Crease Wheel - 150mm dia - U-shape<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.pack.common.tests.KongsbergbitsTest@59906517</td></tr>
+<tr>
+<td title='com.pack.common.tests.KongsbergbitsTest.Showproductdetails()'><b>Showproductdetails</b><br>Test class: com.pack.common.tests.KongsbergbitsTest<br>Test method: Consult detailed product page<br/>
+<a href="#Output-1337866219" onClick='toggleBox("Output-1337866219", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1337866219" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1337866219">
+Product Code on deatils page -G34089540<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.pack.common.tests.KongsbergbitsTest@59906517</td></tr>
+<tr>
+<td title='com.pack.common.tests.KongsbergbitsTest.Showrequirements()'><b>Showrequirements</b><br>Test class: com.pack.common.tests.KongsbergbitsTest<br>Test method: Show product requirements<br/>
+<a href="#Output-660339123" onClick='toggleBox("Output-660339123", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-660339123" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-660339123">
+Crease Wheels - Esko<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>com.pack.common.tests.KongsbergbitsTest@59906517</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionStoreTest.Subscriptionstorepricesoncapepackcomponents()'><b>Subscriptionstorepricesoncapepackcomponents</b><br>Test class: com.pack.common.tests.SubscriptionStoreTest<br>Test method: Verify Subscriptionstore prices on capepackcomponents<br/>
+<a href="#Output-182670350" onClick='toggleBox("Output-182670350", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-182670350" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-182670350">
+Cape Pack items count-3<br/>
+1.Cape Pack Reviewer-15<br/>
+2.Cape Pack Essentials-50<br/>
+3.Cape Pack Advanced-155<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>com.pack.common.tests.SubscriptionStoreTest@27f723</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionStoreTest.Subscriptionstorepricesoncapepackessentialsvariants()'><b>Subscriptionstorepricesoncapepackessentialsvariants</b><br>Test class: com.pack.common.tests.SubscriptionStoreTest<br>Test method: Verify Subscriptionstore prices on capepackessentials variants<br/>
+<a href="#Output-914942811" onClick='toggleBox("Output-914942811", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-914942811" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-914942811">
+Monthly plan, paid Monthly-75<br/>
+Yearly plan, paid Monthly-55<br/>
+Yearly plan, paid Yearly-50<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>com.pack.common.tests.SubscriptionStoreTest@27f723</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionStoreTest.Subscriptionstorepricesonoverviewcomponents()'><b>Subscriptionstorepricesonoverviewcomponents</b><br>Test class: com.pack.common.tests.SubscriptionStoreTest<br>Test method: Verify Subscriptionstore prices on the overview components<br/>
+<a href="#Output-195801026" onClick='toggleBox("Output-195801026", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-195801026" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-195801026">
+Number of software-10<br/>
+3.ArtPro+: 295<br/>
+4.Cape Pack: 15<br/>
+5.DeskPack: 10<br/>
+6.Dynamic Barcodes: 120<br/>
+7.Dynamic Content: 10<br/>
+8.i-cut Suite: 30<br/>
+9.Studio: 145<br/>
+10.Studio Store Visualizer: 695<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.pack.common.tests.SubscriptionStoreTest@27f723</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchfordocumentation()'><b>Supportsearchfordocumentation</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search for documentation<br/>
+<a href="#Output-1512903453" onClick='toggleBox("Output-1512903453", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1512903453" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1512903453">
+Clicked on Productdocumentation<br/>
+Selected Prodcut-ArtiosCAD<br/>
+Page title-DOCUMENTATION FOR ARTIOSCAD<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>com.pack.common.tests.SupportsearchTest@44c8afef</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.SupportsearchopenHtmldocument()'><b>SupportsearchopenHtmldocument</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search Open Html document<br/>
+<a href="#Output-279566689" onClick='toggleBox("Output-279566689", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-279566689" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-279566689">
+Clicked on Productdocumentation<br/>
+Selected Prodcut-ArtiosCAD<br/>
+Page title-DOCUMENTATION FOR ARTIOSCAD<br/>
+Clicked on User Guide link<br/>
+HtmlPage title- User Guide<br/>
+http://accept.docs.esko.com/docs/en-us/artioscad/16.1/userguide/home.html<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.pack.common.tests.SupportsearchTest@44c8afef</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.SupportsearchopenKBdocument()'><b>SupportsearchopenKBdocument</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search open KB document<br/>
+<a href="#Output-6422064" onClick='toggleBox("Output-6422064", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-6422064" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-6422064">
+Search with text: installation<br/>
+Selected option in Sources dropdown:Knowledge Base<br/>
+Title of the 1st Search Result: KB78615036: DeskPack - Error during the installation "Installation failed: following installation step failed: run postinstall script"<br/>
+http://egwbewiki001tst/pages/viewpage.action?pageId=80742849<br/>
+</div>
+</td>
+<td></td>
+<td>55</td>
+<td>com.pack.common.tests.SupportsearchTest@44c8afef</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchopendocumentation()'><b>Supportsearchopendocumentation</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search open Documentation<br/>
+<a href="#Output-1825419935" onClick='toggleBox("Output-1825419935", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1825419935" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1825419935">
+Search with text: installation<br/>
+Selected option in Sources dropdown:Documentation<br/>
+Title of the 1st Search Result: WebCenter 16 Installation Guide: WebCenter Installation Tips<br/>
+http://accept.docs.esko.com/docs/en-us/webcenter/16/installationguide/home.html?q=en-us/common/wc/reference/re_wc_WCR12InstallationTips.html<br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>com.pack.common.tests.SupportsearchTest@44c8afef</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchopenpdfdocument()'><b>Supportsearchopenpdfdocument</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search Open Pdf document<br/>
+<a href="#Output-1256837057" onClick='toggleBox("Output-1256837057", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1256837057" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1256837057">
+Clicked on Productdocumentation<br/>
+Selected Prodcut-ArtiosCAD<br/>
+Page title-DOCUMENTATION FOR ARTIOSCAD<br/>
+Clicked on What's New in ArtiosCAD link<br/>
+http://accept.docs.esko.com/docs/en-us/artioscad/16.1/whatsnew/ArtiosCAD_16_1_Whats_New.pdf<br/>
+</div>
+</td>
+<td></td>
+<td>31</td>
+<td>com.pack.common.tests.SupportsearchTest@44c8afef</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchwithminus()'><b>Supportsearchwithminus</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search with minus<br/>
+<a href="#Output-802771878" onClick='toggleBox("Output-802771878", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-802771878" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-802771878">
+Search with text: installation tips -webcenter<br/>
+Total Search Results: 62<br/>
+Title of the 1st Search Result: User Guide: Licensing and Activation 16.1: If the Program Hangs<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.pack.common.tests.SupportsearchTest@44c8afef</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchwithproductfilters()'><b>Supportsearchwithproductfilters</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search with product filters<br/>
+<a href="#Output-985324122" onClick='toggleBox("Output-985324122", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-985324122" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-985324122">
+Search with text: installation<br/>
+Number of results with All products option: 5527<br/>
+Selected dropdown option: ArtiosCAD<br/>
+Number of results with ArtiosCAD option: 3707<br/>
+ArtiosCAD product number of results is less than All products number of results<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>com.pack.common.tests.SupportsearchTest@44c8afef</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchwithsourcefilters()'><b>Supportsearchwithsourcefilters</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search with source filters<br/>
+<a href="#Output-337533935" onClick='toggleBox("Output-337533935", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-337533935" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-337533935">
+Search with text: installation<br/>
+Number of results with All sources option: 5527<br/>
+Selected dropdown option: Knowledge Base<br/>
+Number of results with Knowledge Base option: 483<br/>
+Selected dropdown option: System Requirements<br/>
+Number of results with System Requirements option: 18<br/>
+Selected dropdown option: Documentation<br/>
+Number of results with Documentation option: 5023<br/>
+Selected dropdown option: Hotfixes<br/>
+Number of results with Hotfixes option: 3<br/>
+Sum of results with other options: 5527<br/>
+All results matchs with sum of the all other options<br/>
+</div>
+</td>
+<td></td>
+<td>50</td>
+<td>com.pack.common.tests.SupportsearchTest@44c8afef</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchwithtext()'><b>Supportsearchwithtext</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search with text<br/>
+<a href="#Output-238564722" onClick='toggleBox("Output-238564722", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-238564722" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-238564722">
+Search with text: Studio installation<br/>
+Total Search Results: 240<br/>
+Title of the 1st Search Result: KB74647202: Where to find the DeskPack/ Studio/ Dynamic Content installation log files<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.pack.common.tests.SupportsearchTest@44c8afef</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchwithwildcards()'><b>Supportsearchwithwildcards</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search with wildcards<br/>
+<a href="#Output-56861999" onClick='toggleBox("Output-56861999", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-56861999" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-56861999">
+Search with text: *stalla*<br/>
+Total Search Results: 5608<br/>
+Title of the 1st Search Result: Installation and Configuration Guide: PDF Security tab<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.pack.common.tests.SupportsearchTest@44c8afef</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Testimonialcountryfilter()'><b>Testimonialcountryfilter</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Testimonial country filter<br/>
+<a href="#Output-2142852357" onClick='toggleBox("Output-2142852357", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2142852357" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2142852357">
+Clicked on Testimonials link<br/>
+Selected Country:Belgium<br/>
+Title of the 1st Testimonials: DSN<br/>
+</div>
+</td>
+<td></td>
+<td>26</td>
+<td>com.pack.common.tests.SupportsearchTest@44c8afef</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Testimonialoverview()'><b>Testimonialoverview</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Testimonial overview<br/>
+<a href="#Output-1997548433" onClick='toggleBox("Output-1997548433", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1997548433" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1997548433">
+Clicked on Testimonials link<br/>
+Title of the 1st Testimonials: Abbott-Action purchases 10,000th Kongsberg table<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.pack.common.tests.SupportsearchTest@44c8afef</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Testimonialproductfilter()'><b>Testimonialproductfilter</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Testimonial product filter<br/>
+<a href="#Output-179779934" onClick='toggleBox("Output-179779934", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-179779934" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-179779934">
+Clicked on Testimonials link<br/>
+Selected Product:ArtiosCAD<br/>
+Title of the 1st Testimonials: ArtiosCAD Enterprise consolidates intellectual property of Great Northern Corporation<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>com.pack.common.tests.SupportsearchTest@44c8afef</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Testimonialsolutionfilter()'><b>Testimonialsolutionfilter</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Testimonial solution filter<br/>
+<a href="#Output-1932597611" onClick='toggleBox("Output-1932597611", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1932597611" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1932597611">
+Clicked on Testimonials link<br/>
+Selected Solution:Digital Finishing<br/>
+Title of the 1st Testimonials: Abbott-Action purchases 10,000th Kongsberg table<br/>
+</div>
+</td>
+<td></td>
+<td>29</td>
+<td>com.pack.common.tests.SupportsearchTest@44c8afef</td></tr>
+<tr>
+<td title='com.pack.common.tests.KongsbergbitsTest.knifebladeseSubcategory()'><b>knifebladeseSubcategory</b><br>Test class: com.pack.common.tests.KongsbergbitsTest<br>Test method: Sub-category page for knife blades<br/>
+<a href="#Output-1530880511" onClick='toggleBox("Output-1530880511", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1530880511" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1530880511">
+sub-categories of knife blades count - 12<br/>
+1.Single edge round 6mm oscillating blades<br/>
+2.8mm shaft blades<br/>
+3.Single edge flat blades<br/>
+4.Single-double edge round 6mm static cutting bla<br/>
+5.Kiss cut blades<br/>
+6.Special purpose heavy-duty flat blades<br/>
+7.Double-edge flat and rota cut blades<br/>
+8.Single edge round 6mm foam blades<br/>
+9.Single edge round 6mm serrated blades<br/>
+10.Single edge flat foam blades<br/>
+11.Single edge flat serrated blades<br/>
+12.Single edge flat standard blades<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.pack.common.tests.KongsbergbitsTest@59906517</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionCheckoutPageTest.licenseemailwithCCforEMEA()'><b>licenseemailwithCCforEMEA</b><br>Test class: com.pack.common.tests.SubscriptionCheckoutPageTest<br>Test method: Verify if license email arrive for order with credit card payment for EMEA<br/>
+<a href="#Output-1940445711" onClick='toggleBox("Output-1940445711", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1940445711" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1940445711">
+Capepack reviewer buy button clicked with Yearlyplan,Paid Yearly<br/>
+Click on cart Link<br/>
+Login with user name - eskododp03@gmail.com & password -Azertyu1!<br/>
+Selected Credit Card Payment method<br/>
+Selected Existing Credit Card<br/>
+Order Number - TEST704380<br/>
+Order Price - 18000<br/>
+</div>
+</td>
+<td></td>
+<td>170</td>
+<td>com.pack.common.tests.SubscriptionCheckoutPageTest@25af5db5</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionCheckoutPageTest.licenseemailwithInvoiceforEMEA()'><b>licenseemailwithInvoiceforEMEA</b><br>Test class: com.pack.common.tests.SubscriptionCheckoutPageTest<br>Test method: Verify if license email arrive for order with Invoice payment for EMEA<br/>
+<a href="#Output-1932332324" onClick='toggleBox("Output-1932332324", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1932332324" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1932332324">
+Capepack reviewer buy button clicked with Yearlyplan,Paid Yearly<br/>
+Click on cart Link<br/>
+Login with user name - eskododp03@gmail.com & password -Azertyu1!<br/>
+Wiretransfer payment  method selected<br/>
+Order Number - TEST704384<br/>
+Order Price - 18000<br/>
+</div>
+</td>
+<td></td>
+<td>122</td>
+<td>com.pack.common.tests.SubscriptionCheckoutPageTest@25af5db5</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionCheckoutPageTest.licenseemailwithInvoiceforUS()'><b>licenseemailwithInvoiceforUS</b><br>Test class: com.pack.common.tests.SubscriptionCheckoutPageTest<br>Test method: Verify if license email arrive for order with Invoice payment for US<br/>
+<a href="#Output-1860491691" onClick='toggleBox("Output-1860491691", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1860491691" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1860491691">
+Capepack reviewer buy button clicked with Yearlyplan,Paid Yearly<br/>
+Click on cart Link<br/>
+Login with user name - eskododp04@gmail.com & password -Azertyu1!<br/>
+Wiretransfer payment  method selected<br/>
+Order Number - TEST704386<br/>
+Order Price - 23000<br/>
+</div>
+</td>
+<td></td>
+<td>121</td>
+<td>com.pack.common.tests.SubscriptionCheckoutPageTest@25af5db5</td></tr>
+<tr>
+<td title='com.pack.common.tests.SubscriptionCheckoutPageTest.orderlicenseemailwithcreditcardpaymentforUS()'><b>orderlicenseemailwithcreditcardpaymentforUS</b><br>Test class: com.pack.common.tests.SubscriptionCheckoutPageTest<br>Test method: Verify if license email arrive for order with credit card payment for US<br/>
+<a href="#Output-1142347343" onClick='toggleBox("Output-1142347343", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1142347343" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1142347343">
+Capepack reviewer buy button clicked with Yearlyplan,Paid Yearly<br/>
+Click on cart Link<br/>
+Login with user name - eskododp04@gmail.com & password -Azertyu1!<br/>
+Selected Credit Card Payment method<br/>
+Selected Existing Credit Card<br/>
+Order Number - TEST704382<br/>
+Order Price - 23000<br/>
+</div>
+</td>
+<td></td>
+<td>174</td>
+<td>com.pack.common.tests.SubscriptionCheckoutPageTest@25af5db5</td></tr>
+<tr>
+<td title='com.pack.common.tests.KongsbergbitsTest.productlistpage()'><b>productlistpage</b><br>Test class: com.pack.common.tests.KongsbergbitsTest<br>Test method: Products list page<br/>
+<a href="#Output-965586344" onClick='toggleBox("Output-965586344", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-965586344" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-965586344">
+Total Products list - 36<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>com.pack.common.tests.KongsbergbitsTest@59906517</td></tr>
+</table><p>
+</body>
+</html>

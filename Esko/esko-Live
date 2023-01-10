@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Esko Live Environment">
+<parameter name="appURL" value="https://www.esko.com"/>
+<parameter name="pdURL" value="https://docs.esko.com/docs/en-us/artioscad/21.07/userguide/home.html#about.html"/>
+    <parameter name="browserType" value="Chrome"/>
+<!--<parameter name="browserType" value="edge"/>-->
+<!--<parameter name="browserType" value="firefox"/>-->
+
+<parameter name="sitename" value="Esko"/>
+<parameter name="env" value="Live"/>
+<parameter name="uPassword" value="Gadhiraju@123"/>	
+<parameter name="uEmail1" value="viswanadha.varma@espire.com"/>
+<parameter name="uEmail3" value="aakashesp87@yopmail.com"/>
+<parameter name="uCoupoun" value="SAVEALOT"/>
+ 
+  <test name="Scenarios">
+    <groups>
+    <run>
+   <exclude name="CAPEPACKADVANCEDTRIALDownloadwithNewUser"/>
+   <exclude name="CAPEPACKADVANCEDTRIALDownloadwithExistingUser"/>
+   <exclude name="CheckoutwithnewcustomerwithnewMastercardpayment"/>
+    </run>
+    </groups>
+    <classes>
+      <!--<class name="com.pack.common.tests.SubscriptionStoreTest"/>-->
+      <!--<class name="com.pack.common.tests.NewCDIConsumablesTest"/>-->
+      <!--<class name="com.pack.common.tests.DownloadsTest"/>--> 
+          <class name="com.pack.common.tests.SupportsearchTest"/>
+    </classes>
+  </test>
+</suite>

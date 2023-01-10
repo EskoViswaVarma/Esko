@@ -1,0 +1,751 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Detailed Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodds  {background-color: #0A0}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.passed td,.numi_passed {background-color: #0A0}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:Lucida Sans Unicode, Lucida Grande, sans-serif}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<center><h2>Esko Detailed Report - 28-11-2022 12:50:11</h2></center><table cellspacing=0 cellpadding=0 class="testOverview">
+<tr><th>Scenario</th><th>Methods<br/>Passed</th><th># skipped</th><th># failed</th><th>Browser</th><th>Start<br/>Time</th><th>End<br/>Time</th><th>Total<br/>Time(hh:mm:ss)</th><th>Environment</th><th>Excluded<br/>Scenario</th></tr>
+<tr><th colspan="10">Esko Regression Suite-null Environment</th></tr>
+<tr><th colspan="10">Esko Accept Environment-Accept Environment</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1"><b>Scenarios</b></a></td><td class="numi passedodds">9</td><td class="numi">0</td><td class="numi">0</td><td class="numi">Chrome</td></td>
+<td class="numi">12:19:50</td></td>
+<td class="numi">12:50:11</td></td>
+<td class="numi">00:30:20</td><td class="numi">Accept</td><td class="numi">CAPEPACKADVANCEDTRIALDownloadwithNewUser, Openproductdocumentation, CAPEPACKADVANCEDTRIALDownloadwithExistingUser, SupportSearchwithquotationmarks, productdocumentverification, </td></tr>
+</table>
+<table cellspacing=0 cellpadding=0 class="methodOverview" id="Summary">
+<tr><th>Class</th><th>Exception Info</th><th>Start Time </th><th>Execution Time<br/>(hh:mm:ss)</th></tr>
+<tr><th colspan="5">Esko Regression Suite</th></tr>
+<tr><th colspan="5">Esko Accept Environment</th></tr>
+<tr id="t1"><th colspan="5">Scenarios &#8212; passed</th></tr>
+<tr class="passedodd"><td>Cancel Subscription</td><td><a href="#m1><b>CancelSubscription</b> (Cancel Subscription) (Cancel Subscription)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">12:36:01</td><td class="numi">00:03:14</td></tr>
+<tr class="passedeven"><td>Change contact person</td><td><a href="#m2><b>Changecontactperson</b> (Change contact person) (Change contact person)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">12:20:09</td><td class="numi">00:02:40</td></tr>
+<tr class="passedodd"><td>Change payment option from CC to CC</td><td><a href="#m3><b>ChangepaymentoptionfromCCtoCC</b> (Change payment option from CC to CC) (Change payment option from CC to CC)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">12:22:50</td><td class="numi">00:03:10</td></tr>
+<tr class="passedeven"><td>Change payment option from CC to Invoice</td><td><a href="#m4><b>ChangepaymentoptionfromCCtoInvoice</b> (Change payment option from CC to Invoice) (Change payment option from CC to Invoice)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">12:29:30</td><td class="numi">00:03:27</td></tr>
+<tr class="passedodd"><td>Change payment option from CC to New card</td><td><a href="#m5><b>ChangepaymentoptionfromCCtoNewcard</b> (Change payment option from CC to New card) (Change payment option from CC to New card)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">12:26:00</td><td class="numi">00:03:30</td></tr>
+<tr class="passedeven"><td>Change payment option from CC to invoice not possible for per month product</td><td><a href="#m6><b>ChangepaymentoptionfromCCtoinvoicenotpossibleforpermonthproduct</b> (Change payment option from CC to invoice not possible for per month product) (Change payment option from CC to invoice not possible for per month product)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">12:32:57</td><td class="numi">00:03:04</td></tr>
+<tr class="passedodd"><td>Downgrade License</td><td><a href="#m7><b>DowngradeLicense</b> (Downgrade License) (Downgrade License)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">12:42:43</td><td class="numi">00:03:53</td></tr>
+<tr class="passedeven"><td>Increase License(s)</td><td><a href="#m8><b>SeatIncrease</b> (Increase License(s)) (Increase License(s))</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">12:46:36</td><td class="numi">00:03:34</td></tr>
+<tr class="passedodd"><td>Upgrade License</td><td><a href="#m9><b>UpgradeLicense</b> (Upgrade License) (Upgrade License)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">12:39:15</td><td class="numi">00:03:28</td></tr>
+</table>
+<h2>Scenarios</h2>
+<h3 id="m1">:Cancel Subscription</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-20
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected order-ACCEPTS718610 and Order date-26 Nov 2022
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Cancel subscription option
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Product Key-SUBT00130372-1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected check box
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on View list link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on next botton in Viewlist popup
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Terms & Conditions checkbox
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Confirmation button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on OK Button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Orderno-ACCEPTS718610 and license Status-CancellationProduct Key-SUBT00130372-1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">:Change contact person</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-20
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected order-ACCEPTS718617 and Order date-26 Nov 2022
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on manage option of the subscription order contains licenses
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Product Key-SUBT00130546-2
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Update Contact details link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected contact-eskododp04@yahoo.be
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on update button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Orderno-ACCEPTS718617 and Updatedcontact-eskododp04@yahoo.beProduct Key-SUBT00130546-2
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">:Change payment option from CC to CC</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-20
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected order-ACCEPTS718617 and Order date-26 Nov 2022
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on manage option of the subscription order contains licenses
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Product Key-SUBT00130546-2
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Change payment method link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Credit card-411111XXXXXX1111 exp 08 / 2027
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on update button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Orderno-ACCEPTS718617Updatedcreditcard-411111XXXXXX1111 exp 08 / 2027Product Key-SUBT00130546-2
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">:Change payment option from CC to Invoice</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-20
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected order-ACCEPTS718615 and Order date-26 Nov 2022
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on manage option of the subscription order contains licenses
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Product Key-SUBT00130480-1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Change payment method link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Invoice Payment option
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on update button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Orderno-ACCEPTS718615Updated Payment method-InvoiceProduct Key-SUBT00130480-1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">:Change payment option from CC to New card</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-20
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected order-ACCEPTS718616 and Order date-26 Nov 2022
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on manage option of the subscription order contains licenses
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Product Key-SUBT00130509-1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Change payment method link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Create a new card option
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on update button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Orderno-ACCEPTS718616Newcreditcard-411111XXXXXX1111 exp 08 / 2027Product Key-SUBT00130509-1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">:Change payment option from CC to invoice not possible for per month product</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-20
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected order-ACCEPTS718607 and Order date-26 Nov 2022
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on manage option of the subscription order contains per month product
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Change payment method link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Invoice Payment option not available for per month product
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">:Downgrade License</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-20
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected order-ACCEPTS718605 and Order date-26 Nov 2022
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Modify Subscriptions
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Product Key-SUBT00130297-1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Check Box
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on View list link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Downgrade option
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on next botton in Viewlist popup
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Terms & Conditions checkbox
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Confirmation button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on OK Button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Orderno-ACCEPTS718605 and license Status-DowngradeProduct Key-SUBT00130297-1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">:Increase License(s)</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-20
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected order-ACCEPTS718604 and Order date-26 Nov 2022
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Increase Licesnes option
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Product Key-SUBT00130281-1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Add Licenses
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Incresed Quantity- 4
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Apply button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Terms & Conditions checkbox
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Confirmation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on OK Button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Orderno-ACCEPTS718604 and license Status-SeatIncreaseProduct Key-SUBT00130281-1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">:Upgrade License</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Software Subscription Orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of subscription order list-20
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected order-ACCEPTS718606 and Order date-26 Nov 2022
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Modify Subscriptions
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Product Key-SUBT00130311-1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected check box
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on View list link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected UPgrade option
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on next botton in Viewlist popup
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Terms & Conditions checkbox
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Confirmation button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on OK Button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Orderno-ACCEPTS718606 and license Status-UpgradeProduct Key-SUBT00130311-1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<center> Espire Automation Framework Generated Report </center>
+</body></html>

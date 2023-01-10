@@ -1,0 +1,929 @@
+<html>
+<head>
+<title>TestNG:  Scenarios</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Scenarios</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 13 17:18:56 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>707 seconds (707661 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td>CAPEPACKADVANCEDTRIALDownloadwithNewUser CAPEPACKADVANCEDTRIALDownloadwithExistingUser CheckoutwithnewcustomerwithnewMastercardpayment </td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Pressoverview()'><b>Pressoverview</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Press overview</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[normalize-space()=&apos;Press releases&apos;]&quot;}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:31.527Z&apos;
+System info: host: &apos;LPCH-5CD7342X0S&apos;, ip: &apos;10.31.143.177&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\VISWAN~1.VAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8aa24c1bc027631868232a8d497ce7
+*** Element info: {Using=xpath, value=//a[normalize-space()=&apos;Press releases&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.pack.common.pageobjects.SupportsearchPage.Pressoverview(SupportsearchPage.java:590)
+	at com.pack.common.tests.SupportsearchTest.Pressoverview(SupportsearchTest.java:174)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1275011461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1275011461'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[normalize-space()=&apos;Press releases&apos;]&quot;}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:31.527Z&apos;
+System info: host: &apos;LPCH-5CD7342X0S&apos;, ip: &apos;10.31.143.177&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\VISWAN~1.VAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8aa24c1bc027631868232a8d497ce7
+*** Element info: {Using=xpath, value=//a[normalize-space()=&apos;Press releases&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:472)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.pack.common.pageobjects.SupportsearchPage.Pressoverview(SupportsearchPage.java:590)
+	at com.pack.common.tests.SupportsearchTest.Pressoverview(SupportsearchTest.java:174)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>13</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchopenpdfdocument()'><b>Supportsearchopenpdfdocument</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search Open Pdf document<br/>
+<a href="#Output-1082528716" onClick='toggleBox("Output-1082528716", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1082528716" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1082528716">
+Clicked on Productdocumentation<br/>
+Selected Prodcut-ArtiosCAD<br/>
+Page title-DOCUMENTATION FOR ARTIOSCAD<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a[title=&apos;Documentation&apos;][href=&apos;http://accept.docs.esko.com/docs/en-us/artioscad/20/whatsnew/ArtiosCAD%2020%20-%20Whats%20New.pdf&apos;]&quot;}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:31.527Z&apos;
+System info: host: &apos;LPCH-5CD7342X0S&apos;, ip: &apos;10.31.143.177&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\VISWAN~1.VAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8aa24c1bc027631868232a8d497ce7
+*** Element info: {Using=css selector, value=a[title=&apos;Documentation&apos;][href=&apos;http://accept.docs.esko.com/docs/en-us/artioscad/20/whatsnew/ArtiosCAD%2020%20-%20Whats%20New.pdf&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:464)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.pack.common.pageobjects.SupportsearchPage.openPdfdocument(SupportsearchPage.java:99)
+	at com.pack.common.tests.SupportsearchTest.Supportsearchopenpdfdocument(SupportsearchTest.java:48)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1082528716", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1082528716'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a[title=&apos;Documentation&apos;][href=&apos;http://accept.docs.esko.com/docs/en-us/artioscad/20/whatsnew/ArtiosCAD%2020%20-%20Whats%20New.pdf&apos;]&quot;}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:31.527Z&apos;
+System info: host: &apos;LPCH-5CD7342X0S&apos;, ip: &apos;10.31.143.177&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\VISWAN~1.VAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8aa24c1bc027631868232a8d497ce7
+*** Element info: {Using=css selector, value=a[title=&apos;Documentation&apos;][href=&apos;http://accept.docs.esko.com/docs/en-us/artioscad/20/whatsnew/ArtiosCAD%2020%20-%20Whats%20New.pdf&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:464)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.pack.common.pageobjects.SupportsearchPage.openPdfdocument(SupportsearchPage.java:99)
+	at com.pack.common.tests.SupportsearchTest.Supportsearchopenpdfdocument(SupportsearchTest.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>36</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchwithquotationmarks()'><b>Supportsearchwithquotationmarks</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search with quotationmarks<br/>
+<a href="#Output-1395173825" onClick='toggleBox("Output-1395173825", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1395173825" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1395173825">
+Search Results without quotationmarks: 555<br/>
+Title of the 1st Search Result without quotationmarks: WebCenter 16 Installation Guide: WebCenter Installation Tips<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;Keyword&apos;]&quot;}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:31.527Z&apos;
+System info: host: &apos;LPCH-5CD7342X0S&apos;, ip: &apos;10.31.143.177&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\VISWAN~1.VAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8aa24c1bc027631868232a8d497ce7
+*** Element info: {Using=name, value=Keyword}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:448)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.pack.common.pageobjects.SupportsearchPage.searchwithquotationmarks(SupportsearchPage.java:279)
+	at com.pack.common.tests.SupportsearchTest.Supportsearchwithquotationmarks(SupportsearchTest.java:77)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1395173825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1395173825'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;Keyword&apos;]&quot;}
+  (Session info: chrome=104.0.5112.81)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:31.527Z&apos;
+System info: host: &apos;LPCH-5CD7342X0S&apos;, ip: &apos;10.31.143.177&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\VISWAN~1.VAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8aa24c1bc027631868232a8d497ce7
+*** Element info: {Using=name, value=Keyword}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:370)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:448)
+	at org.openqa.selenium.By$ByName.findElement(By.java:303)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.pack.common.pageobjects.SupportsearchPage.searchwithquotationmarks(SupportsearchPage.java:279)
+	at com.pack.common.tests.SupportsearchTest.Supportsearchwithquotationmarks(SupportsearchTest.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>36</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Testimonialcountryfilter()'><b>Testimonialcountryfilter</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Testimonial country filter</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.esko.com/en/company/testimonials has no size and location
+  (Session info: chrome=104.0.5112.81)
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:31.527Z&apos;
+System info: host: &apos;LPCH-5CD7342X0S&apos;, ip: &apos;10.31.143.177&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\VISWAN~1.VAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8aa24c1bc027631868232a8d497ce7
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:666)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
+	at com.pack.common.pageobjects.SupportsearchPage.Testimonialcountryfilter(SupportsearchPage.java:651)
+	at com.pack.common.tests.SupportsearchTest.Testimonialcountryfilter(SupportsearchTest.java:190)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace261838162", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace261838162'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.esko.com/en/company/testimonials has no size and location
+  (Session info: chrome=104.0.5112.81)
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:31.527Z&apos;
+System info: host: &apos;LPCH-5CD7342X0S&apos;, ip: &apos;10.31.143.177&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\VISWAN~1.VAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8aa24c1bc027631868232a8d497ce7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:666)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
+	at com.pack.common.pageobjects.SupportsearchPage.Testimonialcountryfilter(SupportsearchPage.java:651)
+	at com.pack.common.tests.SupportsearchTest.Testimonialcountryfilter(SupportsearchTest.java:190)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Testimonialoverview()'><b>Testimonialoverview</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Testimonial overview</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.esko.com/en/company/testimonials has no size and location
+  (Session info: chrome=104.0.5112.81)
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:31.527Z&apos;
+System info: host: &apos;LPCH-5CD7342X0S&apos;, ip: &apos;10.31.143.177&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\VISWAN~1.VAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8aa24c1bc027631868232a8d497ce7
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:666)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
+	at com.pack.common.pageobjects.SupportsearchPage.Testimonialoverview(SupportsearchPage.java:620)
+	at com.pack.common.tests.SupportsearchTest.Testimonialoverview(SupportsearchTest.java:182)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1928174253", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1928174253'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.esko.com/en/company/testimonials has no size and location
+  (Session info: chrome=104.0.5112.81)
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:31.527Z&apos;
+System info: host: &apos;LPCH-5CD7342X0S&apos;, ip: &apos;10.31.143.177&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\VISWAN~1.VAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8aa24c1bc027631868232a8d497ce7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:666)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
+	at com.pack.common.pageobjects.SupportsearchPage.Testimonialoverview(SupportsearchPage.java:620)
+	at com.pack.common.tests.SupportsearchTest.Testimonialoverview(SupportsearchTest.java:182)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Testimonialproductfilter()'><b>Testimonialproductfilter</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Testimonial product filter</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.esko.com/en/company/testimonials has no size and location
+  (Session info: chrome=104.0.5112.81)
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:31.527Z&apos;
+System info: host: &apos;LPCH-5CD7342X0S&apos;, ip: &apos;10.31.143.177&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\VISWAN~1.VAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8aa24c1bc027631868232a8d497ce7
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:666)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
+	at com.pack.common.pageobjects.SupportsearchPage.Testimonialproductfilter(SupportsearchPage.java:717)
+	at com.pack.common.tests.SupportsearchTest.Testimonialproductfilter(SupportsearchTest.java:206)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace420993295", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace420993295'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.esko.com/en/company/testimonials has no size and location
+  (Session info: chrome=104.0.5112.81)
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:31.527Z&apos;
+System info: host: &apos;LPCH-5CD7342X0S&apos;, ip: &apos;10.31.143.177&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\VISWAN~1.VAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8aa24c1bc027631868232a8d497ce7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:666)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
+	at com.pack.common.pageobjects.SupportsearchPage.Testimonialproductfilter(SupportsearchPage.java:717)
+	at com.pack.common.tests.SupportsearchTest.Testimonialproductfilter(SupportsearchTest.java:206)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Testimonialsolutionfilter()'><b>Testimonialsolutionfilter</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Testimonial solution filter</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.esko.com/en/company/testimonials has no size and location
+  (Session info: chrome=104.0.5112.81)
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:31.527Z&apos;
+System info: host: &apos;LPCH-5CD7342X0S&apos;, ip: &apos;10.31.143.177&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\VISWAN~1.VAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8aa24c1bc027631868232a8d497ce7
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:666)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
+	at com.pack.common.pageobjects.SupportsearchPage.Testimonialsolutionfilter(SupportsearchPage.java:684)
+	at com.pack.common.tests.SupportsearchTest.Testimonialsolutionfilter(SupportsearchTest.java:198)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace973692608", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace973692608'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.esko.com/en/company/testimonials has no size and location
+  (Session info: chrome=104.0.5112.81)
+Build info: version: &apos;3.7.1&apos;, revision: &apos;8a0099a&apos;, time: &apos;2017-11-06T21:07:31.527Z&apos;
+System info: host: &apos;LPCH-5CD7342X0S&apos;, ip: &apos;10.31.143.177&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: C:\Users\VISWAN~1.VAR\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:50328}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0f8aa24c1bc027631868232a8d497ce7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:666)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)
+	at com.pack.common.pageobjects.SupportsearchPage.Testimonialsolutionfilter(SupportsearchPage.java:684)
+	at com.pack.common.tests.SupportsearchTest.Testimonialsolutionfilter(SupportsearchTest.java:198)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Generalsearch()'><b>Generalsearch</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: General Search<br/>
+<a href="#Output-138933223" onClick='toggleBox("Output-138933223", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-138933223" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-138933223">
+Search with text: artioscad<br/>
+Total Search Results: 277<br/>
+Title of the 1st Search Result: Artioscad What's new<br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Newsoverview()'><b>Newsoverview</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: News overview<br/>
+<a href="#Output-1241758568" onClick='toggleBox("Output-1241758568", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1241758568" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1241758568">
+Clicked on News link<br/>
+Title of the 1st News: Latest Esko software makes it easier to digitize, automate and connect to overcome today’s packaging business challenges<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Openproductdocumentation()'><b>Openproductdocumentation</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Open product documentation<br/>
+<a href="#Output-1252820474" onClick='toggleBox("Output-1252820474", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1252820474" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1252820474">
+ArtiosCAD 21.07 - Complete Documentation<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Salescontacts()'><b>Salescontacts</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Sales contacts<br/>
+<a href="#Output-1564078808" onClick='toggleBox("Output-1564078808", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1564078808" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1564078808">
+Clicked on Sales contacts<br/>
+Selected Country:United Kingdom<br/>
+Esko Sales Contact(s) : Get in touch:
++44 1702 9671 46
+info.eur@esko.com<br/>
+Esko Office(s) : Esko
+The Loop – building Networks Raymonde de Larochelaan 13
+9051 Gent
+Belgium<br/>
+Reseller(s) : Dantex Graphics Limited
+Danon House
+5 Kings Road
+BD2 1EY Bradford
+United Kingdom
+Tel: +44 1274 777777
+Fax: +44 1274 777766
+Web: www.dantex.com
+Reprocentre Group Ltd
+Unit 10 Fonthill Business Park Fonthill Road
+22 Dublin
+Ireland
+Tel: +353 1 40 93 100
+Fax: +353 1 409 3160
+Web: gpmi.ie/
+Contact:
+Mr. Bernard Hoey
+Mr. Dave Brennan
+Mr. Alan O'Brien
+Mr. Eoin Honan<br/>
+</div>
+</td>
+<td></td>
+<td>57</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchfordocumentation()'><b>Supportsearchfordocumentation</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search for documentation<br/>
+<a href="#Output-2074492901" onClick='toggleBox("Output-2074492901", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2074492901" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2074492901">
+Clicked on Productdocumentation<br/>
+Selected Prodcut-ArtiosCAD<br/>
+Page title-DOCUMENTATION FOR ARTIOSCAD<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.SupportsearchopenHtmldocument()'><b>SupportsearchopenHtmldocument</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search Open Html document<br/>
+<a href="#Output-2068100669" onClick='toggleBox("Output-2068100669", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2068100669" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2068100669">
+Clicked on Productdocumentation<br/>
+Selected Prodcut-ArtiosCAD<br/>
+Page title-DOCUMENTATION FOR ARTIOSCAD<br/>
+Clicked on User Guide link<br/>
+HtmlPage title- <br/>
+https://docs.esko.com/docs/en-us/artioscad/22.11/userguide/home.html#about.html<br/>
+</div>
+</td>
+<td></td>
+<td>58</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.SupportsearchopenKBdocument()'><b>SupportsearchopenKBdocument</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search open KB document<br/>
+<a href="#Output-1682157864" onClick='toggleBox("Output-1682157864", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1682157864" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1682157864">
+Search with text: installation<br/>
+Selected option in Sources dropdown:Knowledge Base<br/>
+Title of the 1st Search Result: KB405014163: Failing Esko installer on Windows<br/>
+https://wiki.esko.com/pages/viewpage.action?pageId=405021417<br/>
+</div>
+</td>
+<td></td>
+<td>46</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchopendocumentation()'><b>Supportsearchopendocumentation</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search open Documentation<br/>
+<a href="#Output-456314134" onClick='toggleBox("Output-456314134", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-456314134" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-456314134">
+Search with text: installation<br/>
+Selected option in Sources dropdown:Documentation<br/>
+Title of the 1st Search Result: WebCenter Installation Guide 22.11: Installation<br/>
+https://docs.esko.com/docs/en-us/webcenter/22.11/installationguide/en-us/common/_reuse/_reuse_view/reference/re_reuse_view_installation.html<br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchwithminus()'><b>Supportsearchwithminus</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search with minus<br/>
+<a href="#Output-1620187937" onClick='toggleBox("Output-1620187937", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1620187937" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1620187937">
+Search with text: installation tips -webcenter<br/>
+Total Search Results: 166<br/>
+Title of the 1st Search Result: Licensing & Activation User Guide: If the Program Hangs<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchwithproductfilters()'><b>Supportsearchwithproductfilters</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search with product filters<br/>
+<a href="#Output-886004375" onClick='toggleBox("Output-886004375", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-886004375" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-886004375">
+Search with text: installation<br/>
+Number of results with All products option: 13883<br/>
+Selected dropdown option: Adobe Illustrator Client<br/>
+Number of results with Adobe Illustrator Client option: 121<br/>
+Adobe Illustrator Client product number of results is less than All products number of results<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchwithsourcefilters()'><b>Supportsearchwithsourcefilters</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search with source filters<br/>
+<a href="#Output-1852821063" onClick='toggleBox("Output-1852821063", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1852821063" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1852821063">
+Search with text: installation<br/>
+Number of results with All sources option: 13883<br/>
+Selected dropdown option: Knowledge Base<br/>
+Number of results with Knowledge Base option: 1185<br/>
+Selected dropdown option: System Requirements<br/>
+Number of results with System Requirements option: 203<br/>
+Selected dropdown option: Documentation<br/>
+Number of results with Documentation option: 12495<br/>
+Selected dropdown option: Hotfixes<br/>
+No Results Found Messsage: Your search did not match any documents. Use these search tips to help you find what you are looking for.<br/>
+Number of results with Hotfixes option: 0<br/>
+Sum of results with other options: 13883<br/>
+All results matchs with sum of the all other options<br/>
+</div>
+</td>
+<td></td>
+<td>69</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchwithtext()'><b>Supportsearchwithtext</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search with text<br/>
+<a href="#Output-1747721875" onClick='toggleBox("Output-1747721875", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1747721875" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1747721875">
+Search with text: Studio installation<br/>
+Total Search Results: 1158<br/>
+Title of the 1st Search Result: KB74647202: Where to find the DeskPack/ Studio/ Dynamic Content installation log files<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.Supportsearchwithwildcards()'><b>Supportsearchwithwildcards</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Support-Search with wildcards<br/>
+<a href="#Output-1160106451" onClick='toggleBox("Output-1160106451", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1160106451" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1160106451">
+Search with text: *stalla*<br/>
+Total Search Results: 14645<br/>
+Title of the 1st Search Result: WebCenter Installation Guide 22.11: Proof for Content Approval<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+<tr>
+<td title='com.pack.common.tests.SupportsearchTest.productdocumentverification()'><b>productdocumentverification</b><br>Test class: com.pack.common.tests.SupportsearchTest<br>Test method: Verify Product documentation<br/>
+<a href="#Output-509806761" onClick='toggleBox("Output-509806761", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-509806761" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-509806761">
+Clicked on Productdocumentation<br/>
+Selected Prodcut-ArtiosCAD<br/>
+Product documentation links Count-8<br/>
+Public
+What’s New
+Richard Deroo
+November 2022
+ArtiosCAD 22.11
+Public
+New Resizable Design Templates Added
+ECMA folding carton FEFCO corrugated Rigid Box
+460+
+15 24 1
+designs added since version 18
+Public
+mate panels, fold-up and knock-down fast and easy with a single-click
+Realistic 3D of Complex Folding Designs
+Gusset Tray
+Beers Tray
+Infold/Outfold Tray
+Gable Top
+Public
+Board Searching & Filtering
+quickly find and select your 
+desired board 
+Public
+Dynamic Subscriptions
+Dynamic Subscriptions is a new cloud-based licensing model for 
+on-premise applications that simplifies global management and distribution of 
+licenses across all sites
+More flexibility and less IT administration than named user subscriptions
+Better management tools than perpetual licenses
+Online cloud portal and cloud services to manage and distribute licenses
+For detailed information, we welcome you to have a look at the Licensing 
+“What’s New” presentation
+Public
+Licensing of on-premise applications
+Local Licenses
+? Activated on client computer
+? Can only be used on the computer where it is 
+activated
+Named User Subscription
+? Is a license that is linked to a user (EskoID) instead 
+of to a computer
+? User can sign in from anywhere on any computer
+? 1 license is assigned to 1 user but can be reassigned 
+to another user online
+Network Licenses
+? Distributed by network license server on the local 
+network
+? Can be used by any computer
+? Usage can not exceed #purchased licenses
+Dynamic Subscription
+? A pool of licenses can be assigned to a group of 
+users from any location (EskoID – no # limit)
+? Users sign in from anywhere as long as # licenses in 
+use does not exceed # purchased licenses
+? Licenses are used and freed up dynamically
+? Licenses and EskoID groups are managed online
+Perpetual Licenses Subscription Licenses
+NEW!
+Public
+Notes
+ArtiosCAD will be converted to a 64-bit 
+application within the next two releases 
+32-bit support will be deprecated at this time, 
+ArtiosCAD will not support:
+32-bit machines
+32-bit apps, like MS Outlook
+Thank you
+<br/>
+</div>
+</td>
+<td></td>
+<td>52</td>
+<td>com.pack.common.tests.SupportsearchTest@4fb3ee4e</td></tr>
+</table><p>
+</body>
+</html>

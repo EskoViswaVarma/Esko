@@ -1,0 +1,207 @@
+<html>
+<head>
+<title>TestNG:  Scenarios</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Scenarios</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jan 09 15:16:58 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>1481 seconds (1481882 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td>CAPEPACKADVANCEDTRIALDownloadwithNewUser Openproductdocumentation CAPEPACKADVANCEDTRIALDownloadwithExistingUser SupportSearchwithquotationmarks productdocumentverification </td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.pack.common.tests.MyAccountordermanagementverificationTest.CancelLicenseVerification()'><b>CancelLicenseVerification</b><br>Test class: com.pack.common.tests.MyAccountordermanagementverificationTest<br>Test method: Cancel License Verification<br/>
+<a href="#Output-1813375175" onClick='toggleBox("Output-1813375175", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1813375175" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1813375175">
+Clicked on Software Subscription Orders<br/>
+Number of subscription order list-20<br/>
+Selected order-ACCEPTS719204<br/>
+Clicked on manage option of the subscription order<br/>
+License status from website-Cancelled<br/>
+After cancellation status is Cancelled<br/>
+</div>
+</td>
+<td></td>
+<td>218</td>
+<td>com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557</td></tr>
+<tr>
+<td title='com.pack.common.tests.MyAccountordermanagementverificationTest.Changecontactpersonverfication()'><b>Changecontactpersonverfication</b><br>Test class: com.pack.common.tests.MyAccountordermanagementverificationTest<br>Test method: Change contact person verification<br/>
+<a href="#Output-19467337" onClick='toggleBox("Output-19467337", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-19467337" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-19467337">
+Clicked on Software Subscription Orders<br/>
+Number of subscription order list-20<br/>
+Selected order-ACCEPTS719209<br/>
+Clicked on manage option of the subscription order<br/>
+Contact from website:eskododp04@yahoo.be<br/>
+Contact from text file:eskododp04@yahoo.be<br/>
+Contact matched in website and datafile<br/>
+</div>
+</td>
+<td></td>
+<td>165</td>
+<td>com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557</td></tr>
+<tr>
+<td title='com.pack.common.tests.MyAccountordermanagementverificationTest.ChangepaymentoptionfromCCtoCCverfication()'><b>ChangepaymentoptionfromCCtoCCverfication</b><br>Test class: com.pack.common.tests.MyAccountordermanagementverificationTest<br>Test method: Change payment option from CC to existing CC verification<br/>
+<a href="#Output-1512822728" onClick='toggleBox("Output-1512822728", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1512822728" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1512822728">
+Clicked on Software Subscription Orders<br/>
+Number of subscription order list-20<br/>
+Selected order-ACCEPTS719209<br/>
+Clicked on manage option of the subscription order<br/>
+Credit card from website:411111XXXXXX1111 exp 08 / 2027<br/>
+Credit card from text file:411111XXXXXX1111 exp 08 / 2027<br/>
+Updated credit card matched in website and datafile<br/>
+</div>
+</td>
+<td></td>
+<td>197</td>
+<td>com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557</td></tr>
+<tr>
+<td title='com.pack.common.tests.MyAccountordermanagementverificationTest.ChangepaymentoptionfromCCtoInvoiceverfication()'><b>ChangepaymentoptionfromCCtoInvoiceverfication</b><br>Test class: com.pack.common.tests.MyAccountordermanagementverificationTest<br>Test method: Change payment option from CC to Invoice verification<br/>
+<a href="#Output-906370291" onClick='toggleBox("Output-906370291", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-906370291" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-906370291">
+Clicked on Software Subscription Orders<br/>
+Number of subscription order list-20<br/>
+Selected order-ACCEPTS719205<br/>
+Clicked on manage option of the subscription order<br/>
+Payment option from website:Invoice<br/>
+Payment option from textfile:Invoice<br/>
+Invoice option not updated in subscription order details page<br/>
+</div>
+</td>
+<td></td>
+<td>212</td>
+<td>com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557</td></tr>
+<tr>
+<td title='com.pack.common.tests.MyAccountordermanagementverificationTest.ChangepaymentoptionfromCCtoNewCCverfication()'><b>ChangepaymentoptionfromCCtoNewCCverfication</b><br>Test class: com.pack.common.tests.MyAccountordermanagementverificationTest<br>Test method: Change payment option from CC to New CC verification<br/>
+<a href="#Output-1428527783" onClick='toggleBox("Output-1428527783", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1428527783" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1428527783">
+Clicked on Software Subscription Orders<br/>
+Number of subscription order list-20<br/>
+Selected order-ACCEPTS719206<br/>
+Clicked on manage option of the subscription order<br/>
+New credit card from website:411111XXXXXX1111 exp 08 / 2027<br/>
+New credit card from text file:411111XXXXXX1111 exp 08 / 2027<br/>
+New credit card matched in website and datafile<br/>
+</div>
+</td>
+<td></td>
+<td>205</td>
+<td>com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557</td></tr>
+<tr>
+<td title='com.pack.common.tests.MyAccountordermanagementverificationTest.SeatIncreaseVerification()'><b>SeatIncreaseVerification</b><br>Test class: com.pack.common.tests.MyAccountordermanagementverificationTest<br>Test method: Seat Increase Verification<br/>
+<a href="#Output-1276666395" onClick='toggleBox("Output-1276666395", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1276666395" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1276666395">
+Clicked on Software Subscription Orders<br/>
+Number of subscription order list-20<br/>
+Selected order-ACCEPTS719200<br/>
+Clicked on manage option of the subscription order<br/>
+Total Number of Productkeys after seat Increase-4<br/>
+New license key generated after seat Increase<br/>
+After seat Increase licensekey1-SUBT00266129-1<br/>
+After seat Increase licensekey2-SUBT00266129-2<br/>
+After seat Increase licensekey3-SUBT00266129-3<br/>
+After seat Increase licensekey4-SUBT00266129-4<br/>
+</div>
+</td>
+<td></td>
+<td>230</td>
+<td>com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557</td></tr>
+<tr>
+<td title='com.pack.common.tests.MyAccountordermanagementverificationTest.UpgradeLicenseVerification()'><b>UpgradeLicenseVerification</b><br>Test class: com.pack.common.tests.MyAccountordermanagementverificationTest<br>Test method: License Keys verification after upgrade<br/>
+<a href="#Output-1041255755" onClick='toggleBox("Output-1041255755", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1041255755" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1041255755">
+Clicked on Software Subscription Orders<br/>
+Number of subscription order list-20<br/>
+Selected order-ACCEPTS719203<br/>
+Clicked on manage option of the subscription order<br/>
+Product Key after upgrade-SUBT00266090-1<br/>
+Product Key before upgrade-SUBT00266089-1<br/>
+Product Key updated after upgradation<br/>
+</div>
+</td>
+<td></td>
+<td>231</td>
+<td>com.pack.common.tests.MyAccountordermanagementverificationTest@54bff557</td></tr>
+</table><p>
+</body>
+</html>

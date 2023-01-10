@@ -1,0 +1,653 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Detailed Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodds  {background-color: #0A0}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.passed td,.numi_passed {background-color: #0A0}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:Lucida Sans Unicode, Lucida Grande, sans-serif}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<center><h2>Esko Detailed Report - 22-12-2022 14:45:29</h2></center><table cellspacing=0 cellpadding=0 class="testOverview">
+<tr><th>Scenario</th><th>Methods<br/>Passed</th><th># skipped</th><th># failed</th><th>Browser</th><th>Start<br/>Time</th><th>End<br/>Time</th><th>Total<br/>Time(hh:mm:ss)</th><th>Environment</th><th>Excluded<br/>Scenario</th></tr>
+<tr><th colspan="10">Esko Regression Suite-null Environment</th></tr>
+<tr><th colspan="10">Esko Accept Environment-Accept Environment</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1"><b>Scenarios</b></a></td><td class="numi passedodds">8</td><td class="numi">0</td><td class="numi">0</td><td class="numi">Chrome</td></td>
+<td class="numi">02:15:33</td></td>
+<td class="numi">02:45:28</td></td>
+<td class="numi">00:29:54</td><td class="numi">Accept</td><td class="numi">CAPEPACKADVANCEDTRIALDownloadwithNewUser, Openproductdocumentation, CAPEPACKADVANCEDTRIALDownloadwithExistingUser, SupportSearchwithquotationmarks, productdocumentverification, </td></tr>
+</table>
+<table cellspacing=0 cellpadding=0 class="methodOverview" id="Summary">
+<tr><th>Class</th><th>Exception Info</th><th>Start Time </th><th>Execution Time<br/>(hh:mm:ss)</th></tr>
+<tr><th colspan="5">Esko Regression Suite</th></tr>
+<tr><th colspan="5">Esko Accept Environment</th></tr>
+<tr id="t1"><th colspan="5">Scenarios &#8212; passed</th></tr>
+<tr class="passedodd"><td>Add an upsell product to the cart</td><td><a href="#m1><b>Addupsellproducttocart</b> (Addupsellproducttocart) (Add an upsell product to the cart)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:24:33</td><td class="numi">00:04:16</td></tr>
+<tr class="passedeven"><td>Apply valid promotional code with valid user and Invalid Company </td><td><a href="#m2><b>ApplyvalidpromotionalcodewithvaliduserandInvalidcompany</b> (Apply valid promotional code with valid user and Invalid Company) (Apply valid promotional code with valid user and Invalid Company )</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:43:16</td><td class="numi">00:02:11</td></tr>
+<tr class="passedodd"><td>Apply valid promotional code with valid user and valid company</td><td><a href="#m3><b>Applyvalidpromotionalcodewithvaliduserandvalidcompany</b> (Apply valid promotional code with valid user and valid Company) (Apply valid promotional code with valid user and valid company)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:40:57</td><td class="numi">00:02:19</td></tr>
+<tr class="passedeven"><td>Apply a valid promotion code and verify 75% reduction</td><td><a href="#m4><b>Applyvalidpromotioncodewithpricereduction</b> (Applyvalidpromotioncodewithpricereduction) (Apply a valid promotion code and verify 75% reduction)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:16:22</td><td class="numi">00:02:41</td></tr>
+<tr class="passedodd"><td>Make a order with Invalid promotion code</td><td><a href="#m5><b>OrderwithInvalidpromotioncode</b> (OrderwithInvalidpromotioncode) (Make a order with Invalid promotion code)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:21:43</td><td class="numi">00:02:50</td></tr>
+<tr class="passedeven"><td>Make order with single/multiple lines with single and multiple quantity</td><td><a href="#m6><b>Orderwithmultiplelineswithmultiplequantity</b> (Orderwithmultiplelineswithmultiplequantity) (Make order with single/multiple lines with single and multiple quantity)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:28:49</td><td class="numi">00:09:15</td></tr>
+<tr class="passedodd"><td>Make order with valid promotion code and verify discounted price on confirmation email</td><td><a href="#m7><b>Orderwithvalidpromotioncode</b> (Orderwithvalidpromotioncode) (Make order with valid promotion code and verify discounted price on confirmation email)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:19:03</td><td class="numi">00:02:40</td></tr>
+<tr class="passedeven"><td>Payment term of the product exceeds the promotion duration</td><td><a href="#m8><b>Paymenttermexceedsthepromotionduration</b> (Paymenttermexceedsthepromotionduration) (Payment term of the product exceeds the promotion duration)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:38:04</td><td class="numi">00:02:53</td></tr>
+</table>
+<h2>Scenarios</h2>
+<h3 id="m1">:Add an upsell product to the cart</h3>
+<div >
+<table>
+<tr>
+<td>
+Selected Cape Pack product
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Capepack Essential plan yearly plan, paid yearly
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Upsell product added to cart
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Click on cart Link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+ Click on continue checkout button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Login with user name - eskododp04@gmail.com & password -Azertyu1$
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+selected Create a new order option
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Credit Card Payment method
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Existing Credit Card
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+OTP Screenn not displayed
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Number - ACCEPTS718975
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Price - 329000
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">:Apply valid promotional code with valid user and Invalid Company </h3>
+<div >
+<table>
+<tr>
+<td>
+Capepack Essentials buy button clicked with Yearlyplan,Paid Monthly
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Click on cart Link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+ Click on continue checkout button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Login with user name - eskododp04@gmail.com & password -Azertyu1$
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Coupon applied - SAVEALOTDODP03147
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Coupon code applied successfully
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Promotion code error message-This promotion code SAVEALOTDODP03147 is invalid
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">:Apply valid promotional code with valid user and valid company</h3>
+<div >
+<table>
+<tr>
+<td>
+Capepack Essentials buy button clicked with Yearlyplan,Paid Monthly
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Click on cart Link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+ Click on continue checkout button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Login with user name - eskododp03@gmail.com & password -Azertyu1$
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order total Price-53.33
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Coupon applied - SAVEALOTDODP03
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Coupon code applied successfully
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Discount Price-39.9975
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+After discount order total price-13.33
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+After discount order total price in conformation page-13.33
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">:Apply a valid promotion code and verify 75% reduction</h3>
+<div >
+<table>
+<tr>
+<td>
+Selected studio option
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Click on cart Link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+ Click on continue checkout button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Login with user name - eskododp04@gmail.com & password -Azertyu1$
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order total Price-251.67
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Coupon applied - SAVEALOTDODP
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Coupon code applied successfully
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Discount Price-188.7525
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+After discount order total price-62.92
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+After discount order total price in conformation page-62.92
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">:Make a order with Invalid promotion code</h3>
+<div >
+<table>
+<tr>
+<td>
+Selected studio option
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Click on cart Link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+ Click on continue checkout button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Login with user name - eskododp04@gmail.com & password -Azertyu1$
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Coupon applied - SAVEALOTDODP147
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Coupon code applied successfully
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Promotion code error message-This promotion code SAVEALOTDODP147 is invalid
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">:Make order with single/multiple lines with single and multiple quantity</h3>
+<div >
+<table>
+<tr>
+<td>
+Cape pack reviewer buy button clicked with Yearly plan ,Paid Yearly
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Cape pack essentials product added to cart with quantity-4
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Studio Essentials buy button clicked with Yearly plan ,Paid Yearly
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Studio Essentials product added to cart with quantity-3
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+DeskPack Essentials buy button clicked with Yearly plan ,Paid Yearly
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+DeskPack Essentials product added to cart with quantity-4
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Cape pack advanced buy button clicked with Yearly plan ,Paid Yearly
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Cape pack advanced product added to cart with quantity-4
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+DeskPack Advanced buy button clicked with Yearly plan ,Paid Yearly
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+DeskPack Advanced product added to cart with quantity-2
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+ Click on continue checkout button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Login with user name - eskododp04@gmail.com & password -Azertyu1$
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+selected Create a new order option
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Credit Card Payment method
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Existing Credit Card
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+OTP Screenn not displayed
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Number - ACCEPTS718976
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Price - 3529000
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">:Make order with valid promotion code and verify discounted price on confirmation email</h3>
+<div >
+<table>
+<tr>
+<td>
+Click on cart Link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+ Click on continue checkout button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+selected Create a new order option
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Credit Card Payment method
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Existing Credit Card
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+OTP Screenn not displayed
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Number - ACCEPTS718974
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Price - 6292
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">:Payment term of the product exceeds the promotion duration</h3>
+<div >
+<table>
+<tr>
+<td>
+Selected studio option
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Click on cart Link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+ Click on continue checkout button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Login with user name - eskododp04@gmail.com & password -Azertyu1$
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Coupon applied - SAVEALOTDODP
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Coupon code applied successfully
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Promotion code error message-Your cart doesn't match with the promotion SAVEALOTDODP restrictions
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<center> Espire Automation Framework Generated Report </center>
+</body></html>

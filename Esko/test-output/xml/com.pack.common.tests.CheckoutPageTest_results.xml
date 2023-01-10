@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Esko test Scenario"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="6"
+           time="0.000">
+  <properties />
+  
+            <testcase name="tearDown" time="0.0" classname="com.pack.common.tests.CheckoutPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="initializeTestBaseSetup" time="0.0" classname="com.pack.common.tests.CheckoutPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="setUp" time="0.0" classname="com.pack.common.tests.CheckoutPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="CheckoutPagewiretransfer" time="0.0" classname="com.pack.common.tests.CheckoutPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="CheckoutwithRegistration" time="0.0" classname="com.pack.common.tests.CheckoutPageTest">
+          <skipped />
+    </testcase>
+            <testcase name="CheckoutPagecreditcard" time="0.0" classname="com.pack.common.tests.CheckoutPageTest">
+          <skipped />
+    </testcase>
+  
+  
+</testsuite>

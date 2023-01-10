@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Esko Live Environment]" guice-stage="DEVELOPMENT">
+  <parameter name="pdURL" value="https://docs.esko.com/docs/en-us/artioscad/21.07/userguide/home.html#about.html"/>
+  <parameter name="uCoupoun" value="SAVEALOT"/>
+  <parameter name="sitename" value="Esko"/>
+  <parameter name="uEmail3" value="aakashesp87@yopmail.com"/>
+  <parameter name="appURL" value="https://www.esko.com"/>
+  <parameter name="uPassword" value="Gadhiraju@123"/>
+  <parameter name="env" value="Live"/>
+  <parameter name="browserType" value="Chrome"/>
+  <parameter name="uEmail1" value="viswanadha.varma@espire.com"/>
+  <listeners>
+    <listener class-name="com.easy.TestNGCustomReportListener"/>
+    <listener class-name="com.pack.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Scenarios(failed)">
+    <groups>
+      <run>
+        <exclude name="CAPEPACKADVANCEDTRIALDownloadwithNewUser"/>
+        <exclude name="CAPEPACKADVANCEDTRIALDownloadwithExistingUser"/>
+        <exclude name="CheckoutwithnewcustomerwithnewMastercardpayment"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.pack.common.tests.SupportsearchTest">
+        <methods>
+          <include name="Testimonialcountryfilter"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="Testimonialsolutionfilter"/>
+          <include name="Pressoverview"/>
+          <include name="Supportsearchwithquotationmarks"/>
+          <include name="Testimonialoverview"/>
+          <include name="Testimonialproductfilter"/>
+          <include name="Supportsearchopenpdfdocument"/>
+          <include name="afterMethod"/>
+          <include name="initializeTestBaseSetup"/>
+        </methods>
+      </class> <!-- com.pack.common.tests.SupportsearchTest -->
+    </classes>
+  </test> <!-- Scenarios(failed) -->
+</suite> <!-- Failed suite [Esko Live Environment] -->

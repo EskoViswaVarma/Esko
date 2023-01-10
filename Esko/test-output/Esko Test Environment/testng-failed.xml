@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Esko Test Environment]" guice-stage="DEVELOPMENT">
+  <parameter name="pdURL" value="http://accept.docs.esko.com/docs/en-us/artioscad/20/userguide/home.html#about.html"/>
+  <parameter name="uUpdatedcontact" value="eskododp04@yahoo.be"/>
+  <parameter name="EsubProrefno" value="METSYS_MOCK_2"/>
+  <parameter name="uEmail3" value="eskododp05@gmail.com"/>
+  <parameter name="appURL" value="https://test-www.esko.com"/>
+  <parameter name="uCoupoun1" value="SAVEALOTDODP03"/>
+  <parameter name="env" value="Test"/>
+  <parameter name="uEmail2" value="eskododp03@gmail.com"/>
+  <parameter name="Esubemail" value="eskododp-metsys2-ID@mailinator.com"/>
+  <parameter name="browserType" value="Chrome"/>
+  <parameter name="uEmail1" value="eskododp04@gmail.com"/>
+  <parameter name="Eproductname" value="Studio Essentials subscription"/>
+  <parameter name="uCoupoun" value="SAVEALOTDODP"/>
+  <parameter name="sitename" value="Esko"/>
+  <parameter name="uPassword" value="Azertyu1$"/>
+  <parameter name="Esuborderno" value="000MOCK1"/>
+  <parameter name="uUpdatedcreditcard" value="411111XXXXXX1111 exp 09 / 2022"/>
+  <listeners>
+    <listener class-name="com.easy.TestNGCustomReportListener"/>
+    <listener class-name="com.pack.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Scenarios(failed)">
+    <groups>
+      <run>
+        <exclude name="CAPEPACKADVANCEDTRIALDownloadwithNewUser"/>
+        <exclude name="CAPEPACKADVANCEDTRIALDownloadwithExistingUser"/>
+        <exclude name="SupportSearchwithquotationmarks"/>
+        <exclude name="Openproductdocumentation"/>
+        <exclude name="productdocumentverification"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.pack.common.tests.EPSMyAccountSubscriptionOrdermanagementTest">
+        <methods>
+          <include name="Cancellicense"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="afterMethod"/>
+          <include name="initializeTestBaseSetup"/>
+        </methods>
+      </class> <!-- com.pack.common.tests.EPSMyAccountSubscriptionOrdermanagementTest -->
+    </classes>
+  </test> <!-- Scenarios(failed) -->
+</suite> <!-- Failed suite [Esko Test Environment] -->

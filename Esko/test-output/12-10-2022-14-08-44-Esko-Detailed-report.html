@@ -1,0 +1,884 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Detailed Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodds  {background-color: #0A0}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.passed td,.numi_passed {background-color: #0A0}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:Lucida Sans Unicode, Lucida Grande, sans-serif}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<center><h2>Esko Detailed Report - 12-10-2022 14:08:44</h2></center><table cellspacing=0 cellpadding=0 class="testOverview">
+<tr><th>Scenario</th><th>Methods<br/>Passed</th><th># skipped</th><th># failed</th><th>Browser</th><th>Start<br/>Time</th><th>End<br/>Time</th><th>Total<br/>Time(hh:mm:ss)</th><th>Environment</th><th>Excluded<br/>Scenario</th></tr>
+<tr><th colspan="10">Esko Regression Suite-null Environment</th></tr>
+<tr><th colspan="10">Esko Accept Environment-Accept Environment</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1"><b>Scenarios</b></a></td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">Chrome</td></td>
+<td class="numi">01:40:02</td></td>
+<td class="numi">02:08:43</td></td>
+<td class="numi">00:28:41</td><td class="numi">Accept</td><td class="numi">CAPEPACKADVANCEDTRIALDownloadwithNewUser, Openproductdocumentation, CAPEPACKADVANCEDTRIALDownloadwithExistingUser, SupportSearchwithquotationmarks, productdocumentverification, </td></tr>
+</table>
+<table cellspacing=0 cellpadding=0 class="methodOverview" id="Summary">
+<tr><th>Class</th><th>Exception Info</th><th>Start Time </th><th>Execution Time<br/>(hh:mm:ss)</th></tr>
+<tr><th colspan="5">Esko Regression Suite</th></tr>
+<tr><th colspan="5">Esko Accept Environment</th></tr>
+<tr id="t1"><th colspan="5">Scenarios &#8212; failed</th></tr>
+<tr class="failedodd"><td>All Confirmation/Invoice/Subscription emails verification</td><td><a href="#m1><b>Allemailsverification</b> (All Confirmation/Invoice/Subscription emails verification) (All Confirmation/Invoice/Subscription emails verification)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//div[@class=&apos;Cp&apos;]/div/table/tbody/tr[2]/td[5]/div/div/div[2]/span/span&quot;}<br/></td><td style="text-align:right">01:59:15</td><td class="numi">00:0-2:0-28</td></tr>
+<tr><th colspan="5">Scenarios &#8212; passed</th></tr>
+<tr class="passedodd"><td>All Confirmation/Invoice/Subscription emails verification</td><td><a href="#m2><b>Allemailsverification</b> (All Confirmation/Invoice/Subscription emails verification) (All Confirmation/Invoice/Subscription emails verification)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">02:01:42</td><td class="numi">00:0-19:0-26</td></tr>
+</table>
+<h2>Scenarios</h2>
+<h3 id="m1">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp05@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717991</td>
+<td>Confirmation</td>
+<td>80000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-13-50-17.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717987</td>
+<td>Subscription</td>
+<td>80000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-13-51-7.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//div[@class='Cp'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717986</td>
+<td>Subscription</td>
+<td>63000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-13-52-12.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//div[@class='Cp'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717987</td>
+<td>Confirmation</td>
+<td>80000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-13-56-47.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='q']</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp05@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717991</td>
+<td>PLInvoice</td>
+<td>80000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-13-58-6.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717990</td>
+<td>Confirmation</td>
+<td>63000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-13-59-52.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">java.lang.AssertionError: Confirmation email not found for the order-ACCEPTS717990</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717989</td>
+<td>Subscription</td>
+<td>63000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-14-0-31.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//div[@class='Cp'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717993</td>
+<td>Confirmation</td>
+<td>329000</td>
+</tr>
+<tr><tdcolspan="5">
+<table>
+<tr>
+<td>
+Esko Store: Order confirmation for ACCEPTS717993
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Total Amount-329000
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Email Total Amount-3290.00 USD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order total amount matches in both confirmation page and email
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717980</td>
+<td>Confirmation</td>
+<td>291000</td>
+</tr>
+<tr><tdcolspan="5">
+<table>
+<tr>
+<td>
+Esko Store: Order confirmation for ACCEPTS717980
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Total Amount-291000
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Email Total Amount-2910.00 USD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order total amount matches in both confirmation page and email
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717988</td>
+<td>Invoice</td>
+<td>63000</td>
+</tr>
+<tr><tdcolspan="5">
+<table>
+<tr>
+<td>
+Esko: invoice for your subscription order ACCEPTS717988
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717990</td>
+<td>Invoice</td>
+<td>63000</td>
+</tr>
+<tr><tdcolspan="5">
+<table>
+<tr>
+<td>
+Esko: invoice for your subscription order ACCEPTS717990
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717983</td>
+<td>Confirmation</td>
+<td>80000</td>
+</tr>
+<tr><tdcolspan="5">
+<table>
+<tr>
+<td>
+Esko Store: Order confirmation for ACCEPTS717983
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Total Amount-80000
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Email Total Amount-800.00 USD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order total amount matches in both confirmation page and email
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717984</td>
+<td>Confirmation</td>
+<td>33000</td>
+</tr>
+<tr><tdcolspan="5">
+<table>
+<tr>
+<td>
+Esko Store: Order confirmation for ACCEPTS717984
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Total Amount-33000
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Email Total Amount-330.00 USD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order total amount matches in both confirmation page and email
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717982</td>
+<td>Confirmation</td>
+<td>80000</td>
+</tr>
+<tr><tdcolspan="5">
+<table>
+<tr>
+<td>
+Esko Store: Order confirmation for ACCEPTS717982
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Total Amount-80000
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Email Total Amount-800.00 USD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order total amount matches in both confirmation page and email
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717986</td>
+<td>Confirmation</td>
+<td>63000</td>
+</tr>
+<tr><tdcolspan="5">
+<table>
+<tr>
+<td>
+Esko Store: Order confirmation for ACCEPTS717986
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Total Amount-63000
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Email Total Amount-630.00 EUR
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order total amount matches in both confirmation page and email
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTH717994</td>
+<td>Confirmation</td>
+<td>7782</td>
+</tr>
+<tr><tdcolspan="5">
+<table>
+<tr>
+<td>
+Esko Store: Order confirmation for ACCEPTH717994
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Total Amount-7782
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Email Total Amount-77.82 USD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order total amount matches in both confirmation page and email
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717989</td>
+<td>Confirmation</td>
+<td>63000</td>
+</tr>
+<tr><tdcolspan="5">
+<table>
+<tr>
+<td>
+Esko Store: Order confirmation for ACCEPTS717989
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Total Amount-63000
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Email Total Amount-630.00 EUR
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order total amount matches in both confirmation page and email
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717988</td>
+<td>Confirmation</td>
+<td>63000</td>
+</tr>
+<tr><tdcolspan="5">
+<table>
+<tr>
+<td>
+Esko Store: Order confirmation for ACCEPTS717988
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Total Amount-63000
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Email Total Amount-630.00 EUR
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order total amount matches in both confirmation page and email
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717981</td>
+<td>Confirmation</td>
+<td>80000</td>
+</tr>
+<tr><tdcolspan="5">
+<table>
+<tr>
+<td>
+Esko Store: Order confirmation for ACCEPTS717981
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Total Amount-80000
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Email Total Amount-800.00 USD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order total amount matches in both confirmation page and email
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTH717998</td>
+<td>Confirmation</td>
+<td>6860</td>
+</tr>
+<tr><tdcolspan="5">
+<table>
+<tr>
+<td>
+Esko Store: Order confirmation for ACCEPTH717998
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Total Amount-6860
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Email Total Amount-68.6 EUR
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order total amount matches in both confirmation page and email
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTH717995</td>
+<td>Confirmation</td>
+<td>7782</td>
+</tr>
+<tr><tdcolspan="5">
+<table>
+<tr>
+<td>
+Esko Store: Order confirmation for ACCEPTH717995
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Total Amount-7782
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Email Total Amount-77.82 USD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order total amount matches in both confirmation page and email
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717992</td>
+<td>Confirmation</td>
+<td>6292</td>
+</tr>
+<tr><tdcolspan="5">
+<table>
+<tr>
+<td>
+Esko Store: Order confirmation for ACCEPTS717992
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Total Amount-6292
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Email Total Amount-0.00 USD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order total amount matches in both confirmation page and email
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTH717997</td>
+<td>Confirmation</td>
+<td>6860</td>
+</tr>
+<tr><tdcolspan="5">
+<table>
+<tr>
+<td>
+Esko Store: Order confirmation for ACCEPTH717997
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Total Amount-6860
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Email Total Amount-68.6 EUR
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order total amount matches in both confirmation page and email
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTH717996</td>
+<td>Confirmation</td>
+<td>7782</td>
+</tr>
+<tr><tdcolspan="5">
+<table>
+<tr>
+<td>
+Esko Store: Order confirmation for ACCEPTH717996
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Total Amount-7782
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Email Total Amount-77.82 USD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order total amount matches in both confirmation page and email
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717979</td>
+<td>Confirmation</td>
+<td>19667</td>
+</tr>
+<tr><tdcolspan="5">
+<table>
+<tr>
+<td>
+Esko Store: Order confirmation for ACCEPTS717979
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order Total Amount-19667
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Email Total Amount-196.67 EUR
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Order total amount matches in both confirmation page and email
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<center> Espire Automation Framework Generated Report </center>
+</body></html>

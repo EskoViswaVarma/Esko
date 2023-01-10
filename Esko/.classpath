@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Drivers"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/activation-1.0.2.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/bson-3.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/byte-buddy-1.7.5.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/client-combined-3.7.1.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/client-combined-3.7.1-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/extentreports-3.0.6.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/gson-2.8.2.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/guava-23.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/guice-3.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/httpclient-4.5.3.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/httpcore-4.4.6.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/javax.mail-1.5.1.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/javax.mail-api-1.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/javax.mail-api-1.5.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/jcommander-1.48.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/jsoup-1.9.2.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/mail-6.0.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/mongodb-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/mongodb-driver-core-3.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/reportng-1.1.4.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/selenium-server-standalone-3.7.1.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/testng-6.9.10.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/velocity-dep-1.4.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/fontbox-2.0.12.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/pdfbox-2.0.12.jar"/>
+	<classpathentry kind="lib" path="D:/Jarfiles/webdrivermanager-5.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/bcpkix-jdk15on-1.64.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/bcprov-jdk15on-1.64.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/commons-codec-1.15.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/commons-compress-1.21.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/commons-lang3-3.12.0.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/dec-0.1.2.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/docker-java-3.2.13.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/docker-java-api-3.2.13.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/docker-java-core-3.2.13.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/docker-java-transport-3.2.13.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/docker-java-transport-httpclient5-3.2.13.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/gson-2.10.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/guava-19.0.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/httpclient5-5.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/httpcore5-5.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/httpcore5-h2-5.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/jackson-annotations-2.10.3.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/jackson-core-2.10.3.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/jackson-databind-2.10.3.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/jcl-over-slf4j-1.7.30.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/jna-5.8.0.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/slf4j-api-2.0.3.jar"/>
+	<classpathentry kind="lib" path="D:/Sel-Jar files/WebdriverManager/webdrivermanager-5.3.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

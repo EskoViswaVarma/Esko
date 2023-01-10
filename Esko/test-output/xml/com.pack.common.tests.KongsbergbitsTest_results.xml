@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenarios"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="111.308">
+  <properties />
+  
+  
+            <testcase name="Showproductdetails" time="15.875" classname="com.pack.common.tests.KongsbergbitsTest" />
+                <testcase name="Kongsbergbitsoverviewpage" time="37.766" classname="com.pack.common.tests.KongsbergbitsTest" />
+                <testcase name="knifebladeseSubcategory" time="16.723" classname="com.pack.common.tests.KongsbergbitsTest" />
+                <testcase name="productlistpage" time="35.342" classname="com.pack.common.tests.KongsbergbitsTest" />
+                <testcase name="Showrequirements" time="5.602" classname="com.pack.common.tests.KongsbergbitsTest" />
+      
+</testsuite>

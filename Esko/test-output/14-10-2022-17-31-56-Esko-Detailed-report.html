@@ -1,0 +1,1633 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Detailed Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodds  {background-color: #0A0}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.passed td,.numi_passed {background-color: #0A0}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:Lucida Sans Unicode, Lucida Grande, sans-serif}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<center><h2>Esko Detailed Report - 14-10-2022 17:31:56</h2></center><table cellspacing=0 cellpadding=0 class="testOverview">
+<tr><th>Scenario</th><th>Methods<br/>Passed</th><th># skipped</th><th># failed</th><th>Browser</th><th>Start<br/>Time</th><th>End<br/>Time</th><th>Total<br/>Time(hh:mm:ss)</th><th>Environment</th><th>Excluded<br/>Scenario</th></tr>
+<tr><th colspan="10">Esko Regression Suite-null Environment</th></tr>
+<tr><th colspan="10">Esko Accept Environment-Accept Environment</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1"><b>Scenarios</b></a></td><td class="numi">29</td><td class="numi">0</td><td class="numi_attn">10</td><td class="numi">Chrome</td></td>
+<td class="numi">04:30:29</td></td>
+<td class="numi">05:31:55</td></td>
+<td class="numi">01:01:26</td><td class="numi">Accept</td><td class="numi">CAPEPACKADVANCEDTRIALDownloadwithNewUser, Openproductdocumentation, CAPEPACKADVANCEDTRIALDownloadwithExistingUser, SupportSearchwithquotationmarks, productdocumentverification, </td></tr>
+</table>
+<table cellspacing=0 cellpadding=0 class="methodOverview" id="Summary">
+<tr><th>Class</th><th>Exception Info</th><th>Start Time </th><th>Execution Time<br/>(hh:mm:ss)</th></tr>
+<tr><th colspan="5">Esko Regression Suite</th></tr>
+<tr><th colspan="5">Esko Accept Environment</th></tr>
+<tr id="t1"><th colspan="5">Scenarios &#8212; failed</th></tr>
+<tr class="failedodd"><td>All Confirmation/Invoice/Subscription emails verification</td><td><a href="#m1><b>Allemailsverification</b> (All Confirmation/Invoice/Subscription emails verification) (All Confirmation/Invoice/Subscription emails verification)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;password&apos;]/div[1]/div/div[1]/input&quot;}<br/></td><td style="text-align:right">05:29:46</td><td class="numi">00:0-2:0-52</td></tr>
+<tr class="failedeven"><td>Verify Membership updates</td><td><a href="#m2><b>Membershipupdates</b> (Verify Membership updates) (Verify Membership updates)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.ElementNotInteractableException: element not interactable<br/></td><td style="text-align:right">04:43:02</td><td class="numi">00:00:30</td></tr>
+<tr class="failedodd"><td>Verify Support Tile </td><td><a href="#m3><b>Supporttile</b> (Verify Support Tile) (Verify Support Tile )</a></td><td class="numi" style="text-align:left;padding-right:2em">java.lang.AssertionError: Error occurred. Please contact Esko Support if issue persists.<br/></td><td style="text-align:right">04:45:17</td><td class="numi">00:02:13</td></tr>
+<tr class="failedeven"><td>Open product documentation</td><td><a href="#m4><b>Openproductdocumentation</b> (Open product documentation) (Open product documentation)</a></td><td class="numi" style="text-align:left;padding-right:2em">java.lang.AssertionError: Your connection is not private<br/></td><td style="text-align:right">05:12:35</td><td class="numi">00:00:20</td></tr>
+<tr class="failedodd"><td>Press overview</td><td><a href="#m5><b>Pressoverview</b> (Press overview) (Press overview)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[normalize-space()=&apos;Press releases&apos;]&quot;}<br/></td><td style="text-align:right">05:11:22</td><td class="numi">00:00:13</td></tr>
+<tr class="failedeven"><td>Testimonial country filter</td><td><a href="#m6><b>Testimonialcountryfilter</b> (Testimonialcountryfilter) (Testimonial country filter)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;Testimonials&apos;]&quot;}<br/></td><td style="text-align:right">05:11:51</td><td class="numi">00:00:13</td></tr>
+<tr class="failedodd"><td>Testimonial overview</td><td><a href="#m7><b>Testimonialoverview</b> (Testimonial overview) (Testimonial overview)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;Testimonials&apos;]&quot;}<br/></td><td style="text-align:right">05:11:36</td><td class="numi">00:00:14</td></tr>
+<tr class="failedeven"><td>Testimonial product filter</td><td><a href="#m8><b>Testimonialproductfilter</b> (Testimonialproductfilter) (Testimonial product filter)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;Testimonials&apos;]&quot;}<br/></td><td style="text-align:right">05:12:20</td><td class="numi">00:00:13</td></tr>
+<tr class="failedodd"><td>Testimonial solution filter</td><td><a href="#m9><b>Testimonialsolutionfilter</b> (Testimonialsolutionfilter) (Testimonial solution filter)</a></td><td class="numi" style="text-align:left;padding-right:2em">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;Testimonials&apos;]&quot;}<br/></td><td style="text-align:right">05:12:05</td><td class="numi">00:00:14</td></tr>
+<tr class="failedeven"><td>Verify Product documentation</td><td><a href="#m10><b>productdocumentverification</b> (Verify Product documentation) (Verify Product documentation)</a></td><td class="numi" style="text-align:left;padding-right:2em">javax.net.ssl.SSLHandshakeException: No subject alternative DNS name matching accept.docs.esko.com found.<br/></td><td style="text-align:right">05:12:56</td><td class="numi">00:00:44</td></tr>
+<tr><th colspan="5">Scenarios &#8212; passed</th></tr>
+<tr class="passedodd"><td>Verify My Account profile</td><td><a href="#m11><b>Myaccountprofile</b> (Verify My Account profile) (Verify My Account profile)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:55:36</td><td class="numi">00:02:22</td></tr>
+<tr class="passedeven"><td>Verify My Policies Details tile</td><td><a href="#m12><b>Mypoliciestile</b> (Verify My Policies Details tile) (Verify My Policies Details tile)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:51:29</td><td class="numi">00:02:04</td></tr>
+<tr class="passedodd"><td>Verify Organization Details tile</td><td><a href="#m13><b>Organizationdetailstile</b> (Verify Organization Details tile) (Verify Organization Details tile)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:49:33</td><td class="numi">00:01:56</td></tr>
+<tr class="passedeven"><td>Verify Planning Tile</td><td><a href="#m14><b>Planningtile</b> (Verify Planning Tile) (Verify Planning Tile)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:43:37</td><td class="numi">00:01:40</td></tr>
+<tr class="passedodd"><td>Verify Your hardware tile</td><td><a href="#m15><b>Yourhardwaretile</b> (Verify Your hardware tile) (Verify Your hardware tile)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:53:33</td><td class="numi">00:02:03</td></tr>
+<tr class="passedeven"><td>Verify Your Tasks tile</td><td><a href="#m16><b>Yourtaskstile</b> (Verify Your Tasks tile) (Verify Your Tasks tile)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:47:31</td><td class="numi">00:02:02</td></tr>
+<tr class="passedodd"><td>CDI categories appear on CDI overview page</td><td><a href="#m17><b>CDIconsumablesoverviewpage</b> (CheckifCDIcategoriesappearonCDIoverviewpage) (CDI categories appear on CDI overview page)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:58:15</td><td class="numi">00:00:30</td></tr>
+<tr class="passedeven"><td>Buy a CDI product as normal existing customer with Invalid Creditcard</td><td><a href="#m18><b>RegistereduserCDIprodcuctbuywithInvalidCreditcard</b> (BuyCDIproductwithexistingcustomerwithInvalidCreditcard) (Buy a CDI product as normal existing customer with Invalid Creditcard)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:58:45</td><td class="numi">00:02:52</td></tr>
+<tr class="passedodd"><td>Verify Checkout with newcustomer with new Mastercard payment option</td><td><a href="#m19><b>CheckoutwithnewcustomerwithnewMastercardpayment</b> (CheckoutwithnewcustomerwithnewMastercardpayment) (Verify Checkout with newcustomer with new Mastercard payment option)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:35:18</td><td class="numi">00:03:48</td></tr>
+<tr class="passedeven"><td>Consult FAQ page</td><td><a href="#m20><b>ConsultFAQpage</b> (ConsultFAQpage) (Consult FAQ page)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:33:25</td><td class="numi">00:00:44</td></tr>
+<tr class="passedodd"><td>Consult the store from a country where the store is not allowed</td><td><a href="#m21><b>Consultthestorefromcountrywherestorenotallowed</b> (Consultthestorefromcountrywherestorenotallowed) (Consult the store from a country where the store is not allowed)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:34:43</td><td class="numi">00:00:35</td></tr>
+<tr class="passedeven"><td>Consult the store from a country where subscriptions is not allowed</td><td><a href="#m22><b>Consultthestorefromsubscriptionsnotallowed</b> (Consultthestorefromsubscriptionsnotallowed) (Consult the store from a country where subscriptions is not allowed)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:34:09</td><td class="numi">00:00:34</td></tr>
+<tr class="passedodd"><td>Create Order with Invalid credit card</td><td><a href="#m23><b>OrderwithInvalidcard</b> (OrderwithInvalidcard) (Create Order with Invalid credit card)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:39:06</td><td class="numi">00:03:38</td></tr>
+<tr class="passedeven"><td>Verify Subscriptionstore prices on capepackcomponents</td><td><a href="#m24><b>Subscriptionstorepricesoncapepackcomponents</b> (Subscriptionstorepricesoncapepackcomponents) (Verify Subscriptionstore prices on capepackcomponents)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:31:41</td><td class="numi">00:00:56</td></tr>
+<tr class="passedodd"><td>Verify Subscriptionstore prices on capepackessentials variants</td><td><a href="#m25><b>Subscriptionstorepricesoncapepackessentialsvariants</b> (Subscriptionstorepricesoncapepackessentialsvariants) (Verify Subscriptionstore prices on capepackessentials variants)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:32:37</td><td class="numi">00:00:48</td></tr>
+<tr class="passedeven"><td>Verify Subscriptionstore prices on the overview components</td><td><a href="#m26><b>Subscriptionstorepricesonoverviewcomponents</b> (Subscriptionstorepricesonoverviewcomponents) (Verify Subscriptionstore prices on the overview components)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">04:30:43</td><td class="numi">00:00:58</td></tr>
+<tr class="passedodd"><td>General Search</td><td><a href="#m27><b>Generalsearch</b> (General Search) (General Search)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">05:08:55</td><td class="numi">00:00:39</td></tr>
+<tr class="passedeven"><td>News overview</td><td><a href="#m28><b>Newsoverview</b> (News overview) (News overview)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">05:10:43</td><td class="numi">00:00:39</td></tr>
+<tr class="passedodd"><td>Sales contacts</td><td><a href="#m29><b>Salescontacts</b> (Sales contacts) (Sales contacts)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">05:09:34</td><td class="numi">00:01:09</td></tr>
+<tr class="passedeven"><td>Support-Search for documentation</td><td><a href="#m30><b>Supportsearchfordocumentation</b> (SupportSearchfordocumentation) (Support-Search for documentation)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">05:01:56</td><td class="numi">00:01:03</td></tr>
+<tr class="passedodd"><td>Support-Search Open Html document</td><td><a href="#m31><b>SupportsearchopenHtmldocument</b> (SupportSearchOpenHtmldocument) (Support-Search Open Html document)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">05:03:57</td><td class="numi">00:00:53</td></tr>
+<tr class="passedeven"><td>Support-Search open KB document</td><td><a href="#m32><b>SupportsearchopenKBdocument</b> (SupportSearchopenKBdocument) (Support-Search open KB document)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">05:07:21</td><td class="numi">00:01:01</td></tr>
+<tr class="passedodd"><td>Support-Search open Documentation</td><td><a href="#m33><b>Supportsearchopendocumentation</b> (SupportSearchopenDocumentation) (Support-Search open Documentation)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">05:08:22</td><td class="numi">00:00:33</td></tr>
+<tr class="passedeven"><td>Support-Search Open Pdf document</td><td><a href="#m34><b>Supportsearchopenpdfdocument</b> (SupportSearchOpenPdfdocument) (Support-Search Open Pdf document)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">05:02:59</td><td class="numi">00:00:58</td></tr>
+<tr class="passedodd"><td>Support-Search with minus</td><td><a href="#m35><b>Supportsearchwithminus</b> (SupportSearchwithminus) (Support-Search with minus)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">05:05:39</td><td class="numi">00:00:18</td></tr>
+<tr class="passedeven"><td>Support-Search with product filters</td><td><a href="#m36><b>Supportsearchwithproductfilters</b> (SupportSearchwithproductfilters) (Support-Search with product filters)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">05:07:03</td><td class="numi">00:00:18</td></tr>
+<tr class="passedodd"><td>Support-Search with source filters</td><td><a href="#m37><b>Supportsearchwithsourcefilters</b> (SupportSearchwithsourcefilters) (Support-Search with source filters)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">05:05:57</td><td class="numi">00:01:06</td></tr>
+<tr class="passedeven"><td>Support-Search with text</td><td><a href="#m38><b>Supportsearchwithtext</b> (SupportSearchwithtext) (Support-Search with text)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">05:04:50</td><td class="numi">00:00:30</td></tr>
+<tr class="passedodd"><td>Support-Search with wildcards</td><td><a href="#m39><b>Supportsearchwithwildcards</b> (SupportSearchwithwildcards) (Support-Search with wildcards)</a></td><td class="numi" style="text-align:left;padding-right:2em"><br/></td><td style="text-align:right">05:05:20</td><td class="numi">00:00:19</td></tr>
+</table>
+<h2>Scenarios</h2>
+<h3 id="m1">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTH717996</td>
+<td>Confirmation</td>
+<td>7782</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Membershipupdates-16-43-32.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717979</td>
+<td>Confirmation</td>
+<td>19667</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Supporttile-16-47-30.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717992</td>
+<td>Confirmation</td>
+<td>6292</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Pressoverview-17-11-35.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717990</td>
+<td>Invoice</td>
+<td>63000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Testimonialoverview-17-11-50.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTH717995</td>
+<td>Confirmation</td>
+<td>7782</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Testimonialcountryfilter-17-12-4.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717983</td>
+<td>Confirmation</td>
+<td>80000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Testimonialsolutionfilter-17-12-19.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717982</td>
+<td>Confirmation</td>
+<td>80000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Testimonialproductfilter-17-12-33.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717986</td>
+<td>Subscription</td>
+<td>63000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Openproductdocumentation-17-12-55.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717987</td>
+<td>Confirmation</td>
+<td>80000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/productdocumentverification-17-13-40.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTH717998</td>
+<td>Confirmation</td>
+<td>6860</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-14-46.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTH717994</td>
+<td>Confirmation</td>
+<td>7782</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-15-29.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717981</td>
+<td>Confirmation</td>
+<td>80000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-16-11.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717984</td>
+<td>Confirmation</td>
+<td>33000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-16-54.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717989</td>
+<td>Confirmation</td>
+<td>63000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-17-37.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717987</td>
+<td>Subscription</td>
+<td>80000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-18-20.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp05@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717991</td>
+<td>Confirmation</td>
+<td>80000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-19-3.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717980</td>
+<td>Confirmation</td>
+<td>291000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-19-45.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717986</td>
+<td>Confirmation</td>
+<td>63000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-20-28.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTH717997</td>
+<td>Confirmation</td>
+<td>6860</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-21-11.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717988</td>
+<td>Invoice</td>
+<td>63000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-21-54.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp04@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717993</td>
+<td>Confirmation</td>
+<td>329000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-22-37.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717990</td>
+<td>Confirmation</td>
+<td>63000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-23-20.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717988</td>
+<td>Confirmation</td>
+<td>63000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-24-3.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp03@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717989</td>
+<td>Subscription</td>
+<td>63000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-24-45.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">:All Confirmation/Invoice/Subscription emails verification</h3>
+<table cellspacing=0 cellpadding=0 class="result">
+<tr class="param"><th>Email</th><th>Password</th><th>Order</th><th>Type</th><th>Price</th></tr>
+<tr class="param stripe"><td>eskododp05@gmail.com</td>
+<td>Azertyu1$</td>
+<td>ACCEPTS717991</td>
+<td>PLInvoice</td>
+<td>80000</td>
+</tr>
+<tr><tdcolspan="5">
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-25-28.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='password'</font></div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">:Verify Membership updates</h3>
+<div >
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-26-11.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=104.0.5112.81)
+Build info: versio</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">:Verify Support Tile </h3>
+<div >
+<table>
+<tr>
+<td>
+Support tile appearing in My account Page
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-26-54.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">java.lang.AssertionError: Error occurred. Please contact Esko Support if issue persists.</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">:Open product documentation</h3>
+<div >
+<table>
+<tr>
+<td>
+Your connection is not private
+Attackers might be trying to steal your information from accept.docs.esko.com (for example, passwords, messages, or credit cards). Learn more
+NET::ERR_CERT_COMMON_NAME_INVALID
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-27-36.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">java.lang.AssertionError: Your connection is not private
+Attackers might be trying to steal your information from accept.docs.esko.com </font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m29">:Press overview</h3>
+<div >
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-28-19.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-spac</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">:Testimonial country filter</h3>
+<div >
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-29-2.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Testim</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m31">:Testimonial overview</h3>
+<div >
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-29-44.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Testim</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m32">:Testimonial product filter</h3>
+<div >
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-30-27.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Testim</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m33">:Testimonial solution filter</h3>
+<div >
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-31-10.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Testim</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m34">:Verify Product documentation</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Productdocumentation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Prodcut-ArtiosCAD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Product documentation links Count-1
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+<h2>Failure</h2>
+<h4><font color="red"><a href =http://10.31.224.164/EskoScreenshots/Allemailsverification-17-31-53.png target = '_blank' >Click Here to View Error Image</a></font></h4>
+<div class="stacktrace"><font color="red">javax.net.ssl.SSLHandshakeException: No subject alternative DNS name matching accept.docs.esko.com found.</font></div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m35">:Verify My Account profile</h3>
+<div >
+<table>
+<tr>
+<td>
+Profile ribbon appearing in My account Page
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+My account Profile name: DODP04 esko
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+ESKOID: eskododp04@gmail.com
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+'Manage Your Profile' link appearing in My Account profile user profiletrue
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Manage Your Profile Page title- Dashboard
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+https://accept-id.esko.com/Organization/Dashboard
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Company Name: WestRock Company (A01149)
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+'Manage Your Organization' link appearing in My Account profile user profiletrue
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+User Roles: Software Admin
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+User Roles: Purchaser
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m36">:Verify My Policies Details tile</h3>
+<div >
+<table>
+<tr>
+<td>
+My Policies tile tile appearing in My account Page
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m37">:Verify Organization Details tile</h3>
+<div >
+<table>
+<tr>
+<td>
+Organization details tile tile appearing in My account Page
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m38">:Verify Planning Tile</h3>
+<div >
+<table>
+<tr>
+<td>
+Planning tile appearing in My account Page
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Technical issue encountered. Contact Esko support in case issue persists.
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m39">:Verify Your hardware tile</h3>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m40">:Verify Your Tasks tile</h3>
+<div >
+<table>
+<tr>
+<td>
+Your Tasks tile appearing in My account Page
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Your Tasks list available
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Planning tile text:Technical issue encountered. Contact Esko support in case issue persists.
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m41">:CDI categories appear on CDI overview page</h3>
+<div >
+<table>
+<tr>
+<td>
+Page Navigate to new CDI store
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Total CDIcategories Count- 7
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m42">:Buy a CDI product as normal existing customer with Invalid Creditcard</h3>
+<div >
+<table>
+<tr>
+<td>
+Page Navigate to new CDI store
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+CDIproduct added to cart from Product list page
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Click on cart Link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+ Click on continue checkout button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Login with user name - eskododp04@gmail.com & password -Azertyu1$
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Create a new card option
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Filled Invalid Creditcard deatils
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Terms and Conditions Checkbox
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on Confirm order button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Invalid credit card error message displayed
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Invalid credit card error message- 102 - Your payment failed as one or more fields in the request contained invalid data. Please double-check your address and payment data and try again. If this problem still occurs, please contact us at: eskostore@esko.com
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m43">:Verify Checkout with newcustomer with new Mastercard payment option</h3>
+<div >
+<table>
+<tr>
+<td>
+Capepack Essentials buy button clicked with Yearlyplan,Paid Yearly
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Click on cart Link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+ Click on continue checkout button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Register user email - eskotest1492022-4380@gmail.com
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Company Name- RCompany14920222
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected cardtype-MasterCard
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m44">:Consult FAQ page</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on FAQ'S page
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+FAQ'S Page title: FAQ - Esko
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m45">:Consult the store from a country where the store is not allowed</h3>
+<div >
+<table>
+<tr>
+<td>
+Page is navigating to the country(Japan),where Store is not allowed
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+We're sorry, but the store is not yet available in your country - Esko
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m46">:Consult the store from a country where subscriptions is not allowed</h3>
+<div >
+<table>
+<tr>
+<td>
+Page is navigating to the country(India),where subscriptions is not allowed
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+CDI Consumables
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m47">:Create Order with Invalid credit card</h3>
+<div >
+<table>
+<tr>
+<td>
+Selected studio option
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Click on cart Link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+ Click on continue checkout button
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Login with user name - eskododp04@gmail.com & password -Azertyu1$
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+User doesn't have any existing subscription orders
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Create a new card option
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Filled Invalid Creditcard deatils
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Invalid credit card error message- 102 - Your payment failed as one or more fields in the request contained invalid data. Please double-check your address and payment data and try again. If this problem still occurs, please contact us at: eskostore@esko.com
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m48">:Verify Subscriptionstore prices on capepackcomponents</h3>
+<div >
+<table>
+<tr>
+<td>
+Cape Pack items count-3
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+1.Cape Pack Reviewer-18
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+2.Cape Pack Essentials-52
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+3.Cape Pack Advanced-161
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m49">:Verify Subscriptionstore prices on capepackessentials variants</h3>
+<div >
+<table>
+<tr>
+<td>
+Monthly plan, paid Monthly-78
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Yearly plan, paid Monthly - Saves you 32 %-53
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Yearly plan, paid Yearly - Saves you 33 %-52
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m50">:Verify Subscriptionstore prices on the overview components</h3>
+<div >
+<table>
+<tr>
+<td>
+Number of software-11
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+1.ArtiosCAD: 6
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+2.ArtPro+: 64
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+3.Cape Pack: 18
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+4.DeskPack: 9
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+5.Dynamic Barcodes: 170
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+6.Dynamic Content: 14
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+7.i-cut Suite: 35
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+8.Studio: 189
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+9.Studio Store Visualizer: 886
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m51">:General Search</h3>
+<div >
+<table>
+<tr>
+<td>
+Search with text: artioscad
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Total Search Results: 197
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Title of the 1st Search Result: ArtiosCAD Subscription Editions
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m52">:News overview</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on News link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Title of the 1st News: What’s New in ArtPro+ 18.1.2?
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m53">:Sales contacts</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Sales contacts
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Country:United Kingdom
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Esko Sales Contact(s) : James Mason (+44 7824 322 299)
+Denis Fitzgerald (+44 121 667 4200)
+Simon Cavanagh (+44 7973 197 464)
+Neil Anthony Little (+447870155275)
+Sam Nicholson (+44 121 667 4200)
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Esko Office(s) : Esko
+The Loop – building Networks Raymonde de Larochelaan 13
+9051 Gent
+Belgium
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Reseller(s) : Dantex Graphics Limited
+Danon House
+5 Kings Road
+BD2 1EY Bradford
+United Kingdom
+Tel: +44 1274 777777
+Fax: +44 1274 777766
+Web: www.dantex.com
+Reprocentre Group Ltd
+Unit 10 Fonthill Business Park Fonthill Road
+22 Dublin
+Ireland
+Tel: +353 1 40 93 100
+Fax: +353 1 409 3160
+Web: gpmi.ie/
+Contact:
+Mr. Bernard Hoey
+Mr. Dave Brennan
+Mr. Alan O'Brien
+Mr. Eoin Honan
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m54">:Support-Search for documentation</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Productdocumentation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Prodcut-ArtiosCAD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Page title-DOCUMENTATION FOR ARTIOSCAD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m55">:Support-Search Open Html document</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Productdocumentation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Prodcut-ArtiosCAD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Page title-DOCUMENTATION FOR ARTIOSCAD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on User Guide link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+HtmlPage title- Privacy error
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+https://accept.docs.esko.com/docs/en-us/artioscad/20/userguide/home.html
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m56">:Support-Search open KB document</h3>
+<div >
+<table>
+<tr>
+<td>
+Search with text: installation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected option in Sources dropdown:Knowledge Base
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Title of the 1st Search Result: KB82230327: ArtiosCAD - What is the difference between Modify and Repair in the ArtiosCAD Installer
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+http://egwbewiki001tst/pages/viewpage.action?pageId=83183328
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m57">:Support-Search open Documentation</h3>
+<div >
+<table>
+<tr>
+<td>
+Search with text: installation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected option in Sources dropdown:Documentation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Title of the 1st Search Result: WebCenter 16 Installation Guide: WebCenter Installation Tips
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+https://accept.docs.esko.com/docs/en-us/webcenter/16/installationguide/en-us/common/wc/reference/re_wc_WCR12InstallationTips.html
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m58">:Support-Search Open Pdf document</h3>
+<div >
+<table>
+<tr>
+<td>
+Clicked on Productdocumentation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected Prodcut-ArtiosCAD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Page title-DOCUMENTATION FOR ARTIOSCAD
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Clicked on What's New in ArtiosCAD link
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+https://accept.docs.esko.com/docs/en-us/artioscad/20/whatsnew/ArtiosCAD%2020%20-%20Whats%20New.pdf
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m59">:Support-Search with minus</h3>
+<div >
+<table>
+<tr>
+<td>
+Search with text: installation tips -webcenter
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Total Search Results: 68
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Title of the 1st Search Result: User Guide: Licensing and Activation 16.1: If the Program Hangs
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m60">:Support-Search with product filters</h3>
+<div >
+<table>
+<tr>
+<td>
+Search with text: installation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of results with All products option: 5961
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected dropdown option: Adobe Illustrator Client
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of results with Adobe Illustrator Client option: 33
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Adobe Illustrator Client product number of results is less than All products number of results
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m61">:Support-Search with source filters</h3>
+<div >
+<table>
+<tr>
+<td>
+Search with text: installation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of results with All sources option: 5961
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected dropdown option: Knowledge Base
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of results with Knowledge Base option: 483
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected dropdown option: System Requirements
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of results with System Requirements option: 19
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected dropdown option: Documentation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of results with Documentation option: 5456
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Selected dropdown option: Hotfixes
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Number of results with Hotfixes option: 3
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Sum of results with other options: 5961
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+All results matchs with sum of the all other options
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m62">:Support-Search with text</h3>
+<div >
+<table>
+<tr>
+<td>
+Search with text: Studio installation
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Total Search Results: 284
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Title of the 1st Search Result: KB74647202: Where to find the DeskPack/ Studio/ Dynamic Content installation log files
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m63">:Support-Search with wildcards</h3>
+<div >
+<table>
+<tr>
+<td>
+Search with text: *stalla*
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Total Search Results: 6098
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+<tr>
+<td>
+Title of the 1st Search Result: KB74647202: Where to find the DeskPack/ Studio/ Dynamic Content installation log files
+</td>
+<td> <font color="green">
+Pass
+</font></td></tr>
+</table>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<center> Espire Automation Framework Generated Report </center>
+</body></html>
